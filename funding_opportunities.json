@@ -219,5 +219,37 @@
     "date_added": "2026-03-15",
     "status": "new",
     "notes": "Siegel is a Humanity AI coalition member with an active research fellowship programme. Explicitly focused on worker agency in AI transformation. Contact directly for 2026 grant deadlines."
+  },
+  {
+    "id": "ibmImpactAcceleratorAIWorkforce2026",
+    "name": "IBM Impact Accelerator \u2014 Education & Workforce Development Cohort",
+    "organization": "IBM",
+    "type": "corporate",
+    "thematic_fit": 5,
+    "description": "Global RFP for nonprofits and research organisations to develop AI solutions for education and workforce development. Selected organisations (5 per cohort) receive two-year pro bono access to IBM watsonx, Granite AI models, IBM Cloud, and implementation support from IBM researchers and consultants.",
+    "url": "https://newsroom.ibm.com/2026-02-04-ibm-opens-global-rfp-for-ai-driven-solutions-shaping-the-future-of-work-and-education",
+    "amount_max_usd": 0,
+    "amount_notes": "Pro bono technology package; in-kind support including IBM tools and consulting (no cash grant)",
+    "deadline": "2026-03-25",
+    "eligible_regions": "global",
+    "date_added": "2026-03-15",
+    "status": "new",
+    "notes": "Deadline 25 March 2026 \u2014 apply immediately. Excellent fit for think tanks working on AI and workforce research. Global scope. Contact: impact.accelerator@ibm.com"
+  },
+  {
+    "id": "knightFoundationAIGovernanceFund2026",
+    "name": "Knight Foundation \u2014 Ethics and Governance of AI Fund",
+    "organization": "Knight Foundation",
+    "type": "foundation",
+    "thematic_fit": 4,
+    "description": "Ongoing initiative supporting civil society organisations working on AI ethics, governance, and public interest. The Foundation has committed $7.6M to nine initial grantees; supports research on governance, norms, values, and responsible AI systems.",
+    "url": "https://knightfoundation.org/press/releases/the-ethics-and-governance-of-artificial-intelligence-fund-commits-7-6-million-to-organizations-that-bolster-civil-society-efforts-around-the-world/",
+    "amount_max_usd": 0,
+    "amount_notes": "$7.6M committed across nine grantees; individual award sizes not published",
+    "deadline": "rolling",
+    "eligible_regions": "global",
+    "date_added": "2026-03-15",
+    "status": "new",
+    "notes": "Rolling applications. Good fit for AI governance and policy research. Check knightfoundation.org for 2026 RFP details. May need to align with Knight's democracy and civics mission."
   }
 ]

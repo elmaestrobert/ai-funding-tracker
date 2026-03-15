@@ -234,5 +234,53 @@
     "date_added": "2026-03-15",
     "status": "new",
     "notes": "Rolling applications. Good fit for AI governance and policy research. Check knightfoundation.org for 2026 RFP details. May need to align with Knight's democracy and civics mission."
+  },
+  {
+    "id": "schmidtAIatWork2026",
+    "name": "Schmidt Sciences \u2014 AI at Work: Field Experiments on Workforce Effects of AI",
+    "organization": "Schmidt Sciences",
+    "type": "foundation",
+    "thematic_fit": 5,
+    "description": "Funds field experiments and quasi-experiments by economists and quantitative social scientists studying AI's impact on workplaces. Two priority areas: (1) Worker Displacement & Adjustment; (2) Scientific Productivity. Awards up to $200k per project.",
+    "url": "https://www.schmidtsciences.org/ai-at-work/",
+    "amount_max_usd": 200000,
+    "amount_notes": "Up to $200,000 per project",
+    "deadline": "2026-04-10",
+    "eligible_regions": "global",
+    "date_added": "2026-03-15",
+    "status": "new",
+    "notes": "Expressions of interest due 10 April 2026. Perfect fit for think tank AI + future-of-work research."
+  },
+  {
+    "id": "schmidtScienceTrustworthyAI2026",
+    "name": "Schmidt Sciences \u2014 Science of Trustworthy AI RFP 2026",
+    "organization": "Schmidt Sciences",
+    "type": "foundation",
+    "thematic_fit": 4,
+    "description": "Supports technical research improving understanding, prediction, and control of risks from frontier AI systems. Tier 1: up to $1M; Tier 2: $1M\u2013$5M+. 1\u20133 year projects. Indirect costs capped at 10%. Global participation encouraged.",
+    "url": "https://www.schmidtsciences.org/opportunity/2026-science-of-trustworthy-ai-rfp/",
+    "amount_max_usd": 5000000,
+    "amount_notes": "Tier 1: up to $1M; Tier 2: $1M\u2013$5M+; 1\u20133 year projects",
+    "deadline": "2026-05-17",
+    "eligible_regions": "global",
+    "date_added": "2026-03-15",
+    "status": "new",
+    "notes": "Applications opened 18 Feb 2026. Informational webinar 15 April. Can encompass sociotechnical and labour-market risks of frontier AI."
+  },
+  {
+    "id": "schmidtAI2050Fellowship",
+    "name": "Schmidt Sciences \u2014 AI2050 Fellowship Programme",
+    "organization": "Schmidt Sciences",
+    "type": "foundation",
+    "thematic_fit": 5,
+    "description": "Supports exceptional researchers working on critical AI opportunities and hard problems including AI's impact on the economy and society. The 2025 cohort awarded $18M+ to 28 fellows. Co-chaired by Eric Schmidt and James Manyika.",
+    "url": "https://ai2050.schmidtsciences.org/",
+    "amount_max_usd": 0,
+    "amount_notes": "$18M+ awarded to 28 fellows in 2025 cohort; individual amounts not disclosed",
+    "deadline": "rolling",
+    "eligible_regions": "global",
+    "date_added": "2026-03-15",
+    "status": "new",
+    "notes": "Invitation and nomination only \u2014 no open application. Monitor for nomination windows and build a relationship with Schmidt Sciences programme staff."
   }
 ]

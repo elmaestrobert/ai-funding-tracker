@@ -1,94 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>🌱 AI Future-of-Work Funding Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg:#f4f6f9;--surface:#fff;--border:#dde3ec;
-    --text:#1a2436;--muted:#5f7085;--accent:#1565c0;
-    --header-bg:#1f4e79;--header-text:#fff;
+    --bg:        #f5f7fb;
+    --surface:   #ffffff;
+    --border:    #e2e7f0;
+    --text:      #1a1d2e;
+    --muted:     #64748b;
+    --accent:    #2563eb;
+    --accent2:   #7c3aed;
+    --green:     #16a34a;
+    --yellow:    #b45309;
+    --red:       #dc2626;
+    --orange:    #ea580c;
+    --teal:      #0d9488;
+    --row-hover: #eef2fb;
+    --panel-w:   440px;
   }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
-  header{background:var(--header-bg);color:var(--header-text);padding:32px 24px 24px}
-  header h1{font-size:2rem;font-weight:700}
-  header p.subtitle{margin-top:6px;opacity:.85;font-size:1.05rem}
-  header .meta{margin-top:12px;font-size:.85rem;opacity:.7;display:flex;gap:18px;flex-wrap:wrap}
-  .controls{background:var(--surface);border-bottom:1px solid var(--border);padding:16px 24px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-  .controls input,.controls select{padding:8px 12px;border:1px solid var(--border);border-radius:6px;font-size:.9rem;background:var(--bg);color:var(--text);outline:none}
-  .controls input{flex:1;min-width:200px}
-  .count{font-size:.85rem;color:var(--muted);margin-left:auto}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px;padding:24px}
-  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 4px rgba(0,0,0,.06);transition:box-shadow .2s}
-  .card:hover{box-shadow:0 4px 16px rgba(0,0,0,.12)}
-  .card-header{display:flex;align-items:flex-start;gap:10px}
-  .fit-badge{flex-shrink:0;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.95rem;color:#fff}
-  .card-title{font-size:1rem;font-weight:600;line-height:1.35}
-  .card-org{font-size:.85rem;color:var(--muted)}
-  .tags{display:flex;gap:6px;flex-wrap:wrap}
-  .tag{padding:3px 8px;border-radius:12px;font-size:.75rem;font-weight:600;border:1px solid transparent}
-  .tag-type{background:#e3f2fd;color:#1565c0;border-color:#90caf9}
-  .tag-region{background:#f3e5f5;color:#7b1fa2;border-color:#ce93d8}
-  .tag-deadline{font-weight:700}
-  .desc{font-size:.88rem;color:var(--muted);line-height:1.55}
-  .meta-row{display:flex;gap:16px;flex-wrap:wrap;font-size:.8rem;color:var(--muted)}
-  .notes-box{background:#f8f9fc;border-left:3px solid var(--accent);padding:8px 12px;border-radius:0 6px 6px 0;font-size:.82rem;color:var(--text);line-height:1.5}
-  .link-btn{display:inline-block;margin-top:auto;padding:8px 16px;background:var(--accent);color:#fff;border-radius:6px;font-size:.85rem;font-weight:600;text-decoration:none;text-align:center;transition:background .2s}
-  .link-btn:hover{background:#0d47a1}
-  .hidden{display:none!important}
-  footer{text-align:center;padding:24px;font-size:.8rem;color:var(--muted);border-top:1px solid var(--border)}
-  @media(max-width:600px){.grid{padding:12px}header{padding:20px 16px}}
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+    min-height: 100vh;
+  }
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  header .logo {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; flex-shrink: 0;
+  }
+  header h1 { font-size: 18px; font-weight: 600; }
+  header .subtitle { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  header .spacer { flex: 1; }
+  header .updated { font-size: 11px; color: var(--muted); text-align: right; line-height: 1.5; }
+  .tab-bar {
+    display: flex; gap: 2px;
+    padding: 16px 24px 0;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .tab {
+    background: none; border: none;
+    color: var(--muted); font-size: 13px; font-weight: 500;
+    padding: 8px 16px 12px; cursor: pointer;
+    border-bottom: 2px solid transparent;
+    display: flex; align-items: center; gap: 8px;
+    transition: color 0.15s;
+    font-family: inherit;
+  }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-badge {
+    background: var(--border); border-radius: 10px;
+    padding: 1px 7px; font-size: 11px; color: var(--muted);
+  }
+  .tab.active .tab-badge { background: rgba(37,99,235,0.12); color: var(--accent); }
+  .toolbar {
+    padding: 12px 24px; display: flex; gap: 10px;
+    align-items: center; flex-wrap: wrap; background: var(--bg);
+  }
+  .search-wrap {
+    position: relative; flex: 1;
+    min-width: 180px; max-width: 320px;
+  }
+  .search-wrap svg {
+    position: absolute; left: 10px; top: 50%;
+    transform: translateY(-50%); color: var(--muted);
+    width: 14px; height: 14px; pointer-events: none;
+  }
+  .toolbar input, .toolbar select {
+    background: var(--surface); border: 1px solid var(--border);
+    color: var(--text); border-radius: 6px;
+    padding: 6px 10px; font-size: 13px; outline: none;
+    transition: border-color 0.15s; font-family: inherit;
+  }
+  .toolbar input { padding-left: 30px; width: 100%; }
+  .toolbar input:focus, .toolbar select:focus { border-color: var(--accent); }
+  .result-count { font-size: 12px; color: var(--muted); margin-left: auto; white-space: nowrap; }
+  .table-wrap { overflow-x: auto; padding: 0 24px 32px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  thead th {
+    text-align: left; font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--muted); padding: 8px 12px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap; user-select: none;
+  }
+  thead th:first-child { padding-left: 4px; }
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    cursor: pointer; transition: background 0.1s;
+  }
+  tbody tr:hover { background: var(--row-hover); }
+  tbody tr.active-row { background: rgba(37,99,235,0.07); }
+  tbody td { padding: 12px 12px; vertical-align: middle; }
+  tbody td:first-child { padding-left: 4px; }
+  .fit-badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 12px; font-weight: 700;
+    padding: 2px 8px; border-radius: 12px; white-space: nowrap;
+  }
+  .fit-5 { background: rgba(22,163,74,0.10);  color: var(--green); }
+  .fit-4 { background: rgba(37,99,235,0.10);  color: var(--accent); }
+  .fit-3 { background: rgba(180,83,9,0.10);   color: var(--yellow); }
+  .fit-2 { background: rgba(234,88,12,0.10);  color: var(--orange); }
+  .fit-1 { background: rgba(220,38,38,0.10);  color: var(--red); }
+  .name-cell .org { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .type-pill {
+    display: inline-block; padding: 2px 8px;
+    border-radius: 4px; font-size: 11px; font-weight: 500; white-space: nowrap;
+  }
+  .type-foundation         { background: rgba(124,58,237,0.10); color: #6d28d9; }
+  .type-government         { background: rgba(13,148,136,0.10); color: var(--teal); }
+  .type-corporate          { background: rgba(234,88,12,0.10);  color: var(--orange); }
+  .type-research_institution { background: rgba(37,99,235,0.10); color: var(--accent); }
+  .amount-cell { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .dl-cell { white-space: nowrap; }
+  .dl-badge {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 12px; font-weight: 500;
+    padding: 3px 9px; border-radius: 6px;
+  }
+  .dl-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+  .dl-soon    { background: rgba(22,163,74,0.10);  color: var(--green); }
+  .dl-soon    .dl-dot { background: var(--green); }
+  .dl-open    { background: rgba(37,99,235,0.10);  color: var(--accent); }
+  .dl-open    .dl-dot { background: var(--accent); }
+  .dl-tbc     { background: rgba(180,83,9,0.10);   color: var(--yellow); }
+  .dl-tbc     .dl-dot { background: var(--yellow); }
+  .dl-rolling { background: rgba(13,148,136,0.10); color: var(--teal); }
+  .dl-rolling .dl-dot { background: var(--teal); }
+  .dl-passed  { background: rgba(100,116,139,0.10); color: var(--muted); }
+  .dl-passed  .dl-dot { background: var(--muted); }
+  .region-cell { font-size: 12px; color: var(--muted); }
+  .empty { text-align: center; padding: 60px 20px; color: var(--muted); }
+  .empty .empty-icon { font-size: 36px; margin-bottom: 12px; }
+  .empty p { font-size: 14px; }
+  .new-dot {
+    display: inline-block; width: 7px; height: 7px;
+    background: var(--accent); border-radius: 50%;
+    margin-left: 4px; vertical-align: middle;
+  }
+  /* ── Detail Panel ── */
+  .panel-backdrop {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.45); z-index: 100;
+    backdrop-filter: blur(1px);
+  }
+  .panel-backdrop.open { display: block; }
+  .detail-panel {
+    position: fixed; top: 0; right: 0;
+    height: 100vh; width: var(--panel-w); max-width: 92vw;
+    background: var(--surface); border-left: 1px solid var(--border);
+    z-index: 101;
+    transform: translateX(100%);
+    transition: transform 0.25s cubic-bezier(0.4,0,0.2,1);
+    display: flex; flex-direction: column; overflow: hidden;
+  }
+  .detail-panel.open { transform: translateX(0); }
+  .panel-header {
+    padding: 20px 20px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: flex-start; gap: 12px;
+  }
+  .panel-header .ph-main { flex: 1; min-width: 0; }
+  .panel-title { font-size: 15px; font-weight: 600; line-height: 1.35; margin-bottom: 6px; }
+  .panel-org { font-size: 12px; color: var(--muted); }
+  .panel-close {
+    background: none; border: none; color: var(--muted);
+    cursor: pointer; padding: 4px; border-radius: 4px;
+    flex-shrink: 0; line-height: 1; font-size: 18px;
+  }
+  .panel-close:hover { color: var(--text); background: var(--border); }
+  .panel-body {
+    flex: 1; overflow-y: auto; padding: 20px;
+    display: flex; flex-direction: column; gap: 18px;
+  }
+  .panel-section-label {
+    font-size: 10px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--muted); margin-bottom: 6px;
+  }
+  .panel-desc { font-size: 13px; line-height: 1.65; color: var(--text); }
+  .panel-meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .meta-item {
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 8px; padding: 10px 12px;
+  }
+  .meta-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
+  .meta-value { font-size: 13px; font-weight: 500; }
+  .panel-notes {
+    background: rgba(180,83,9,0.06);
+    border: 1px solid rgba(180,83,9,0.18);
+    border-radius: 8px; padding: 12px 14px;
+    font-size: 12px; line-height: 1.6; color: #92400e;
+  }
+  .panel-footer { padding: 16px 20px; border-top: 1px solid var(--border); }
+  .btn-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--accent); color: #fff;
+    font-size: 13px; font-weight: 600;
+    padding: 9px 18px; border-radius: 7px;
+    text-decoration: none; transition: opacity 0.15s;
+    width: 100%; justify-content: center;
+  }
+  .btn-link:hover { opacity: 0.88; }
+  footer {
+    text-align: center; padding: 20px 24px;
+    font-size: 11px; color: var(--muted);
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+  }
+  @media (max-width: 640px) {
+    .toolbar { padding: 10px 12px; }
+    .table-wrap { padding: 0 12px 24px; }
+    header { padding: 14px 16px; }
+    .tab-bar { padding: 12px 12px 0; }
+    .tab { padding: 6px 12px 10px; font-size: 12px; }
+  }
 </style>
 </head>
 <body>
+
 <header>
-  <h1>🌱 AI Future-of-Work Funding Tracker</h1>
-  <p class="subtitle">Curated funding opportunities at the intersection of AI and workforce / labour-market research</p>
-  <div class="meta">
-    <span>📅 Last updated: 16 March 2026</span>
-    <span>🔄 Auto-updated daily</span>
-    <span>📊 <span id="total-count">8</span> active opportunities</span>
+  <div class="logo">🌱</div>
+  <div>
+    <h1>AI Future-of-Work Funding Tracker</h1>
+    <div class="subtitle">Grants &amp; research funds at the intersection of AI &amp; labour — foundations &amp; corporate only</div>
   </div>
+  <div class="spacer"></div>
+  <div class="updated" id="updated-ts"></div>
 </header>
-<div class="controls">
-  <input type="text" id="search" placeholder="🔍 Search by name, org, notes…">
-  <select id="filter-type">
-    <option value="">All Types</option>
-    <option value="government">Government</option>
+
+<div class="tab-bar">
+  <button class="tab active" id="tab-open" onclick="switchTab('open')">
+    Open Calls <span class="tab-badge" id="badge-open">–</span>
+  </button>
+  <button class="tab" id="tab-archive" onclick="switchTab('archive')">
+    Archive <span class="tab-badge" id="badge-archive">–</span>
+  </button>
+</div>
+
+<div class="toolbar">
+  <div class="search-wrap">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+    </svg>
+    <input type="text" id="q" placeholder="Search grants…" oninput="applyFilters()" />
+  </div>
+  <select id="f-type" onchange="applyFilters()">
+    <option value="">All types</option>
     <option value="foundation">Foundation</option>
+    <option value="government">Government</option>
     <option value="corporate">Corporate</option>
-    <option value="research_institution">Research Institution</option>
+    <option value="research_institution">Research institution</option>
   </select>
-  <select id="filter-fit">
-    <option value="">All Fit Scores</option>
-    <option value="5">⭐⭐⭐⭐⭐ Fit 5 only</option>
-    <option value="4">⭐⭐⭐⭐ Fit 4+</option>
-    <option value="3">⭐⭐⭐ Fit 3+</option>
+  <select id="f-fit" onchange="applyFilters()">
+    <option value="">All fit scores</option>
+    <option value="5">⭐ 5 — Excellent</option>
+    <option value="4">4 — Strong</option>
+    <option value="3">3 — Moderate</option>
+    <option value="2">2 — Low</option>
   </select>
-  <select id="filter-region">
-    <option value="">All Regions</option>
+  <select id="f-region" onchange="applyFilters()">
+    <option value="">All regions</option>
     <option value="US">US</option>
     <option value="global">Global</option>
     <option value="EU">EU</option>
   </select>
-  <select id="filter-deadline">
-    <option value="">All Deadlines</option>
-    <option value="soon">Closing Soon (≤60 days)</option>
-    <option value="future">Open (future)</option>
-    <option value="rolling">Rolling</option>
-    <option value="TBC">TBC</option>
-  </select>
-  <span class="count" id="visible-count"></span>
+  <span class="result-count" id="result-count"></span>
 </div>
-<div class="grid" id="grid"></div>
+
+<div class="table-wrap">
+  <table id="main-table">
+    <thead>
+      <tr>
+        <th>Fit</th>
+        <th>Name / Organisation</th>
+        <th>Type</th>
+        <th>Max Award</th>
+        <th>Deadline</th>
+        <th>Region</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+  <div class="empty" id="empty-state" style="display:none">
+    <div class="empty-icon">🔎</div>
+    <p>No matching grants found. Try adjusting your filters.</p>
+  </div>
+</div>
+
 <footer>
-  Data sourced from public grant announcements. Verify deadlines and eligibility on funder websites before applying.<br>
+  Data sourced from public grant announcements. Verify deadlines and eligibility on funder websites before applying. •
   Excludes EU Horizon, US federal agency grants, and PhD/postdoc-only fellowships.
 </footer>
+
+<div class="panel-backdrop" id="backdrop" onclick="closePanel()"></div>
+<div class="detail-panel" id="detail-panel">
+  <div class="panel-header">
+    <div class="ph-main">
+      <div class="panel-title" id="p-title"></div>
+      <div class="panel-org" id="p-org"></div>
+      <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap" id="p-badges"></div>
+    </div>
+    <button class="panel-close" onclick="closePanel()">✕</button>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div class="panel-section-label">Description</div>
+      <div class="panel-desc" id="p-desc"></div>
+    </div>
+    <div class="panel-meta-grid">
+      <div class="meta-item">
+        <div class="meta-label">Deadline</div>
+        <div class="meta-value" id="p-deadline"></div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">Award Amount</div>
+        <div class="meta-value" id="p-amount"></div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">Region</div>
+        <div class="meta-value" id="p-region"></div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">Date Added</div>
+        <div class="meta-value" id="p-added"></div>
+      </div>
+    </div>
+    <div id="p-notes-wrap" style="display:none">
+      <div class="panel-section-label">Notes</div>
+      <div class="panel-notes" id="p-notes"></div>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <a href="#" id="p-link" class="btn-link" target="_blank" rel="noopener">View Grant Page ↗</a>
+  </div>
+</div>
+
 <script>
-const DATA = [
+const TODAY = new Date(); TODAY.setHours(0,0,0,0);
+const DATA  = [
   {
     "id": "mozillaDemocracyAICohort2026",
     "name": "Mozilla Foundation Democracy × AI Cohort 2026",
@@ -108,20 +378,20 @@ const DATA = [
   },
   {
     "id": "ibmImpactAcceleratorRFP2026",
-    "name": "IBM Impact Accelerator — Global RFP: AI for Work & Education",
-    "organization": "IBM (with EY as strategic ally)",
+    "name": "IBM Impact Accelerator — Education & Workforce Development Cohort",
+    "organization": "IBM",
     "type": "corporate",
-    "thematic_fit": 4,
-    "description": "IBM's global RFP for the next Impact Accelerator cohort seeks nonprofits, government organisations, and academic institutions building AI solutions for workforce transitions and education. Selected organisations receive a two-year pro bono technology grant — access to IBM watsonx, Granite AI models, IBM Cloud, IBM Quantum, and Red Hat open-source technologies — plus strategic support from EY.",
+    "thematic_fit": 5,
+    "description": "Global RFP for nonprofits and research organisations to develop AI solutions for education and workforce development. Selected organisations (5 per cohort) receive two-year pro bono access to IBM watsonx, Granite AI models, IBM Cloud, and implementation support from IBM researchers and consultants.",
     "url": "https://newsroom.ibm.com/2026-02-04-ibm-opens-global-rfp-for-ai-driven-solutions-shaping-the-future-of-work-and-education",
-    "contact": "",
+    "contact": "impact.accelerator@ibm.com",
     "amount_max_usd": 0,
-    "amount_notes": "Two-year pro bono technology & implementation grant (non-cash)",
+    "amount_notes": "Pro bono technology package (IBM tools + consulting; no cash grant)",
     "deadline": "2026-03-25",
     "eligible_regions": "global",
-    "date_added": "2026-03-16",
+    "date_added": "2026-03-15",
     "status": "new",
-    "notes": "Deadline 25 March 2026 — proposals due via IBM Proposal Submission Portal. Award is in-kind (technology + consulting), not cash. IBM IBV research shows 57% of skills obsolete by 2030, signalling strong strategic fit for labour-market research orgs."
+    "notes": "Deadline 25 March 2026 — apply immediately. Excellent fit for think tanks working on AI and workforce research. Global scope."
   },
   {
     "id": "googleOrgAIGovernmentInnovation2026",
@@ -141,6 +411,23 @@ const DATA = [
     "notes": "Deadline 3 April 2026 — applications currently open. Government-innovation focus; moderate fit for AI + labour/workforce angle if framed around public-sector workforce planning, benefits delivery, or labour-market information systems."
   },
   {
+    "id": "schmidtAIatWork2026",
+    "name": "Schmidt Sciences — AI at Work: Field Experiments on Workforce Effects of AI",
+    "organization": "Schmidt Sciences",
+    "type": "foundation",
+    "thematic_fit": 5,
+    "description": "Funds field experiments and quasi-experiments by economists and quantitative social scientists studying AI's impact on workplaces. Two priority areas: (1) Worker Displacement & Adjustment — reallocation, earnings, transitions; (2) Task & Skill Redefinition — which tasks are automated vs augmented. Awards are flexible; expressions of interest reviewed April 2026.",
+    "url": "https://www.schmidtsciences.org/ai-at-work/",
+    "contact": "",
+    "amount_max_usd": 0,
+    "amount_notes": "Flexible; typically $100k–$500k (EoI stage, amounts negotiated)",
+    "deadline": "2026-04-10",
+    "eligible_regions": "global",
+    "date_added": "2026-03-16",
+    "status": "new",
+    "notes": "Expressions of interest due 10 April 2026. Perfect fit for think tank AI + future-of-work research. Partners include leading economists at top institutions."
+  },
+  {
     "id": "googleOrgAIForScience2026",
     "name": "Google.org Impact Challenge: AI for Science 2026",
     "organization": "Google.org",
@@ -158,6 +445,40 @@ const DATA = [
     "notes": "Deadline 17 April 2026 — applications currently open. Health/climate science focus; lower fit for workforce research unless framing around occupational health AI or climate-related job transitions."
   },
   {
+    "id": "schmidtScienceTrustworthyAI2026",
+    "name": "Schmidt Sciences — Science of Trustworthy AI RFP 2026",
+    "organization": "Schmidt Sciences",
+    "type": "foundation",
+    "thematic_fit": 4,
+    "description": "Supports technical and sociotechnical research improving understanding, prediction, and control of risks from frontier AI systems. Tier 1: up to $1M over 1–3 years; Tier 2: $1M–$5M+ over 1–3 years. Global participation; no restriction on org type.",
+    "url": "https://www.schmidtsciences.org/trustworthy-ai/",
+    "contact": "",
+    "amount_max_usd": 5000000,
+    "amount_notes": "Tier 1: up to $1M / Tier 2: $1M–$5M+ over 1–3 years",
+    "deadline": "2026-05-17",
+    "eligible_regions": "global",
+    "date_added": "2026-03-16",
+    "status": "new",
+    "notes": "Applications opened 18 Feb 2026. Informational webinar 15 April. Strong fit for AI safety and governance research — can encompass sociotechnical and labour-market angles."
+  },
+  {
+    "id": "wtGrantReducingInequality2026",
+    "name": "William T. Grant Foundation — Research Grants on Reducing Inequality",
+    "organization": "William T. Grant Foundation",
+    "type": "foundation",
+    "thematic_fit": 3,
+    "description": "Grants up to $600k funding research to build, test, or increase understanding of programmes and policies that reduce inequality in youth outcomes (ages 5–25) in the US. Can encompass AI-driven labour market effects on young workers if framed around reducing inequality.",
+    "url": "https://wtgrantfoundation.org/grants/reducing-inequality",
+    "contact": "",
+    "amount_max_usd": 600000,
+    "amount_notes": "Up to $600,000 per grant",
+    "deadline": "2026-07-29",
+    "eligible_regions": "US",
+    "date_added": "2026-03-16",
+    "status": "new",
+    "notes": "LOI due 29 July 2026 (second cycle). Focus strictly on ages 5–25; best fit if research targets young workers entering AI-affected labour markets."
+  },
+  {
     "id": "humanityAIPooledFund2026",
     "name": "Humanity AI Pooled Fund — Labour & Workforce Priority Area",
     "organization": "Humanity AI (managed by Rockefeller Philanthropy Advisors)",
@@ -173,6 +494,57 @@ const DATA = [
     "date_added": "2026-03-16",
     "status": "new",
     "notes": "No open RFP yet — sign up for updates at humanityai.ai. This is the highest-priority opportunity to watch: Labour is an explicit priority area and the funder coalition includes Ford, Lumina, and MacArthur. Expect RFP announcements mid-2026."
+  },
+  {
+    "id": "equitableGrowthAIWorkers2025",
+    "name": "Washington Center for Equitable Growth — AI, Workers & Competition RFP",
+    "organization": "Washington Center for Equitable Growth",
+    "type": "foundation",
+    "thematic_fit": 5,
+    "description": "Research grants studying how AI, automation, algorithmic management, and electronic surveillance affect US workers, wages, and market competition. Awards $25k–$80k over up to 2 years. Open to individual researchers and research organisations; think tanks eligible.",
+    "url": "https://equitablegrowth.org/grants/",
+    "contact": "",
+    "amount_max_usd": 80000,
+    "amount_notes": "$25,000–$80,000 per grant over up to 2 years",
+    "deadline": "TBC",
+    "eligible_regions": "US",
+    "date_added": "2026-03-16",
+    "status": "new",
+    "notes": "Most recent cycle closed Feb 2025; next RFP likely late 2026. Excellent thematic fit for think tank teams. Monitor equitablegrowth.org."
+  },
+  {
+    "id": "gitlabFoundationAIEconomicOpp",
+    "name": "GitLab Foundation — AI for Economic Opportunity Fund",
+    "organization": "GitLab Foundation",
+    "type": "foundation",
+    "thematic_fit": 3,
+    "description": "Demonstration grants to US-based nonprofits using AI to measurably improve economic mobility for low-income populations. Each award is $250k plus OpenAI API credits and 6 months of technical support. Focus on measurable employment and income outcomes.",
+    "url": "https://gitlabfoundation.org/grants/",
+    "contact": "",
+    "amount_max_usd": 250000,
+    "amount_notes": "$250,000 + OpenAI API credits + technical support",
+    "deadline": "TBC",
+    "eligible_regions": "US",
+    "date_added": "2026-03-16",
+    "status": "new",
+    "notes": "2026 cohort (16 orgs) announced March 5, 2026. Next open call TBC. Open to nonprofits; think tanks need to be nonprofit-registered to apply."
+  },
+  {
+    "id": "siegelFamilyAIWorkforce2026",
+    "name": "Siegel Family Endowment — AI & Workforce Research Grants",
+    "organization": "Siegel Family Endowment",
+    "type": "foundation",
+    "thematic_fit": 5,
+    "description": "Siegel Family Endowment investing $15.4M+ in grants focused on how workers shape AI's transformation of work. Supports research and programmes examining hiring, management, monitoring of workers, and worker agency in AI deployment. Also a Humanity AI coalition member.",
+    "url": "https://siegelendowment.org/",
+    "contact": "",
+    "amount_max_usd": 0,
+    "amount_notes": "Varies; part of $15.4M+ commitment",
+    "deadline": "TBC",
+    "eligible_regions": "US",
+    "date_added": "2026-03-16",
+    "status": "new",
+    "notes": "Siegel is a Humanity AI coalition member with an active research fellowship programme. Explicitly focused on worker agency in AI transformation. Contact via foundation relations."
   },
   {
     "id": "nsfSBIRArtificialIntelligence",
@@ -224,68 +596,326 @@ const DATA = [
     "date_added": "2026-03-16",
     "status": "new",
     "notes": "Rolling submission windows — check NSF 23-506 for current dates. Restricted to minority-serving institutions. Relevant for academic partners building AI + labour market research capacity at MSIs."
+  },
+  {
+    "id": "cooperativeAIFoundationGrants",
+    "name": "Cooperative AI Foundation — Research Grants",
+    "organization": "Cooperative AI Foundation",
+    "type": "foundation",
+    "thematic_fit": 3,
+    "description": "Research grants on AI cooperation, including understanding and evaluating cooperation-relevant capabilities in AI systems. No fixed upper limit; cost-effectiveness weighted. Priority areas include cooperation in human-AI work systems and multi-agent dynamics.",
+    "url": "https://www.cooperativeai.com/grants",
+    "contact": "grants@cooperativeai.com",
+    "amount_max_usd": 0,
+    "amount_notes": "No fixed cap; cost-effectiveness weighted",
+    "deadline": "rolling",
+    "eligible_regions": "global",
+    "date_added": "2026-03-16",
+    "status": "new",
+    "notes": "Rolling applications. Thematic overlap is indirect; strongest fit if research addresses cooperation in human-AI work systems or labour-market multi-agent dynamics."
+  },
+  {
+    "id": "googleOrgAIOpportunityFundUS",
+    "name": "Google.org AI Opportunity Fund — US Workforce Development",
+    "organization": "Google.org",
+    "type": "corporate",
+    "thematic_fit": 4,
+    "description": "Part of a $75M commitment to help over 1 million Americans learn AI skills through workforce development and education organisations. Focuses on rural/under-served workers, public sector employees, small business owners, and re-skilling programmes.",
+    "url": "https://aiopportunityfund.withgoogle.com/",
+    "contact": "",
+    "amount_max_usd": 0,
+    "amount_notes": "Selected partners; grant sizes vary (part of $75M total)",
+    "deadline": "rolling",
+    "eligible_regions": "US",
+    "date_added": "2026-03-16",
+    "status": "new",
+    "notes": "Not an open RFP — Google.org selects partners proactively. Engage through introductions or foundation relations. Excellent fit for AI workforce research organisations."
+  },
+  {
+    "id": "schmidtAI2050Fellowship",
+    "name": "Schmidt Sciences — AI2050 Fellowship Programme",
+    "organization": "Schmidt Sciences",
+    "type": "foundation",
+    "thematic_fit": 5,
+    "description": "Supports exceptional researchers working on critical AI opportunities and hard problems including AI's impact on the economy and society. The 2025 cohort awarded $18M+ to 28 fellows (21 early career, 7 senior). Open to researchers at diverse institutions including nonprofits.",
+    "url": "https://www.schmidtsciences.org/ai2050/",
+    "contact": "",
+    "amount_max_usd": 0,
+    "amount_notes": "~$300k–$1M per fellow (part of $125M, 5-year AI investment)",
+    "deadline": "rolling",
+    "eligible_regions": "global",
+    "date_added": "2026-03-16",
+    "status": "new",
+    "notes": "Invitation and nomination only — no open application. Monitor for nomination windows and build relationships with Schmidt Sciences programme staff."
+  },
+  {
+    "id": "knightFoundationAIGovernanceFund2026",
+    "name": "Knight Foundation — Ethics and Governance of AI Fund",
+    "organization": "Knight Foundation",
+    "type": "foundation",
+    "thematic_fit": 4,
+    "description": "Ongoing initiative supporting civil society organisations working on AI ethics, governance, and public interest. The Foundation has committed $7.6M to nine initial grantees bolstering civil society voices in AI policymaking and accountability.",
+    "url": "https://knightfoundation.org/programs/ethics-governance-ai/",
+    "contact": "",
+    "amount_max_usd": 0,
+    "amount_notes": "Varies; part of $7.6M+ commitment",
+    "deadline": "rolling",
+    "eligible_regions": "global",
+    "date_added": "2026-03-16",
+    "status": "new",
+    "notes": "Rolling applications. Good fit for AI governance and policy research. Check knightfoundation.org for 2026 RFP details. May need to align with Knight's democracy + information angle."
+  },
+  {
+    "id": "nsfCyberAISFS2026",
+    "name": "NSF CyberAI Scholarship for Service (CyberAI SFS) 2026",
+    "organization": "National Science Foundation (NSF)",
+    "type": "government",
+    "thematic_fit": 3,
+    "description": "NSF's CyberAI SFS programme integrates AI into cybersecurity education and workforce development, awarding scholarships and institutional grants to universities preparing students for AI-cybersecurity careers in government service. Institutions receive funding to design new AI+cybersecurity curricula and recruit students. FY 2026 target deadline is 3 April 2026.",
+    "url": "https://www.nsf.gov/edu/updates/nsf-launches-ai-cybersecurity-education-solicitation",
+    "contact": "cyberaicorps@nsf.gov",
+    "amount_max_usd": 0,
+    "amount_notes": "Institutional grants + student scholarships (amounts vary by proposal)",
+    "deadline": "2026-04-03",
+    "eligible_regions": "US",
+    "date_added": "2026-03-16",
+    "status": "excluded",
+    "notes": "FY 2026 target deadline: 3 April 2026. Academic institutions only. Good fit for university research programmes at the intersection of AI skills, cybersecurity workforce, and labour-market policy. | EXCLUDED: matches exclusion rule (US gov or academia-only)."
+  },
+  {
+    "id": "berkmanKleinFellowship2026",
+    "name": "Berkman Klein Center AI Research Fellowship 2026–2027",
+    "organization": "Berkman Klein Center for Internet & Society, Harvard University",
+    "type": "research_institution",
+    "thematic_fit": 3,
+    "description": "BKC invites scholars and practitioners to propose and lead independent research initiatives aligned with its AI governance and design agenda. The 2026 cycle prioritises research to inform and shape the design, development, and governance of AI systems. Fellowships are part-time or full-time and vary in length; residential or remote options available.",
+    "url": "https://cyber.harvard.edu/page/open-call-fellowship-applications-2026-and-2026-2027",
+    "contact": "fellows@cyber.law.harvard.edu",
+    "amount_max_usd": 0,
+    "amount_notes": "Stipend-based fellowship (amount varies by type)",
+    "deadline": "TBC",
+    "eligible_regions": "global",
+    "date_added": "2026-03-16",
+    "status": "excluded",
+    "notes": "Check BKC website for current application windows — they run rolling and annual cycles. Good fit for AI governance / labour-market policy researchers seeking institutional affiliation and peer network. | EXCLUDED: matches exclusion rule (US gov or academia-only)."
+  },
+  {
+    "id": "activateAIEconomicOpportunity2026",
+    "name": "Activate AI: Economic Opportunity Challenge 2026",
+    "organization": "data.org (in collaboration with Zoom)",
+    "type": "corporate",
+    "thematic_fit": 4,
+    "description": "A global challenge supporting AI-powered solutions that expand economic opportunity, strengthen workforce resilience, and build climate-ready communities. At least five winners each receive USD $115,000 plus in-kind technical and capacity-building support to scale AI for social impact. Open to for-profits, nonprofits, and government agencies worldwide (some country restrictions apply).",
+    "url": "https://opportunitydesk.org/2025/12/29/activate-ai-economic-opportunity-challenge-2026/",
+    "contact": "",
+    "amount_max_usd": 115000,
+    "amount_notes": "$115,000 cash + in-kind technical support (5+ winners)",
+    "deadline": "2026-01-08",
+    "eligible_regions": "global",
+    "date_added": "2026-03-16",
+    "status": "archived",
+    "notes": "Deadline passed 8 January 2026. Strong fit for AI + economic opportunity / workforce resilience angle. Monitor data.org for next annual cycle."
+  },
+  {
+    "id": "jffAIResilientEarlyCareer2026",
+    "name": "JFF Advancing AI-Resilient Early-Career Pathways RFP",
+    "organization": "Jobs for the Future (JFF)",
+    "type": "foundation",
+    "thematic_fit": 5,
+    "description": "JFF sought 3–6 early-stage pilot projects reimagining how workers aged 18–24 build skills and access quality jobs in an AI-transformed labour market. Awards of $50,000–$100,000 supported work-based learning, employer incentives, and durable skills assessment. Grantees participated in a structured peer learning community.",
+    "url": "https://info.jff.org/hubfs/Advancing%20AI-Resilient%20Early-Career%20Pathways%20RFP.pdf",
+    "contact": "",
+    "amount_max_usd": 100000,
+    "amount_notes": "$50,000–$100,000 per pilot grant (3–6 awards)",
+    "deadline": "2026-02-25",
+    "eligible_regions": "US",
+    "date_added": "2026-03-16",
+    "status": "archived",
+    "notes": "Deadline passed 25 February 2026. Watch JFF's website for a second round — this RFP is directly aligned with AI + workforce research and early-career workers. Consider applying to JFF's broader Catalyze programme in the interim."
+  },
+  {
+    "id": "linkedInFutureOfWorkFund2026",
+    "name": "LinkedIn Future of Work Fund 2026 — Global AI Workforce Grant",
+    "organization": "LinkedIn (via Silicon Valley Community Foundation)",
+    "type": "corporate",
+    "thematic_fit": 5,
+    "description": "A global philanthropic grant initiative funding nonprofit organisations that prepare young adults for the AI-transformed labour market, with an expanded round combining financial grants and in-kind support. Most grants are anticipated in the $200,000–$300,000 range, unrestricted, paid through a Donor Advised Fund. Eligibility: registered nonprofits/501(c)(3) focused on workforce development and AI innovation.",
+    "url": "https://opportunitiesforyouth.org/2026/02/20/linkedin-future-of-work-fund-2026-global-ai-workforce-grant-supporting-nonprofits-preparing-young-adults-for-the-ai-economy/",
+    "contact": "",
+    "amount_max_usd": 300000,
+    "amount_notes": "$200,000–$300,000 (one-time unrestricted)",
+    "deadline": "2026-03-15",
+    "eligible_regions": "global",
+    "date_added": "2026-03-16",
+    "status": "archived",
+    "notes": "Deadline was 15 March 2026 (just passed). Monitor LinkedIn's philanthropy pages for any extension or next funding round. Very high fit for AI + workforce research and practitioner organisations."
   }
 ];
-const FIT_COLORS = {5:"#1b5e20",4:"#388e3c",3:"#f9a825",2:"#e65100",1:"#b71c1c"};
-function deadlineStatus(dl) {
-  const today = new Date(); today.setHours(0,0,0,0);
-  if(!dl||dl==='TBC') return 'TBC';
-  if(dl==='rolling') return 'rolling';
-  const d = new Date(dl);
-  if(isNaN(d)) return 'TBC';
-  if(d<today) return 'passed';
-  const diff = Math.ceil((d-today)/86400000);
-  return diff<=60?'soon':'future';
+
+function dlStatus(d) {
+  if (!d || d === 'TBC')  return 'tbc';
+  if (d === 'rolling')    return 'rolling';
+  const dl = new Date(d);
+  if (dl < TODAY)         return 'passed';
+  const days = (dl - TODAY) / 86400000;
+  return days <= 60 ? 'soon' : 'open';
 }
-function deadlineTag(dl) {
-  const s = deadlineStatus(dl);
-  const map = {
-    passed:  ['background:#9e9e9e;color:#fff','Closed'],
-    soon:    ['background:#ff9800;color:#fff','⚠ '+dl],
-    future:  ['background:#43a047;color:#fff',dl],
-    rolling: ['background:#1976d2;color:#fff','Rolling'],
-    TBC:     ['background:#757575;color:#fff','TBC'],
-  };
-  const [style,label] = map[s]||map.TBC;
-  return `<span class="tag tag-deadline" style="${style}">${label}</span>`;
+function dlLabel(d) {
+  if (!d || d === 'TBC')  return 'TBC';
+  if (d === 'rolling')    return 'Rolling';
+  const dl = new Date(d);
+  if (dl < TODAY)         return d;
+  const days = Math.round((dl - TODAY) / 86400000);
+  if (days === 0)         return 'Today';
+  if (days === 1)         return 'Tomorrow';
+  if (days < 30)          return `${days}d left`;
+  const months = Math.round(days / 30.5);
+  return `${months}mo · ${d}`;
 }
-function renderCard(o) {
-  const fc = FIT_COLORS[o.thematic_fit]||'#999';
-  const amt = o.amount_notes||(o.amount_max_usd>0?'$'+o.amount_max_usd.toLocaleString():'Not specified');
-  return `<div class="card" data-type="${o.type}" data-fit="${o.thematic_fit}" data-region="${o.eligible_regions}" data-ds="${deadlineStatus(o.deadline)}">
-    <div class="card-header">
-      <div class="fit-badge" style="background:${fc}" title="Fit ${o.thematic_fit}/5">${o.thematic_fit}</div>
-      <div><div class="card-title">${o.name}</div><div class="card-org">${o.organization}</div></div>
-    </div>
-    <div class="tags"><span class="tag tag-type">${o.type.replace('_',' ')}</span>${deadlineTag(o.deadline)}<span class="tag tag-region">${o.eligible_regions}</span></div>
-    <div class="desc">${o.description}</div>
-    <div class="meta-row"><span>💰 ${amt}</span><span>📅 Added ${o.date_added}</span></div>
-    ${o.notes?`<div class="notes-box"><strong>Notes:</strong> ${o.notes}</div>`:''}
-    <a class="link-btn" href="${o.url}" target="_blank" rel="noopener">View Opportunity →</a>
-  </div>`;
+function dlSortKey(d) {
+  if (!d || d === 'TBC')  return 9e12;
+  if (d === 'rolling')    return 9e13;
+  return new Date(d).getTime();
 }
-function render() {
-  const q  = document.getElementById('search').value.toLowerCase();
-  const tf = document.getElementById('filter-type').value;
-  const ff = parseInt(document.getElementById('filter-fit').value)||0;
-  const rf = document.getElementById('filter-region').value;
-  const df = document.getElementById('filter-deadline').value;
-  let v=0;
-  const html = DATA.map(o=>{
-    const txt=(o.name+' '+o.organization+' '+o.notes+' '+o.description).toLowerCase();
-    const ds=deadlineStatus(o.deadline);
-    const fitMatch = ff===5?o.thematic_fit===5:o.thematic_fit>=ff;
-    if((!q||txt.includes(q))&&(!tf||o.type===tf)&&(!ff||fitMatch)&&(!rf||o.eligible_regions.includes(rf))&&(!df||ds===df))
-      {v++;return renderCard(o);}
-    return '';
-  }).join('');
-  document.getElementById('grid').innerHTML=html||'<p style="padding:24px;color:var(--muted)">No opportunities match your filters.</p>';
-  document.getElementById('visible-count').textContent=`Showing ${v} of ${DATA.length}`;
+function fmtAmount(o) {
+  if (!o.amount_max_usd || o.amount_max_usd === 0) return 'TBC';
+  if (o.amount_max_usd >= 1000000) return '$' + (o.amount_max_usd/1e6).toFixed(1).replace(/\.0$/,'') + 'M';
+  if (o.amount_max_usd >= 1000)    return '$' + (o.amount_max_usd/1000).toFixed(0) + 'k';
+  return '$' + o.amount_max_usd;
 }
-['search','filter-type','filter-fit','filter-region','filter-deadline'].forEach(id=>{
-  document.getElementById(id).addEventListener('input',render);
+function fitStars(n) {
+  return `<span class="fit-badge fit-${n}">${'●'.repeat(n)}{'○'.repeat(5-n)} ${n}</span>`;
+}
+function capitalize(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1).replace('_',' ') : ''; }
+function isOpen(o) { return dlStatus(o.deadline) !== 'passed' && o.status !== 'archived' && o.status !== 'excluded'; }
+
+const OPEN_DATA = DATA.filter(isOpen).sort((a,b) => {
+  const ka = dlSortKey(a.deadline), kb = dlSortKey(b.deadline);
+  if (ka !== kb) return ka - kb;
+  if (b.thematic_fit !== a.thematic_fit) return b.thematic_fit - a.thematic_fit;
+  return new Date(b.date_added) - new Date(a.date_added);
 });
-render();
+const ARCHIVE_DATA = DATA.filter(o => !isOpen(o)).sort((a,b) => {
+  return new Date(b.deadline||0) - new Date(a.deadline||0);
+});
+
+let currentTab = 'open';
+let activeId   = null;
+
+function renderTable(rows) {
+  const tbody = document.getElementById('tbody');
+  const empty = document.getElementById('empty-state');
+  const count = document.getElementById('result-count');
+  if (!rows.length) {
+    tbody.innerHTML = '';
+    empty.style.display = 'block';
+    count.textContent = '0 results';
+    return;
+  }
+  empty.style.display = 'none';
+  count.textContent = `${rows.length} grant${rows.length!==1?'s':''}`;
+  tbody.innerHTML = rows.map(o => {
+    const st = dlStatus(o.deadline);
+    const isNew = o.status === 'new';
+    return `<tr onclick="openPanel('${o.id}')" id="row-${o.id}" class="${activeId===o.id?'active-row':''}">
+      <td>${fitStars(o.thematic_fit)}</td>
+      <td class="name-cell">
+        <strong>${o.name}${isNew?'<span class="new-dot" title="Newly added"></span>':''}</strong>
+        <div class="org">${o.organization}</div>
+      </td>
+      <td><span class="type-pill type-${o.type}">${capitalize(o.type)}</span></td>
+      <td class="amount-cell">${fmtAmount(o)}</td>
+      <td class="dl-cell">
+        <span class="dl-badge dl-${st}">
+          <span class="dl-dot"></span>${dlLabel(o.deadline)}
+        </span>
+      </td>
+      <td class="region-cell">${o.eligible_regions}</td>
+    </tr>`;
+  }).join('');
+}
+
+function applyFilters() {
+  const q     = document.getElementById('q').value.toLowerCase();
+  const fType = document.getElementById('f-type').value;
+  const fFit  = document.getElementById('f-fit').value;
+  const fReg  = document.getElementById('f-region').value;
+  const src   = currentTab === 'open' ? OPEN_DATA : ARCHIVE_DATA;
+  const filtered = src.filter(o => {
+    if (fType && o.type !== fType) return false;
+    if (fFit  && o.thematic_fit !== +fFit) return false;
+    if (fReg  && !o.eligible_regions.toLowerCase().includes(fReg.toLowerCase())) return false;
+    if (q) {
+      const hay = (o.name+' '+o.organization+' '+o.description+' '+o.eligible_regions).toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  renderTable(filtered);
+}
+
+function switchTab(tab) {
+  currentTab = tab;
+  closePanel(false);
+  document.getElementById('tab-open').classList.toggle('active', tab==='open');
+  document.getElementById('tab-archive').classList.toggle('active', tab==='archive');
+  document.getElementById('q').value='';
+  document.getElementById('f-type').value='';
+  document.getElementById('f-fit').value='';
+  document.getElementById('f-region').value='';
+  applyFilters();
+}
+
+function openPanel(id) {
+  const o = DATA.find(x => x.id === id);
+  if (!o) return;
+  if (activeId) {
+    const prev = document.getElementById('row-'+activeId);
+    if (prev) prev.classList.remove('active-row');
+  }
+  activeId = id;
+  const row = document.getElementById('row-'+id);
+  if (row) row.classList.add('active-row');
+  const st = dlStatus(o.deadline);
+  document.getElementById('p-title').textContent   = o.name;
+  document.getElementById('p-org').textContent     = o.organization;
+  document.getElementById('p-desc').textContent    = o.description;
+  document.getElementById('p-deadline').innerHTML  = `<span class="dl-badge dl-${st}"><span class="dl-dot"></span>${o.deadline==='rolling'?'Rolling':o.deadline==='TBC'?'TBC':o.deadline}</span>`;
+  document.getElementById('p-amount').textContent  = o.amount_notes || fmtAmount(o);
+  document.getElementById('p-region').textContent  = o.eligible_regions;
+  document.getElementById('p-added').textContent   = o.date_added;
+  document.getElementById('p-link').href           = o.url;
+  document.getElementById('p-badges').innerHTML    = fitStars(o.thematic_fit) +
+    `<span class="type-pill type-${o.type}" style="margin-left:4px">${capitalize(o.type)}</span>`;
+  const nw = document.getElementById('p-notes-wrap');
+  if (o.notes) {
+    document.getElementById('p-notes').textContent = o.notes;
+    nw.style.display = 'block';
+  } else {
+    nw.style.display = 'none';
+  }
+  document.getElementById('backdrop').classList.add('open');
+  document.getElementById('detail-panel').classList.add('open');
+}
+
+function closePanel(clearActive=true) {
+  document.getElementById('backdrop').classList.remove('open');
+  document.getElementById('detail-panel').classList.remove('open');
+  if (clearActive && activeId) {
+    const row = document.getElementById('row-'+activeId);
+    if (row) row.classList.remove('active-row');
+    activeId = null;
+  }
+}
+
+document.addEventListener('keydown', e => { if (e.key==='Escape') closePanel(); });
+
+document.getElementById('badge-open').textContent    = OPEN_DATA.length;
+document.getElementById('badge-archive').textContent = ARCHIVE_DATA.length;
+document.getElementById('updated-ts').innerHTML =
+  `Last updated<br><strong>16 March 2026</strong> · Auto-updated daily`;
+
+renderTable(OPEN_DATA);
 </script>
 </body>
 </html>

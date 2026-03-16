@@ -563,14 +563,14 @@ const TODAY = new Date(); TODAY.setHours(0,0,0,0);
 function dlStatus(d) {
   if (!d || d === 'TBC') return 'tbc';
   if (d === 'rolling')   return 'rolling';
-  var dl = new Date(d);
+  var dl = new Date(d + 'T12:00:00');
   if (dl < TODAY) return 'passed';
   return ((dl - TODAY) / 86400000) <= 60 ? 'soon' : 'open';
 }
 function dlLabel(d) {
   if (!d || d === 'TBC') return 'TBC';
   if (d === 'rolling')   return 'Rolling';
-  var dl = new Date(d);
+  var dl = new Date(d + 'T12:00:00');
   if (dl < TODAY) return d;
   var days = Math.round((dl - TODAY) / 86400000);
   if (days === 0) return 'Today';
@@ -581,7 +581,7 @@ function dlLabel(d) {
 function dlSortKey(d) {
   if (!d || d === 'TBC') return 9e12;
   if (d === 'rolling')   return 9e13;
-  return new Date(d).getTime();
+  return new Date(d + 'T12:00:00').getTime();
 }
 function fmtAmount(o) {
   if (!o.amount_max_usd || o.amount_max_usd === 0) return 'TBC';

@@ -11,15 +11,14 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,sans-serif;font-size:14px;min-height:100vh}
 header{background:var(--surface);border-bottom:1px solid var(--border);padding:18px 24px;display:flex;align-items:center;gap:14px}
-header .logo{width:36px;height:36px;background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.logo{width:36px;height:36px;background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
 header h1{font-size:18px;font-weight:600}
-header .subtitle{font-size:12px;color:var(--muted);margin-top:2px}
-header .spacer{flex:1}
-header .updated{font-size:11px;color:var(--muted);text-align:right;line-height:1.6}
+.subtitle{font-size:12px;color:var(--muted);margin-top:2px}
+.spacer{flex:1}
+.updated{font-size:11px;color:var(--muted);text-align:right;line-height:1.6}
 .tab-bar{display:flex;gap:2px;padding:16px 24px 0;border-bottom:1px solid var(--border);background:var(--surface)}
 .tab{background:none;border:none;color:var(--muted);font-size:13px;font-weight:500;padding:8px 16px 12px;cursor:pointer;border-bottom:2px solid transparent;display:flex;align-items:center;gap:8px;transition:color .15s;font-family:inherit}
-.tab:hover{color:var(--text)}
-.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:hover{color:var(--text)}.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
 .tab-badge{background:var(--border);border-radius:10px;padding:1px 7px;font-size:11px;color:var(--muted)}
 .tab.active .tab-badge{background:rgba(37,99,235,.12);color:var(--accent)}
 .toolbar{padding:12px 24px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:var(--bg)}
@@ -45,8 +44,7 @@ tbody td:first-child{padding-left:4px}
 .fit-2{background:rgba(234,88,12,.10);color:var(--orange)}
 .fit-1{background:rgba(220,38,38,.10);color:var(--red)}
 .fit-dot{width:9px;height:9px;border-radius:50%;display:inline-block;flex-shrink:0}
-.fit-dot.on{opacity:1}
-.fit-dot.off{opacity:.18}
+.fit-dot.on{opacity:1}.fit-dot.off{opacity:.18}
 .name-cell .org{font-size:11px;color:var(--muted);margin-top:2px}
 .broken-url-flag{display:inline-flex;align-items:center;gap:3px;font-size:10px;color:#dc2626;background:rgba(220,38,38,.08);border:1px solid rgba(220,38,38,.2);border-radius:4px;padding:1px 5px;margin-top:3px}
 .type-pill{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:500;white-space:nowrap}
@@ -58,21 +56,21 @@ tbody td:first-child{padding-left:4px}
 .dl-cell{white-space:nowrap}
 .dl-badge{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:500;padding:3px 9px;border-radius:6px}
 .dl-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
-.dl-soon{background:rgba(22,163,74,.10);color:var(--green)} .dl-soon .dl-dot{background:var(--green)}
-.dl-open{background:rgba(37,99,235,.10);color:var(--accent)} .dl-open .dl-dot{background:var(--accent)}
-.dl-tbc{background:rgba(180,83,9,.10);color:var(--yellow)} .dl-tbc .dl-dot{background:var(--yellow)}
-.dl-rolling{background:rgba(13,148,136,.10);color:var(--teal)} .dl-rolling .dl-dot{background:var(--teal)}
-.dl-passed{background:rgba(100,116,139,.10);color:var(--muted)} .dl-passed .dl-dot{background:var(--muted)}
+.dl-soon{background:rgba(22,163,74,.10);color:var(--green)}.dl-soon .dl-dot{background:var(--green)}
+.dl-open{background:rgba(37,99,235,.10);color:var(--accent)}.dl-open .dl-dot{background:var(--accent)}
+.dl-tbc{background:rgba(180,83,9,.10);color:var(--yellow)}.dl-tbc .dl-dot{background:var(--yellow)}
+.dl-rolling{background:rgba(13,148,136,.10);color:var(--teal)}.dl-rolling .dl-dot{background:var(--teal)}
+.dl-passed{background:rgba(100,116,139,.10);color:var(--muted)}.dl-passed .dl-dot{background:var(--muted)}
 .region-cell{font-size:12px;color:var(--muted)}
 .new-dot{display:inline-block;width:7px;height:7px;background:var(--accent);border-radius:50%;margin-left:4px;vertical-align:middle}
 .empty{text-align:center;padding:60px 20px;color:var(--muted)}
-.empty .empty-icon{font-size:36px;margin-bottom:12px}
+.empty-icon{font-size:36px;margin-bottom:12px}
 .panel-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:100;backdrop-filter:blur(1px)}
 .panel-backdrop.open{display:block}
 .detail-panel{position:fixed;top:0;right:0;height:100vh;width:var(--panel-w);max-width:92vw;background:var(--surface);border-left:1px solid var(--border);z-index:101;transform:translateX(100%);transition:transform .25s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;overflow:hidden}
 .detail-panel.open{transform:translateX(0)}
 .panel-header{padding:20px 20px 16px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:12px}
-.panel-header .ph-main{flex:1;min-width:0}
+.ph-main{flex:1;min-width:0}
 .panel-title{font-size:15px;font-weight:600;line-height:1.35;margin-bottom:6px}
 .panel-org{font-size:12px;color:var(--muted)}
 .panel-close{background:none;border:none;color:var(--muted);cursor:pointer;padding:4px;border-radius:4px;flex-shrink:0;line-height:1;font-size:18px}
@@ -88,8 +86,7 @@ tbody td:first-child{padding-left:4px}
 .broken-url-banner{background:rgba(220,38,38,.07);border:1px solid rgba(220,38,38,.2);border-radius:8px;padding:10px 14px;font-size:12px;color:#dc2626;display:flex;align-items:center;gap:8px}
 .panel-footer{padding:16px 20px;border-top:1px solid var(--border)}
 .btn-link{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;font-size:13px;font-weight:600;padding:9px 18px;border-radius:7px;text-decoration:none;transition:opacity .15s;width:100%;justify-content:center}
-.btn-link:hover{opacity:.88}
-.btn-link.broken{background:#dc2626}
+.btn-link:hover{opacity:.88}.btn-link.broken{background:#dc2626}
 footer{text-align:center;padding:20px 24px;font-size:11px;color:var(--muted);border-top:1px solid var(--border);background:var(--surface)}
 @media(max-width:640px){.toolbar{padding:10px 12px}.table-wrap{padding:0 12px 24px}header{padding:14px 16px}.tab-bar{padding:12px 12px 0}.tab{padding:6px 12px 10px;font-size:12px}}
 </style>
@@ -97,90 +94,41 @@ footer{text-align:center;padding:20px 24px;font-size:11px;color:var(--muted);bor
 <body>
 <header>
   <div class="logo">🌱</div>
-  <div>
-    <h1>AI Future-of-Work Funding Tracker</h1>
-    <div class="subtitle">Grants &amp; research funds at the intersection of AI &amp; labour — foundations &amp; corporate only</div>
-  </div>
+  <div><h1>AI Future-of-Work Funding Tracker</h1>
+  <div class="subtitle">Grants &amp; research funds at the intersection of AI &amp; labour — foundations &amp; corporate only</div></div>
   <div class="spacer"></div>
   <div class="updated" id="updated-ts"></div>
 </header>
 <div class="tab-bar">
-  <button class="tab active" id="tab-open"    onclick="switchTab('open')">Open Calls <span class="tab-badge" id="badge-open">–</span></button>
-  <button class="tab"        id="tab-tbc"     onclick="switchTab('tbc')">TBC <span class="tab-badge" id="badge-tbc">–</span></button>
-  <button class="tab"        id="tab-archive" onclick="switchTab('archive')">Archive <span class="tab-badge" id="badge-archive">–</span></button>
+  <button class="tab active" id="tab-open"    onclick="switchTab('open')">Open Calls <span class="tab-badge" id="badge-open">-</span></button>
+  <button class="tab"        id="tab-tbc"     onclick="switchTab('tbc')">TBC <span class="tab-badge" id="badge-tbc">-</span></button>
+  <button class="tab"        id="tab-archive" onclick="switchTab('archive')">Archive <span class="tab-badge" id="badge-archive">-</span></button>
 </div>
 <div class="toolbar">
-  <div class="search-wrap">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" id="q" placeholder="Search grants…" oninput="applyFilters()"/>
-  </div>
-  <select id="f-type" onchange="applyFilters()">
-    <option value="">All types</option>
-    <option value="foundation">Foundation</option>
-    <option value="government">Government</option>
-    <option value="corporate">Corporate</option>
-    <option value="research_institution">Research institution</option>
-  </select>
-  <select id="f-fit" onchange="applyFilters()">
-    <option value="">All fit scores</option>
-    <option value="5">⭐ 5 — Excellent</option>
-    <option value="4">4 — Strong</option>
-    <option value="3">3 — Moderate</option>
-    <option value="2">2 — Low</option>
-  </select>
-  <select id="f-region" onchange="applyFilters()">
-    <option value="">All regions</option>
-    <option value="US">US</option>
-    <option value="global">Global</option>
-    <option value="EU">EU</option>
-  </select>
+  <div class="search-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>  <input type="text" id="q" placeholder="Search grants…" oninput="applyFilters()"/></div>
+  <select id="f-type" onchange="applyFilters()"><option value="">All types</option><option value="foundation">Foundation</option><option value="government">Government</option><option value="corporate">Corporate</option><option value="research_institution">Research institution</option></select>
+  <select id="f-fit" onchange="applyFilters()"><option value="">All fit scores</option><option value="5">⭐ 5 — Excellent</option><option value="4">4 — Strong</option><option value="3">3 — Moderate</option><option value="2">2 — Low</option></select>
+  <select id="f-region" onchange="applyFilters()"><option value="">All regions</option><option value="US">US</option><option value="global">Global</option><option value="EU">EU</option></select>
   <span class="result-count" id="result-count"></span>
 </div>
 <div class="table-wrap">
-  <table id="main-table">
-    <thead><tr><th>Fit</th><th>Name / Organisation</th><th>Type</th><th>Max Award</th><th>Deadline</th><th>Region</th></tr></thead>
-    <tbody id="tbody"></tbody>
-  </table>
-  <div class="empty" id="empty-state" style="display:none">
-    <div class="empty-icon">🔎</div>
-    <p>No matching grants found. Try adjusting your filters.</p>
-  </div>
+  <table id="main-table"><thead><tr><th>Fit</th><th>Name / Organisation</th><th>Type</th><th>Max Award</th><th>Deadline</th><th>Region</th></tr></thead><tbody id="tbody"></tbody></table>
+  <div class="empty" id="empty-state" style="display:none"><div class="empty-icon">🔎</div><p>No matching grants found.</p></div>
 </div>
-<footer>
-  Data sourced from public grant announcements. Verify deadlines and eligibility on funder websites before applying. •
-  Excludes EU Horizon, US federal agency grants, and PhD/postdoc-only fellowships.
-</footer>
+<footer>Data sourced from public grant announcements. Verify deadlines and eligibility on funder websites before applying. • Excludes EU Horizon, US federal agency grants, and PhD/postdoc-only fellowships.</footer>
 <div class="panel-backdrop" id="backdrop" onclick="closePanel()"></div>
 <div class="detail-panel" id="detail-panel">
-  <div class="panel-header">
-    <div class="ph-main">
-      <div class="panel-title" id="p-title"></div>
-      <div class="panel-org" id="p-org"></div>
-      <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap" id="p-badges"></div>
-    </div>
-    <button class="panel-close" onclick="closePanel()">✕</button>
-  </div>
+  <div class="panel-header"><div class="ph-main"><div class="panel-title" id="p-title"></div><div class="panel-org" id="p-org"></div><div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap" id="p-badges"></div></div>  <button class="panel-close" onclick="closePanel()">✕</button></div>
   <div class="panel-body">
-    <div id="p-broken-banner" style="display:none" class="broken-url-banner">⚠️ This grant’s link may be broken or outdated. Verify the URL before applying.</div>
+    <div id="p-broken-banner" style="display:none" class="broken-url-banner">⚠️ This grant's link may be broken or outdated.</div>
     <div><div class="panel-section-label">Description</div><div class="panel-desc" id="p-desc"></div></div>
-    <div class="panel-meta-grid">
-      <div class="meta-item"><div class="meta-label">Deadline</div><div class="meta-value" id="p-deadline"></div></div>
-      <div class="meta-item"><div class="meta-label">Award Amount</div><div class="meta-value" id="p-amount"></div></div>
-      <div class="meta-item"><div class="meta-label">Region</div><div class="meta-value" id="p-region"></div></div>
-      <div class="meta-item"><div class="meta-label">Date Added</div><div class="meta-value" id="p-added"></div></div>
-    </div>
-    <div id="p-notes-wrap" style="display:none">
-      <div class="panel-section-label">Notes</div>
-      <div class="panel-notes" id="p-notes"></div>
-    </div>
+    <div class="panel-meta-grid">      <div class="meta-item"><div class="meta-label">Deadline</div><div class="meta-value" id="p-deadline"></div></div>      <div class="meta-item"><div class="meta-label">Award Amount</div><div class="meta-value" id="p-amount"></div></div>      <div class="meta-item"><div class="meta-label">Region</div><div class="meta-value" id="p-region"></div></div>      <div class="meta-item"><div class="meta-label">Date Added</div><div class="meta-value" id="p-added"></div></div>    </div>
+    <div id="p-notes-wrap" style="display:none"><div class="panel-section-label">Notes</div><div class="panel-notes" id="p-notes"></div></div>
   </div>
-  <div class="panel-footer">
-    <a href="#" id="p-link" class="btn-link" target="_blank" rel="noopener">View Grant Page ↗</a>
-  </div>
+  <div class="panel-footer"><a href="#" id="p-link" class="btn-link" target="_blank" rel="noopener">View Grant Page ↗</a></div>
 </div>
 <script>
-const TODAY=new Date();TODAY.setHours(0,0,0,0);
-const DATA=[
+const DATA = [
   {
     "id": "mozillaDemocracyAICohort2026",
     "name": "Mozilla Foundation Democracy × AI Cohort 2026",
@@ -610,125 +558,183 @@ const DATA=[
   }
 ];
 
-function dlStatus(d){
-  if(!d||d==='TBC')return 'tbc';
-  if(d==='rolling')return 'rolling';
-  const dl=new Date(d);if(dl<TODAY)return 'passed';
-  return((dl-TODAY)/86400000)<=60?'soon':'open';
+const TODAY = new Date(); TODAY.setHours(0,0,0,0);
+
+function dlStatus(d) {
+  if (!d || d === 'TBC') return 'tbc';
+  if (d === 'rolling')   return 'rolling';
+  var dl = new Date(d);
+  if (dl < TODAY) return 'passed';
+  return ((dl - TODAY) / 86400000) <= 60 ? 'soon' : 'open';
 }
-function dlLabel(d){
-  if(!d||d==='TBC')return 'TBC';
-  if(d==='rolling')return 'Rolling';
-  const dl=new Date(d);if(dl<TODAY)return d;
-  const days=Math.round((dl-TODAY)/86400000);
-  if(days===0)return 'Today';if(days===1)return 'Tomorrow';
-  if(days<30)return days+'d left';
-  return Math.round(days/30.5)+'mo · '+d;
+function dlLabel(d) {
+  if (!d || d === 'TBC') return 'TBC';
+  if (d === 'rolling')   return 'Rolling';
+  var dl = new Date(d);
+  if (dl < TODAY) return d;
+  var days = Math.round((dl - TODAY) / 86400000);
+  if (days === 0) return 'Today';
+  if (days === 1) return 'Tomorrow';
+  if (days < 30)  return days + 'd left';
+  return Math.round(days / 30.5) + 'mo \u00b7 ' + d;
 }
-function dlSortKey(d){
-  if(!d||d==='TBC')return 9e12;if(d==='rolling')return 9e13;return new Date(d).getTime();
+function dlSortKey(d) {
+  if (!d || d === 'TBC') return 9e12;
+  if (d === 'rolling')   return 9e13;
+  return new Date(d).getTime();
 }
-function fmtAmount(o){
-  if(!o.amount_max_usd||o.amount_max_usd===0)return 'TBC';
-  if(o.amount_max_usd>=1000000)return '$'+(o.amount_max_usd/1e6).toFixed(1).replace(/\.0$/,'')+'M';
-  if(o.amount_max_usd>=1000)return '$'+(o.amount_max_usd/1000).toFixed(0)+'k';
-  return '$'+o.amount_max_usd;
+function fmtAmount(o) {
+  if (!o.amount_max_usd || o.amount_max_usd === 0) return 'TBC';
+  if (o.amount_max_usd >= 1000000) return '$' + (o.amount_max_usd / 1e6).toFixed(1).replace(/\.0$/, '') + 'M';
+  if (o.amount_max_usd >= 1000)    return '$' + (o.amount_max_usd / 1000).toFixed(0) + 'k';
+  return '$' + o.amount_max_usd;
 }
-const DOT_COLORS={5:'var(--green)',4:'var(--accent)',3:'var(--yellow)',2:'var(--orange)',1:'var(--red)'};
-function fitStars(n){
-  const color=DOT_COLORS[n]||'#999';let dots='';
-  for(let i=1;i<=5;i++)dots+='<span class="fit-dot '+(i<=n?'on':'off')+'" style="background:'+color+'"></span>';
-  return '<span class="fit-badge fit-'+n+'">'+dots+' '+n+'</span>';
+var DOT_COLORS = {5:'var(--green)',4:'var(--accent)',3:'var(--yellow)',2:'var(--orange)',1:'var(--red)'};
+function fitStars(n) {
+  var color = DOT_COLORS[n] || '#999';
+  var dots = '';
+  for (var i = 1; i <= 5; i++) {
+    dots += '<span class="fit-dot ' + (i <= n ? 'on' : 'off') + '" style="background:' + color + '"></span>';
+  }
+  return '<span class="fit-badge fit-' + n + '">' + dots + ' ' + n + '</span>';
 }
-function capitalize(s){return s?s.charAt(0).toUpperCase()+s.slice(1).replace('_',' '):''}
-function tabOf(o){
-  const st=dlStatus(o.deadline);
-  if(o.status==='archived'||o.status==='excluded'||st==='passed')return 'archive';
-  if(o.deadline==='TBC'||st==='tbc')return 'tbc';
+function capitalize(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1).replace('_', ' ') : ''; }
+
+function tabOf(o) {
+  var st = dlStatus(o.deadline);
+  if (o.status === 'archived' || o.status === 'excluded' || st === 'passed') return 'archive';
+  if (o.deadline === 'TBC' || st === 'tbc') return 'tbc';
   return 'open';
 }
-const OPEN_DATA=DATA.filter(o=>tabOf(o)==='open').sort((a,b)=>{
-  const ka=dlSortKey(a.deadline),kb=dlSortKey(b.deadline);
-  if(ka!==kb)return ka-kb;
-  if(b.thematic_fit!==a.thematic_fit)return b.thematic_fit-a.thematic_fit;
-  return new Date(b.date_added)-new Date(a.date_added);
+
+var OPEN_DATA = DATA.filter(function(o){ return tabOf(o) === 'open'; }).sort(function(a, b) {
+  var ka = dlSortKey(a.deadline), kb = dlSortKey(b.deadline);
+  if (ka !== kb) return ka - kb;
+  if (b.thematic_fit !== a.thematic_fit) return b.thematic_fit - a.thematic_fit;
+  return new Date(b.date_added) - new Date(a.date_added);
 });
-const TBC_DATA=DATA.filter(o=>tabOf(o)==='tbc').sort((a,b)=>{
-  if(b.thematic_fit!==a.thematic_fit)return b.thematic_fit-a.thematic_fit;
-  return new Date(b.date_added)-new Date(a.date_added);
+var TBC_DATA = DATA.filter(function(o){ return tabOf(o) === 'tbc'; }).sort(function(a, b) {
+  if (b.thematic_fit !== a.thematic_fit) return b.thematic_fit - a.thematic_fit;
+  return new Date(b.date_added) - new Date(a.date_added);
 });
-const ARCHIVE_DATA=DATA.filter(o=>tabOf(o)==='archive').sort((a,b)=>new Date(b.deadline||0)-new Date(a.deadline||0));
-let currentTab='open',activeId=null;
-function renderTable(rows){
-  const tbody=document.getElementById('tbody'),empty=document.getElementById('empty-state'),count=document.getElementById('result-count');
-  if(!rows.length){tbody.innerHTML='';empty.style.display='block';count.textContent='0 results';return;}
-  empty.style.display='none';count.textContent=rows.length+' grant'+(rows.length!==1?'s':'');
-  tbody.innerHTML=rows.map(o=>{
-    const st=dlStatus(o.deadline),isNew=o.status==='new';
-    const brk=o.broken_url?'<div class="broken-url-flag">⚠ link may be broken</div>':'';
-    return '<tr onclick="openPanel(''+o.id+'')" id="row-'+o.id+'" class="'+(activeId===o.id?'active-row':'')+'">'
-      +'<td>'+fitStars(o.thematic_fit)+'</td>'
-      +'<td class="name-cell"><strong>'+o.name+(isNew?'<span class="new-dot" title="Newly added"></span>':'')+'</strong>'
-      +'<div class="org">'+o.organization+'</div>'+brk+'</td>'
-      +'<td><span class="type-pill type-'+o.type+'">'+capitalize(o.type)+'</span></td>'
-      +'<td class="amount-cell">'+fmtAmount(o)+'</td>'
-      +'<td class="dl-cell"><span class="dl-badge dl-'+st+'"><span class="dl-dot"></span>'+dlLabel(o.deadline)+'</span></td>'
-      +'<td class="region-cell">'+o.eligible_regions+'</td></tr>';
-  }).join('');
+var ARCHIVE_DATA = DATA.filter(function(o){ return tabOf(o) === 'archive'; }).sort(function(a, b) {
+  return new Date(b.deadline || 0) - new Date(a.deadline || 0);
+});
+
+var currentTab = 'open', activeId = null;
+
+function renderTable(rows) {
+  var tbody = document.getElementById('tbody');
+  var empty = document.getElementById('empty-state');
+  var count = document.getElementById('result-count');
+  if (!rows.length) {
+    tbody.innerHTML = '';
+    empty.style.display = 'block';
+    count.textContent = '0 results';
+    return;
+  }
+  empty.style.display = 'none';
+  count.textContent = rows.length + ' grant' + (rows.length !== 1 ? 's' : '');
+  var html = '';
+  for (var i = 0; i < rows.length; i++) {
+    var o = rows[i];
+    var st = dlStatus(o.deadline);
+    var isNew = o.status === 'new';
+    var brk = o.broken_url ? '<div class="broken-url-flag">&#9888; link may be broken</div>' : '';
+    var activeClass = activeId === o.id ? ' active-row' : '';
+    html += '<tr data-id="' + o.id + '" onclick="openPanel(this.dataset.id)" id="row-' + o.id + '" class="' + activeClass + '">';
+    html += '<td>' + fitStars(o.thematic_fit) + '</td>';
+    html += '<td class="name-cell"><strong>' + o.name + (isNew ? '<span class="new-dot" title="Newly added"></span>' : '') + '</strong>';
+    html += '<div class="org">' + o.organization + '</div>' + brk + '</td>';
+    html += '<td><span class="type-pill type-' + o.type + '">' + capitalize(o.type) + '</span></td>';
+    html += '<td class="amount-cell">' + fmtAmount(o) + '</td>';
+    html += '<td class="dl-cell"><span class="dl-badge dl-' + st + '"><span class="dl-dot"></span>' + dlLabel(o.deadline) + '</span></td>';
+    html += '<td class="region-cell">' + o.eligible_regions + '</td>';
+    html += '</tr>';
+  }
+  tbody.innerHTML = html;
 }
-function applyFilters(){
-  const q=document.getElementById('q').value.toLowerCase(),fType=document.getElementById('f-type').value,
-        fFit=document.getElementById('f-fit').value,fReg=document.getElementById('f-region').value;
-  const src=currentTab==='open'?OPEN_DATA:currentTab==='tbc'?TBC_DATA:ARCHIVE_DATA;
-  const filtered=src.filter(o=>{
-    if(fType&&o.type!==fType)return false;
-    if(fFit&&o.thematic_fit!==+fFit)return false;
-    if(fReg&&!o.eligible_regions.toLowerCase().includes(fReg.toLowerCase()))return false;
-    if(q){const hay=(o.name+' '+o.organization+' '+o.description+' '+o.eligible_regions).toLowerCase();if(!hay.includes(q))return false;}
+
+function applyFilters() {
+  var q     = document.getElementById('q').value.toLowerCase();
+  var fType = document.getElementById('f-type').value;
+  var fFit  = document.getElementById('f-fit').value;
+  var fReg  = document.getElementById('f-region').value;
+  var src   = currentTab === 'open' ? OPEN_DATA : currentTab === 'tbc' ? TBC_DATA : ARCHIVE_DATA;
+  var filtered = src.filter(function(o) {
+    if (fType && o.type !== fType) return false;
+    if (fFit  && o.thematic_fit !== +fFit) return false;
+    if (fReg  && o.eligible_regions.toLowerCase().indexOf(fReg.toLowerCase()) === -1) return false;
+    if (q) {
+      var hay = (o.name + ' ' + o.organization + ' ' + o.description + ' ' + o.eligible_regions).toLowerCase();
+      if (hay.indexOf(q) === -1) return false;
+    }
     return true;
   });
   renderTable(filtered);
 }
-function switchTab(tab){
-  currentTab=tab;closePanel(false);
-  ['open','tbc','archive'].forEach(t=>document.getElementById('tab-'+t).classList.toggle('active',t===tab));
-  document.getElementById('q').value='';document.getElementById('f-type').value='';
-  document.getElementById('f-fit').value='';document.getElementById('f-region').value='';
+
+function switchTab(tab) {
+  currentTab = tab;
+  closePanel(false);
+  ['open', 'tbc', 'archive'].forEach(function(t) {
+    document.getElementById('tab-' + t).classList.toggle('active', t === tab);
+  });
+  document.getElementById('q').value = '';
+  document.getElementById('f-type').value = '';
+  document.getElementById('f-fit').value = '';
+  document.getElementById('f-region').value = '';
   applyFilters();
 }
-function openPanel(id){
-  const o=DATA.find(x=>x.id===id);if(!o)return;
-  if(activeId){const prev=document.getElementById('row-'+activeId);if(prev)prev.classList.remove('active-row');}
-  activeId=id;const row=document.getElementById('row-'+id);if(row)row.classList.add('active-row');
-  const st=dlStatus(o.deadline);
-  document.getElementById('p-title').textContent=o.name;
-  document.getElementById('p-org').textContent=o.organization;
-  document.getElementById('p-desc').textContent=o.description;
-  document.getElementById('p-deadline').innerHTML='<span class="dl-badge dl-'+st+'"><span class="dl-dot"></span>'+(o.deadline==='rolling'?'Rolling':o.deadline==='TBC'?'TBC':o.deadline)+'</span>';
-  document.getElementById('p-amount').textContent=o.amount_notes||fmtAmount(o);
-  document.getElementById('p-region').textContent=o.eligible_regions;
-  document.getElementById('p-added').textContent=o.date_added;
-  document.getElementById('p-link').href=o.url;
-  document.getElementById('p-link').className='btn-link'+(o.broken_url?' broken':'');
-  document.getElementById('p-link').textContent=o.broken_url?'⚠ Link may be broken ↗':'View Grant Page ↗';
-  document.getElementById('p-broken-banner').style.display=o.broken_url?'flex':'none';
-  document.getElementById('p-badges').innerHTML=fitStars(o.thematic_fit)+'<span class="type-pill type-'+o.type+'" style="margin-left:4px">'+capitalize(o.type)+'</span>';
-  const nw=document.getElementById('p-notes-wrap');
-  if(o.notes){document.getElementById('p-notes').textContent=o.notes;nw.style.display='block';}
-  else nw.style.display='none';
+
+function openPanel(id) {
+  var o = null;
+  for (var i = 0; i < DATA.length; i++) { if (DATA[i].id === id) { o = DATA[i]; break; } }
+  if (!o) return;
+  if (activeId) {
+    var prev = document.getElementById('row-' + activeId);
+    if (prev) prev.classList.remove('active-row');
+  }
+  activeId = id;
+  var row = document.getElementById('row-' + id);
+  if (row) row.classList.add('active-row');
+  var st = dlStatus(o.deadline);
+  document.getElementById('p-title').textContent   = o.name;
+  document.getElementById('p-org').textContent     = o.organization;
+  document.getElementById('p-desc').textContent    = o.description;
+  document.getElementById('p-deadline').innerHTML  = '<span class="dl-badge dl-' + st + '"><span class="dl-dot"></span>' + (o.deadline === 'rolling' ? 'Rolling' : o.deadline === 'TBC' ? 'TBC' : o.deadline) + '</span>';
+  document.getElementById('p-amount').textContent  = o.amount_notes || fmtAmount(o);
+  document.getElementById('p-region').textContent  = o.eligible_regions;
+  document.getElementById('p-added').textContent   = o.date_added;
+  document.getElementById('p-link').href           = o.url;
+  document.getElementById('p-link').className      = 'btn-link' + (o.broken_url ? ' broken' : '');
+  document.getElementById('p-link').textContent    = o.broken_url ? '\u26a0 Link may be broken \u2197' : 'View Grant Page \u2197';
+  document.getElementById('p-broken-banner').style.display = o.broken_url ? 'flex' : 'none';
+  document.getElementById('p-badges').innerHTML = fitStars(o.thematic_fit) + '<span class="type-pill type-' + o.type + '" style="margin-left:4px">' + capitalize(o.type) + '</span>';
+  var nw = document.getElementById('p-notes-wrap');
+  if (o.notes) { document.getElementById('p-notes').textContent = o.notes; nw.style.display = 'block'; }
+  else { nw.style.display = 'none'; }
   document.getElementById('backdrop').classList.add('open');
   document.getElementById('detail-panel').classList.add('open');
 }
-function closePanel(clearActive=true){
+
+function closePanel(clearActive) {
+  if (clearActive === undefined) clearActive = true;
   document.getElementById('backdrop').classList.remove('open');
   document.getElementById('detail-panel').classList.remove('open');
-  if(clearActive&&activeId){const row=document.getElementById('row-'+activeId);if(row)row.classList.remove('active-row');activeId=null;}
+  if (clearActive && activeId) {
+    var row = document.getElementById('row-' + activeId);
+    if (row) row.classList.remove('active-row');
+    activeId = null;
+  }
 }
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closePanel();});
-document.getElementById('badge-open').textContent=OPEN_DATA.length;
-document.getElementById('badge-tbc').textContent=TBC_DATA.length;
-document.getElementById('badge-archive').textContent=ARCHIVE_DATA.length;
-document.getElementById('updated-ts').innerHTML='Last updated<br><strong>16 March 2026</strong> · Auto-updated daily';
+
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closePanel(); });
+
+document.getElementById('badge-open').textContent    = OPEN_DATA.length;
+document.getElementById('badge-tbc').textContent     = TBC_DATA.length;
+document.getElementById('badge-archive').textContent = ARCHIVE_DATA.length;
+document.getElementById('updated-ts').innerHTML = 'Last updated<br><strong>16 March 2026</strong> \u00b7 Auto-updated daily';
 renderTable(OPEN_DATA);
 </script>
 </body>

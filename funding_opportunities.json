@@ -12,7 +12,7 @@
     "deadline": "2026-03-25",
     "eligible_regions": "global",
     "date_added": "2026-03-15",
-    "status": "new",
+    "status": "active",
     "notes": "Deadline 25 March 2026 \u2014 apply immediately. Excellent fit for think tanks working on AI and workforce research. Global scope. Contact: impact.accelerator@ibm.com",
     "broken_url": false
   },
@@ -30,7 +30,7 @@
     "deadline": "2026-04-03",
     "eligible_regions": "global",
     "date_added": "2026-03-17",
-    "status": "new",
+    "status": "active",
     "broken_url": false,
     "notes": "Economy is one of three priority pillars alongside health and resilience. Requires partnership with a government entity. Strong fit if project focuses on AI-driven workforce or economic opportunity via public services."
   },
@@ -47,7 +47,7 @@
     "deadline": "2026-04-10",
     "eligible_regions": "global",
     "date_added": "2026-03-15",
-    "status": "new",
+    "status": "active",
     "notes": "Expressions of interest due 10 April 2026. Perfect fit for think tank AI + future-of-work research.",
     "broken_url": false
   },
@@ -65,7 +65,7 @@
     "deadline": "2026-04-30",
     "eligible_regions": "US",
     "date_added": "2026-03-14",
-    "status": "new",
+    "status": "active",
     "notes": "LOI deadline 30 April 2026. Full proposals by invitation only. Focus is on R&D return estimates, not future-of-work specifically.",
     "broken_url": true
   },
@@ -82,7 +82,7 @@
     "deadline": "2026-05-17",
     "eligible_regions": "global",
     "date_added": "2026-03-15",
-    "status": "new",
+    "status": "active",
     "notes": "Applications opened 18 Feb 2026. Informational webinar 15 April. Can encompass sociotechnical and labour-market risks of frontier AI.",
     "broken_url": false
   },
@@ -100,7 +100,7 @@
     "deadline": "2026-07-29",
     "eligible_regions": "US",
     "date_added": "2026-03-14",
-    "status": "new",
+    "status": "active",
     "notes": "LOI due 29 July 2026 (second cycle). Focus strictly on ages 5\u201325; best fit if research targets young workers entering AI-affected labour markets.",
     "broken_url": false
   },
@@ -118,7 +118,7 @@
     "deadline": "TBC",
     "eligible_regions": "US",
     "date_added": "2026-03-14",
-    "status": "new",
+    "status": "active",
     "notes": "Most recent cycle closed Feb 2025; next RFP likely late 2026. Excellent thematic fit for think tank teams. Monitor equitablegrowth.org.",
     "broken_url": false
   },
@@ -136,7 +136,7 @@
     "deadline": "TBC",
     "eligible_regions": "US",
     "date_added": "2026-03-14",
-    "status": "new",
+    "status": "active",
     "notes": "2026 cohort (16 orgs) announced March 5, 2026. Next open call TBC. Open to nonprofits, not think tanks directly unless nonprofit-registered.",
     "broken_url": false
   },
@@ -154,7 +154,7 @@
     "deadline": "TBC",
     "eligible_regions": "global",
     "date_added": "2026-03-14",
-    "status": "new",
+    "status": "active",
     "notes": "Application details and per-grant amounts not yet announced. Sign up for updates at humanityai.ai. Managed by Rockefeller Philanthropy Advisors.",
     "broken_url": true
   },
@@ -172,7 +172,7 @@
     "deadline": "TBC",
     "eligible_regions": "US",
     "date_added": "2026-03-15",
-    "status": "new",
+    "status": "active",
     "notes": "Siegel is a Humanity AI coalition member with an active research fellowship programme. Explicitly focused on worker agency in AI transformation. Contact directly for 2026 grant deadlines.",
     "broken_url": false
   },
@@ -190,7 +190,7 @@
     "deadline": "rolling",
     "eligible_regions": "global",
     "date_added": "2026-03-14",
-    "status": "new",
+    "status": "active",
     "notes": "Rolling applications. Thematic overlap is indirect; strongest fit if research addresses cooperation in human-AI work systems.",
     "broken_url": false
   },
@@ -208,7 +208,7 @@
     "deadline": "rolling",
     "eligible_regions": "global",
     "date_added": "2026-03-14",
-    "status": "new",
+    "status": "active",
     "notes": "Requires institutional affiliation (university or nonprofit research org). Applications reviewed in rolling cycles; check portal for current open areas.",
     "broken_url": false
   },
@@ -226,7 +226,7 @@
     "deadline": "rolling",
     "eligible_regions": "US",
     "date_added": "2026-03-14",
-    "status": "new",
+    "status": "active",
     "notes": "Not an open RFP \u2014 Google.org selects partners proactively. Engage through introductions or foundation relations. Excellent fit for AI workforce research with practical outputs.",
     "broken_url": false
   },
@@ -243,7 +243,7 @@
     "deadline": "rolling",
     "eligible_regions": "global",
     "date_added": "2026-03-15",
-    "status": "new",
+    "status": "active",
     "notes": "Rolling applications. Good fit for AI governance and policy research. Check knightfoundation.org for 2026 RFP details. May need to align with Knight's democracy and civics mission.",
     "broken_url": false
   },
@@ -260,8 +260,8 @@
     "deadline": "rolling",
     "eligible_regions": "global",
     "date_added": "2026-03-15",
-    "status": "new",
+    "status": "active",
     "notes": "Invitation and nomination only \u2014 no open application. Monitor for nomination windows and build a relationship with Schmidt Sciences programme staff.",
-    "broken_url": true
+    "broken_url": false
   }
 ]

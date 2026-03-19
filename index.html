@@ -55,39 +55,28 @@ tbody td{padding:0.75rem 1rem;font-size:0.875rem;vertical-align:top}
 .panel .broken-warning{background:#fef2f2;border:1px solid #fecaca;color:#991b1b;padding:0.5rem 0.75rem;border-radius:6px;margin-bottom:1rem;font-size:0.85rem}
 .footer{text-align:center;padding:1.5rem;color:var(--muted);font-size:0.8rem;border-top:1px solid var(--border);background:#fff;margin-top:2rem}
 .empty-state{text-align:center;padding:3rem;color:var(--muted)}
-@media(max-width:768px){
-  .toolbar{flex-direction:column}
-  thead th:nth-child(n+5),tbody td:nth-child(n+5){display:none}
-  .panel{width:100vw}
-}
+@media(max-width:768px){.toolbar{flex-direction:column}thead th:nth-child(n+5),tbody td:nth-child(n+5){display:none}.panel{width:100vw}}
 </style>
 </head>
 <body>
 <div class="header">
 <h1>&#127793; AI Future-of-Work Funding Tracker</h1>
 <p>Grants, fellowships &amp; funding for AI + workforce / labour-market research</p>
-<p style="margin-top:0.5rem;font-size:0.8rem;opacity:0.7">Last updated: 17 March 2026 &middot; Auto-updated daily</p>
+<p style="margin-top:0.5rem;font-size:0.8rem;opacity:0.7">Last updated: 19 March 2026 &middot; Auto-updated daily</p>
 </div>
-
 <div class="tabs" id="tabs">
 <div class="tab active" data-tab="open" onclick="switchTab('open')">Open Calls <span class="badge" id="countOpen">0</span></div>
 <div class="tab" data-tab="tbc" onclick="switchTab('tbc')">TBC <span class="badge" id="countTbc">0</span></div>
 <div class="tab" data-tab="archive" onclick="switchTab('archive')">Archive <span class="badge" id="countArchive">0</span></div>
 </div>
-
 <div class="toolbar">
 <input type="text" id="search" placeholder="Search name, org, description..." oninput="render()">
 <select id="filterType" onchange="render()"><option value="">All types</option><option value="foundation">Foundation</option><option value="corporate">Corporate</option><option value="government">Government</option><option value="research_institution">Research Institution</option></select>
 <select id="filterFit" onchange="render()"><option value="">All fit scores</option><option value="5">5</option><option value="4">4</option><option value="3">3</option></select>
 <select id="filterRegion" onchange="render()"><option value="">All regions</option></select>
 </div>
-
-<table>
-<thead><tr><th>Fit</th><th>Name / Organisation</th><th>Type</th><th>Max Award</th><th>Deadline</th><th>Region</th></tr></thead>
-<tbody id="tbody"></tbody>
-</table>
+<table><thead><tr><th>Fit</th><th>Name / Organisation</th><th>Type</th><th>Max Award</th><th>Deadline</th><th>Region</th></tr></thead><tbody id="tbody"></tbody></table>
 <div class="empty-state" id="emptyState" style="display:none">No opportunities match your filters.</div>
-
 <div class="panel-overlay" id="panelOverlay" onclick="closePanel()"></div>
 <div class="panel" id="panel">
 <button class="close-btn" onclick="closePanel()">&times;</button>
@@ -98,11 +87,7 @@ tbody td{padding:0.75rem 1rem;font-size:0.875rem;vertical-align:top}
 <div class="notes" id="panelNotes" style="display:none"></div>
 <a class="link-btn" id="panelLink" href="#" target="_blank">Visit Opportunity &rarr;</a>
 </div>
-
-<div class="footer">
-Data sourced from public grant announcements. Verify deadlines and eligibility on funder websites before applying. &bull; Excludes EU Horizon, US federal agency grants, and PhD/postdoc-only fellowships.
-</div>
-
+<div class="footer">Data sourced from public grant announcements. Verify deadlines and eligibility on funder websites before applying. &bull; Excludes EU Horizon, US federal agency grants, and PhD/postdoc-only fellowships.</div>
 <script>
 var ACTIVE = [
   {
@@ -118,7 +103,7 @@ var ACTIVE = [
     "deadline": "2026-03-25",
     "eligible_regions": "global",
     "date_added": "2026-03-15",
-    "status": "new",
+    "status": "active",
     "notes": "Deadline 25 March 2026 \u2014 apply immediately. Excellent fit for think tanks working on AI and workforce research. Global scope. Contact: impact.accelerator@ibm.com",
     "broken_url": false
   },
@@ -136,7 +121,7 @@ var ACTIVE = [
     "deadline": "2026-04-03",
     "eligible_regions": "global",
     "date_added": "2026-03-17",
-    "status": "new",
+    "status": "active",
     "broken_url": false,
     "notes": "Economy is one of three priority pillars alongside health and resilience. Requires partnership with a government entity. Strong fit if project focuses on AI-driven workforce or economic opportunity via public services."
   },
@@ -153,7 +138,7 @@ var ACTIVE = [
     "deadline": "2026-04-10",
     "eligible_regions": "global",
     "date_added": "2026-03-15",
-    "status": "new",
+    "status": "active",
     "notes": "Expressions of interest due 10 April 2026. Perfect fit for think tank AI + future-of-work research.",
     "broken_url": false
   },
@@ -171,7 +156,7 @@ var ACTIVE = [
     "deadline": "2026-04-30",
     "eligible_regions": "US",
     "date_added": "2026-03-14",
-    "status": "new",
+    "status": "active",
     "notes": "LOI deadline 30 April 2026. Full proposals by invitation only. Focus is on R&D return estimates, not future-of-work specifically.",
     "broken_url": true
   },
@@ -188,7 +173,7 @@ var ACTIVE = [
     "deadline": "2026-05-17",
     "eligible_regions": "global",
     "date_added": "2026-03-15",
-    "status": "new",
+    "status": "active",
     "notes": "Applications opened 18 Feb 2026. Informational webinar 15 April. Can encompass sociotechnical and labour-market risks of frontier AI.",
     "broken_url": false
   },
@@ -206,7 +191,7 @@ var ACTIVE = [
     "deadline": "2026-07-29",
     "eligible_regions": "US",
     "date_added": "2026-03-14",
-    "status": "new",
+    "status": "active",
     "notes": "LOI due 29 July 2026 (second cycle). Focus strictly on ages 5\u201325; best fit if research targets young workers entering AI-affected labour markets.",
     "broken_url": false
   },
@@ -224,7 +209,7 @@ var ACTIVE = [
     "deadline": "TBC",
     "eligible_regions": "US",
     "date_added": "2026-03-14",
-    "status": "new",
+    "status": "active",
     "notes": "Most recent cycle closed Feb 2025; next RFP likely late 2026. Excellent thematic fit for think tank teams. Monitor equitablegrowth.org.",
     "broken_url": false
   },
@@ -242,7 +227,7 @@ var ACTIVE = [
     "deadline": "TBC",
     "eligible_regions": "US",
     "date_added": "2026-03-14",
-    "status": "new",
+    "status": "active",
     "notes": "2026 cohort (16 orgs) announced March 5, 2026. Next open call TBC. Open to nonprofits, not think tanks directly unless nonprofit-registered.",
     "broken_url": false
   },
@@ -260,7 +245,7 @@ var ACTIVE = [
     "deadline": "TBC",
     "eligible_regions": "global",
     "date_added": "2026-03-14",
-    "status": "new",
+    "status": "active",
     "notes": "Application details and per-grant amounts not yet announced. Sign up for updates at humanityai.ai. Managed by Rockefeller Philanthropy Advisors.",
     "broken_url": true
   },
@@ -278,7 +263,7 @@ var ACTIVE = [
     "deadline": "TBC",
     "eligible_regions": "US",
     "date_added": "2026-03-15",
-    "status": "new",
+    "status": "active",
     "notes": "Siegel is a Humanity AI coalition member with an active research fellowship programme. Explicitly focused on worker agency in AI transformation. Contact directly for 2026 grant deadlines.",
     "broken_url": false
   },
@@ -296,7 +281,7 @@ var ACTIVE = [
     "deadline": "rolling",
     "eligible_regions": "global",
     "date_added": "2026-03-14",
-    "status": "new",
+    "status": "active",
     "notes": "Rolling applications. Thematic overlap is indirect; strongest fit if research addresses cooperation in human-AI work systems.",
     "broken_url": false
   },
@@ -314,7 +299,7 @@ var ACTIVE = [
     "deadline": "rolling",
     "eligible_regions": "global",
     "date_added": "2026-03-14",
-    "status": "new",
+    "status": "active",
     "notes": "Requires institutional affiliation (university or nonprofit research org). Applications reviewed in rolling cycles; check portal for current open areas.",
     "broken_url": false
   },
@@ -332,7 +317,7 @@ var ACTIVE = [
     "deadline": "rolling",
     "eligible_regions": "US",
     "date_added": "2026-03-14",
-    "status": "new",
+    "status": "active",
     "notes": "Not an open RFP \u2014 Google.org selects partners proactively. Engage through introductions or foundation relations. Excellent fit for AI workforce research with practical outputs.",
     "broken_url": false
   },
@@ -349,7 +334,7 @@ var ACTIVE = [
     "deadline": "rolling",
     "eligible_regions": "global",
     "date_added": "2026-03-15",
-    "status": "new",
+    "status": "active",
     "notes": "Rolling applications. Good fit for AI governance and policy research. Check knightfoundation.org for 2026 RFP details. May need to align with Knight's democracy and civics mission.",
     "broken_url": false
   },
@@ -366,9 +351,9 @@ var ACTIVE = [
     "deadline": "rolling",
     "eligible_regions": "global",
     "date_added": "2026-03-15",
-    "status": "new",
+    "status": "active",
     "notes": "Invitation and nomination only \u2014 no open application. Monitor for nomination windows and build a relationship with Schmidt Sciences programme staff.",
-    "broken_url": true
+    "broken_url": false
   }
 ];
 var ARCHIVE = [
@@ -427,152 +412,16 @@ var ARCHIVE = [
     "broken_url": false
   }
 ];
-
 var currentTab = 'open';
-
-function switchTab(tab) {
-  currentTab = tab;
-  var tabs = document.querySelectorAll('.tab');
-  for (var i = 0; i < tabs.length; i++) {
-    tabs[i].classList.toggle('active', tabs[i].getAttribute('data-tab') === tab);
-  }
-  render();
-}
-
-function fitStars(n) {
-  var color = {5:'var(--green)',4:'var(--accent)',3:'var(--yellow)',2:'var(--orange)',1:'var(--red)'}[n]||'#999';
-  var dots = '';
-  for (var i = 1; i <= 5; i++) {
-    dots += '<span class="fit-dot '+(i<=n?'on':'off')+'" style="background:'+color+'"></span>';
-  }
-  return '<span class="fit-badge fit-'+n+'">'+dots+' '+n+'</span>';
-}
-
-function deadlineBadge(d) {
-  if (d === 'rolling') return '<span class="deadline-badge dl-teal">Rolling</span>';
-  if (d === 'TBC') return '<span class="deadline-badge dl-yellow">TBC</span>';
-  var dl = new Date(d + 'T12:00:00');
-  var now = new Date();
-  now.setHours(12,0,0,0);
-  var diff = Math.ceil((dl - now) / 86400000);
-  if (diff < 0) return '<span class="deadline-badge dl-grey">Passed</span>';
-  if (diff <= 60) return '<span class="deadline-badge dl-green">' + diff + 'd left</span>';
-  var mo = Math.round(diff / 30);
-  var ds = dl.toLocaleDateString('en-GB', {day:'numeric',month:'short'});
-  return '<span class="deadline-badge dl-blue">' + mo + 'mo &middot; ' + ds + '</span>';
-}
-
-function fmtAmount(n) {
-  if (!n || n === 0) return '—';
-  if (n >= 1000000) return '$' + (n/1000000).toFixed(n%1000000===0?0:1) + 'M';
-  if (n >= 1000) return '$' + (n/1000) + 'K';
-  return '$' + n;
-}
-
-function getFiltered() {
-  var src;
-  if (currentTab === 'open') {
-    src = ACTIVE.filter(function(e) {
-      return e.deadline !== 'TBC';
-    });
-  } else if (currentTab === 'tbc') {
-    src = ACTIVE.filter(function(e) {
-      return e.deadline === 'TBC';
-    });
-  } else {
-    src = ARCHIVE;
-  }
-  var q = document.getElementById('search').value.toLowerCase();
-  var ft = document.getElementById('filterType').value;
-  var ff = document.getElementById('filterFit').value;
-  var fr = document.getElementById('filterRegion').value;
-  return src.filter(function(e) {
-    if (q && (e.name+' '+e.organization+' '+e.description).toLowerCase().indexOf(q) === -1) return false;
-    if (ft && e.type !== ft) return false;
-    if (ff && e.thematic_fit !== parseInt(ff)) return false;
-    if (fr && e.eligible_regions !== fr) return false;
-    return true;
-  });
-}
-
-function render() {
-  var openCount = ACTIVE.filter(function(e){return e.deadline!=='TBC';}).length;
-  var tbcCount = ACTIVE.filter(function(e){return e.deadline==='TBC';}).length;
-  document.getElementById('countOpen').textContent = openCount;
-  document.getElementById('countTbc').textContent = tbcCount;
-  document.getElementById('countArchive').textContent = ARCHIVE.length;
-
-  var items = getFiltered();
-  var tbody = document.getElementById('tbody');
-  var rows = '';
-  for (var i = 0; i < items.length; i++) {
-    var e = items[i];
-    var newDot = e.status === 'new' ? '<span class="new-dot"></span>' : '';
-    var brokenBadge = e.broken_url ? '<span class="broken-badge">&#9888; link may be broken</span>' : '';
-    rows += '<tr data-id="' + e.id + '" onclick="openPanel(this.dataset.id)">';
-    rows += '<td>' + fitStars(e.thematic_fit) + '</td>';
-    rows += '<td class="name-cell"><strong>' + e.name + newDot + '</strong><br><span class="org">' + e.organization + '</span>' + brokenBadge + '</td>';
-    rows += '<td>' + e.type + '</td>';
-    rows += '<td class="amount">' + fmtAmount(e.amount_max_usd) + '</td>';
-    rows += '<td>' + deadlineBadge(e.deadline) + '</td>';
-    rows += '<td>' + (e.eligible_regions || '') + '</td>';
-    rows += '</tr>';
-  }
-  tbody.innerHTML = rows;
-  document.getElementById('emptyState').style.display = items.length === 0 ? 'block' : 'none';
-
-  var regionSel = document.getElementById('filterRegion');
-  var curVal = regionSel.value;
-  var regions = {};
-  for (var j = 0; j < ACTIVE.length; j++) {
-    var r = ACTIVE[j].eligible_regions;
-    if (r) regions[r] = true;
-  }
-  for (var j = 0; j < ARCHIVE.length; j++) {
-    var r = ARCHIVE[j].eligible_regions;
-    if (r) regions[r] = true;
-  }
-  var opts = '<option value="">All regions</option>';
-  var rkeys = Object.keys(regions).sort();
-  for (var k = 0; k < rkeys.length; k++) {
-    opts += '<option value="' + rkeys[k] + '"' + (rkeys[k]===curVal?' selected':'') + '>' + rkeys[k] + '</option>';
-  }
-  regionSel.innerHTML = opts;
-}
-
-function findEntry(id) {
-  for (var i = 0; i < ACTIVE.length; i++) { if (ACTIVE[i].id === id) return ACTIVE[i]; }
-  for (var i = 0; i < ARCHIVE.length; i++) { if (ARCHIVE[i].id === id) return ARCHIVE[i]; }
-  return null;
-}
-
-function openPanel(id) {
-  var e = findEntry(id);
-  if (!e) return;
-  document.getElementById('panelTitle').textContent = e.name;
-  document.getElementById('panelDesc').textContent = e.description;
-  document.getElementById('panelBroken').style.display = e.broken_url ? 'block' : 'none';
-  var meta = '';
-  meta += '<div class="meta-item"><div class="label">Deadline</div><div class="value">' + e.deadline + '</div></div>';
-  meta += '<div class="meta-item"><div class="label">Max Award</div><div class="value">' + (e.amount_notes || fmtAmount(e.amount_max_usd)) + '</div></div>';
-  meta += '<div class="meta-item"><div class="label">Region</div><div class="value">' + (e.eligible_regions || '—') + '</div></div>';
-  meta += '<div class="meta-item"><div class="label">Date Added</div><div class="value">' + e.date_added + '</div></div>';
-  document.getElementById('panelMeta').innerHTML = meta;
-  var notesDiv = document.getElementById('panelNotes');
-  if (e.notes) { notesDiv.textContent = e.notes; notesDiv.style.display = 'block'; }
-  else { notesDiv.style.display = 'none'; }
-  var linkBtn = document.getElementById('panelLink');
-  linkBtn.href = e.url;
-  linkBtn.className = 'link-btn' + (e.broken_url ? ' broken' : '');
-  document.getElementById('panel').classList.add('open');
-  document.getElementById('panelOverlay').classList.add('open');
-}
-
-function closePanel() {
-  document.getElementById('panel').classList.remove('open');
-  document.getElementById('panelOverlay').classList.remove('open');
-}
-
+function switchTab(tab){currentTab=tab;var tabs=document.querySelectorAll('.tab');for(var i=0;i<tabs.length;i++){tabs[i].classList.toggle('active',tabs[i].getAttribute('data-tab')===tab)}render()}
+function fitStars(n){var color={5:'var(--green)',4:'var(--accent)',3:'var(--yellow)',2:'var(--orange)',1:'var(--red)'}[n]||'#999';var dots='';for(var i=1;i<=5;i++){dots+='<span class="fit-dot '+(i<=n?'on':'off')+'" style="background:'+color+'"></span>'}return '<span class="fit-badge fit-'+n+'">'+dots+' '+n+'</span>'}
+function deadlineBadge(d){if(d==='rolling')return '<span class="deadline-badge dl-teal">Rolling</span>';if(d==='TBC')return '<span class="deadline-badge dl-yellow">TBC</span>';var dl=new Date(d+'T12:00:00');var now=new Date();now.setHours(12,0,0,0);var diff=Math.ceil((dl-now)/86400000);if(diff<0)return '<span class="deadline-badge dl-grey">Passed</span>';if(diff<=60)return '<span class="deadline-badge dl-green">'+diff+'d left</span>';var mo=Math.round(diff/30);var ds=dl.toLocaleDateString('en-GB',{day:'numeric',month:'short'});return '<span class="deadline-badge dl-blue">'+mo+'mo &middot; '+ds+'</span>'}
+function fmtAmount(n){if(!n||n===0)return '\u2014';if(n>=1000000)return '$'+(n/1000000).toFixed(n%1000000===0?0:1)+'M';if(n>=1000)return '$'+(n/1000)+'K';return '$'+n}
+function getFiltered(){var src;if(currentTab==='open'){src=ACTIVE.filter(function(e){return e.deadline!=='TBC'})}else if(currentTab==='tbc'){src=ACTIVE.filter(function(e){return e.deadline==='TBC'})}else{src=ARCHIVE}var q=document.getElementById('search').value.toLowerCase();var ft=document.getElementById('filterType').value;var ff=document.getElementById('filterFit').value;var fr=document.getElementById('filterRegion').value;return src.filter(function(e){if(q&&(e.name+' '+e.organization+' '+e.description).toLowerCase().indexOf(q)===-1)return false;if(ft&&e.type!==ft)return false;if(ff&&e.thematic_fit!==parseInt(ff))return false;if(fr&&e.eligible_regions!==fr)return false;return true})}
+function render(){var openCount=ACTIVE.filter(function(e){return e.deadline!=='TBC'}).length;var tbcCount=ACTIVE.filter(function(e){return e.deadline==='TBC'}).length;document.getElementById('countOpen').textContent=openCount;document.getElementById('countTbc').textContent=tbcCount;document.getElementById('countArchive').textContent=ARCHIVE.length;var items=getFiltered();var tbody=document.getElementById('tbody');var rows='';for(var i=0;i<items.length;i++){var e=items[i];var newDot=e.status==='new'?'<span class="new-dot"></span>':'';var brokenBadge=e.broken_url?'<span class="broken-badge">&#9888; link may be broken</span>':'';rows+='<tr data-id="'+e.id+'" onclick="openPanel(this.dataset.id)">';rows+='<td>'+fitStars(e.thematic_fit)+'</td>';rows+='<td class="name-cell"><strong>'+e.name+newDot+'</strong><br><span class="org">'+e.organization+'</span>'+brokenBadge+'</td>';rows+='<td>'+e.type+'</td>';rows+='<td class="amount">'+fmtAmount(e.amount_max_usd)+'</td>';rows+='<td>'+deadlineBadge(e.deadline)+'</td>';rows+='<td>'+(e.eligible_regions||'')+'</td>';rows+='</tr>'}tbody.innerHTML=rows;document.getElementById('emptyState').style.display=items.length===0?'block':'none';var regionSel=document.getElementById('filterRegion');var curVal=regionSel.value;var regions={};for(var j=0;j<ACTIVE.length;j++){var r=ACTIVE[j].eligible_regions;if(r)regions[r]=true}for(var j=0;j<ARCHIVE.length;j++){var r=ARCHIVE[j].eligible_regions;if(r)regions[r]=true}var opts='<option value="">All regions</option>';var rkeys=Object.keys(regions).sort();for(var k=0;k<rkeys.length;k++){opts+='<option value="'+rkeys[k]+'"'+(rkeys[k]===curVal?' selected':'')+'>'+rkeys[k]+'</option>'}regionSel.innerHTML=opts}
+function findEntry(id){for(var i=0;i<ACTIVE.length;i++){if(ACTIVE[i].id===id)return ACTIVE[i]}for(var i=0;i<ARCHIVE.length;i++){if(ARCHIVE[i].id===id)return ARCHIVE[i]}return null}
+function openPanel(id){var e=findEntry(id);if(!e)return;document.getElementById('panelTitle').textContent=e.name;document.getElementById('panelDesc').textContent=e.description;document.getElementById('panelBroken').style.display=e.broken_url?'block':'none';var meta='';meta+='<div class="meta-item"><div class="label">Deadline</div><div class="value">'+e.deadline+'</div></div>';meta+='<div class="meta-item"><div class="label">Max Award</div><div class="value">'+(e.amount_notes||fmtAmount(e.amount_max_usd))+'</div></div>';meta+='<div class="meta-item"><div class="label">Region</div><div class="value">'+(e.eligible_regions||'\u2014')+'</div></div>';meta+='<div class="meta-item"><div class="label">Date Added</div><div class="value">'+e.date_added+'</div></div>';document.getElementById('panelMeta').innerHTML=meta;var notesDiv=document.getElementById('panelNotes');if(e.notes){notesDiv.textContent=e.notes;notesDiv.style.display='block'}else{notesDiv.style.display='none'}var linkBtn=document.getElementById('panelLink');linkBtn.href=e.url;linkBtn.className='link-btn'+(e.broken_url?' broken':'');document.getElementById('panel').classList.add('open');document.getElementById('panelOverlay').classList.add('open')}
+function closePanel(){document.getElementById('panel').classList.remove('open');document.getElementById('panelOverlay').classList.remove('open')}
 render();
 </script>
 </body>

@@ -31,7 +31,7 @@
     "eligible_regions": "global",
     "date_added": "2026-03-17",
     "status": "active",
-    "broken_url": false,
+    "broken_url": true,
     "notes": "Economy is one of three priority pillars alongside health and resilience. Requires partnership with a government entity. Strong fit if project focuses on AI-driven workforce or economic opportunity via public services."
   },
   {

@@ -52,5 +52,22 @@
     "status": "archived",
     "notes": "Initial proposal deadline 16 March 2026; full proposals invited April 15. Requires working prototype and open-source commitment. Civic/democracy focus, not labour markets.",
     "broken_url": false
+  },
+  {
+    "id": "ibmImpactAcceleratorAIWorkforce2026",
+    "name": "IBM Impact Accelerator \u2014 Education & Workforce Development Cohort",
+    "organization": "IBM",
+    "type": "corporate",
+    "thematic_fit": 5,
+    "description": "Global RFP for nonprofits and research organisations to develop AI solutions for education and workforce development. Selected organisations (5 per cohort) receive two-year pro bono access to IBM watsonx, Granite AI models, IBM Cloud, and implementation support from IBM researchers and consultants.",
+    "url": "https://newsroom.ibm.com/2026-02-04-ibm-opens-global-rfp-for-ai-driven-solutions-shaping-the-future-of-work-and-education",
+    "amount_max_usd": 0,
+    "amount_notes": "Pro bono technology package; in-kind support including IBM tools and consulting (no cash grant)",
+    "deadline": "2026-03-25",
+    "eligible_regions": "global",
+    "date_added": "2026-03-15",
+    "status": "archived",
+    "notes": "Deadline 25 March 2026 \u2014 apply immediately. Excellent fit for think tanks working on AI and workforce research. Global scope. Contact: impact.accelerator@ibm.com",
+    "broken_url": false
   }
 ]

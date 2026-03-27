@@ -5,420 +5,264 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Future-of-Work Funding Tracker</title>
 <style>
-:root{--bg:#f4f6fa;--card:#fff;--border:#e0e4eb;--text:#1a2233;--muted:#6b7280;--accent:#2563eb;--green:#16a34a;--yellow:#eab308;--orange:#ea580c;--red:#dc2626;--teal:#0d9488;--blue-light:#dbeafe;--panel-w:420px}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
-.header{background:linear-gradient(135deg,#1e3a5f 0%,#2563eb 100%);color:#fff;padding:2rem;text-align:center}
-.header h1{font-size:1.75rem;margin-bottom:0.25rem}
-.header p{opacity:0.85;font-size:0.9rem}
-.tabs{display:flex;gap:0;background:#fff;border-bottom:2px solid var(--border);padding:0 1rem;position:sticky;top:0;z-index:20}
-.tab{padding:0.75rem 1.25rem;cursor:pointer;border-bottom:3px solid transparent;font-weight:500;color:var(--muted);transition:all 0.2s}
-.tab:hover{color:var(--text)}
-.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
-.tab .badge{background:var(--blue-light);color:var(--accent);font-size:0.75rem;padding:0.1rem 0.5rem;border-radius:99px;margin-left:0.4rem}
-.toolbar{display:flex;gap:0.75rem;padding:1rem;background:#fff;border-bottom:1px solid var(--border);flex-wrap:wrap;position:sticky;top:50px;z-index:19}
-.toolbar input,.toolbar select{padding:0.5rem 0.75rem;border:1px solid var(--border);border-radius:6px;font-size:0.875rem;background:#fff}
-.toolbar input{flex:1;min-width:180px}
-.toolbar select{min-width:120px}
-table{width:100%;border-collapse:collapse;background:#fff}
-thead th{text-align:left;padding:0.6rem 1rem;font-size:0.75rem;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--border);position:sticky;top:106px;background:#fff;z-index:18}
-tbody tr{border-bottom:1px solid var(--border);cursor:pointer;transition:background 0.15s}
-tbody tr:hover{background:#f0f4ff}
-tbody td{padding:0.75rem 1rem;font-size:0.875rem;vertical-align:top}
-.fit-badge{display:inline-flex;align-items:center;gap:2px;font-size:0.8rem;font-weight:600}
-.fit-dot{display:inline-block;width:8px;height:8px;border-radius:50%;opacity:0.25}
-.fit-dot.on{opacity:1}
-.name-cell .org{color:var(--muted);font-size:0.8rem}
-.name-cell .new-dot{display:inline-block;width:8px;height:8px;background:var(--accent);border-radius:50%;margin-left:6px;vertical-align:middle}
-.name-cell .broken-badge{display:block;color:var(--red);font-size:0.7rem;margin-top:2px}
-.deadline-badge{display:inline-block;padding:0.15rem 0.6rem;border-radius:99px;font-size:0.78rem;font-weight:500}
-.dl-green{background:#dcfce7;color:#166534}.dl-blue{background:#dbeafe;color:#1e40af}.dl-teal{background:#ccfbf1;color:#115e59}.dl-yellow{background:#fef9c3;color:#854d0e}.dl-grey{background:#f3f4f6;color:#6b7280}
-.amount{font-weight:600;white-space:nowrap}
-.panel-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.3);z-index:90;display:none}
-.panel-overlay.open{display:block}
-.panel{position:fixed;top:0;right:-480px;width:min(var(--panel-w),90vw);height:100%;background:#fff;box-shadow:-4px 0 24px rgba(0,0,0,0.12);z-index:100;transition:right 0.3s ease;overflow-y:auto;padding:1.5rem}
-.panel.open{right:0}
-.panel .close-btn{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--muted)}
-.panel h2{font-size:1.15rem;margin-bottom:0.75rem;padding-right:2rem}
-.panel .desc{color:var(--text);margin-bottom:1rem;font-size:0.9rem}
-.panel .meta-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:1rem}
-.panel .meta-item{background:var(--bg);padding:0.5rem 0.75rem;border-radius:6px}
-.panel .meta-item .label{font-size:0.7rem;text-transform:uppercase;color:var(--muted)}
-.panel .meta-item .value{font-size:0.9rem;font-weight:500}
-.panel .notes{background:#fffbeb;border-left:3px solid var(--yellow);padding:0.75rem;font-size:0.85rem;margin-bottom:1rem;border-radius:0 6px 6px 0}
-.panel .link-btn{display:inline-block;padding:0.6rem 1.25rem;background:var(--accent);color:#fff;text-decoration:none;border-radius:6px;font-weight:500;font-size:0.9rem}
-.panel .link-btn.broken{background:var(--red)}
-.panel .broken-warning{background:#fef2f2;border:1px solid #fecaca;color:#991b1b;padding:0.5rem 0.75rem;border-radius:6px;margin-bottom:1rem;font-size:0.85rem}
-.footer{text-align:center;padding:1.5rem;color:var(--muted);font-size:0.8rem;border-top:1px solid var(--border);background:#fff;margin-top:2rem}
-.empty-state{text-align:center;padding:3rem;color:var(--muted)}
-@media(max-width:768px){.toolbar{flex-direction:column}thead th:nth-child(n+5),tbody td:nth-child(n+5){display:none}.panel{width:100vw}}
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --border: #e2e8f0;
+  --text: #1e293b;
+  --muted: #64748b;
+  --green: #22c55e;
+  --accent: #3b82f6;
+  --yellow: #eab308;
+  --orange: #f97316;
+  --red: #ef4444;
+  --teal: #14b8a6;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); }
+.header { background: linear-gradient(135deg, #1e3a5f 0%, #2d5a8e 100%); color: white; padding: 2rem 2rem 1.5rem; }
+.header h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+.header .subtitle { opacity: 0.85; font-size: 0.95rem; }
+.header .updated { opacity: 0.7; font-size: 0.8rem; margin-top: 0.5rem; }
+.tabs { display: flex; gap: 0; background: var(--card); border-bottom: 2px solid var(--border); padding: 0 2rem; }
+.tab { padding: 0.75rem 1.5rem; cursor: pointer; font-weight: 500; color: var(--muted); border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all 0.2s; font-size: 0.9rem; }
+.tab:hover { color: var(--text); }
+.tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+.tab .badge { background: var(--accent); color: white; border-radius: 999px; padding: 0.1rem 0.5rem; font-size: 0.75rem; margin-left: 0.4rem; }
+.toolbar { display: flex; gap: 0.75rem; padding: 1rem 2rem; flex-wrap: wrap; align-items: center; background: var(--card); border-bottom: 1px solid var(--border); }
+.toolbar input, .toolbar select { padding: 0.5rem 0.75rem; border: 1px solid var(--border); border-radius: 6px; font-size: 0.85rem; background: white; }
+.toolbar input { flex: 1; min-width: 200px; }
+.toolbar select { min-width: 120px; }
+.table-wrap { overflow-x: auto; padding: 0 2rem 2rem; }
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+th { text-align: left; padding: 0.6rem 0.75rem; font-size: 0.75rem; text-transform: uppercase; color: var(--muted); border-bottom: 2px solid var(--border); font-weight: 600; letter-spacing: 0.03em; }
+tr { cursor: pointer; transition: background 0.15s; }
+tr:hover { background: #f1f5f9; }
+td { padding: 0.75rem; border-bottom: 1px solid var(--border); font-size: 0.875rem; vertical-align: top; }
+.fit-badge { display: inline-flex; align-items: center; gap: 2px; font-weight: 600; font-size: 0.8rem; }
+.fit-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.fit-dot.off { opacity: 0.15; }
+.org-name { font-weight: 600; color: var(--text); }
+.org-sub { color: var(--muted); font-size: 0.8rem; }
+.new-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-left: 6px; vertical-align: middle; }
+.broken-badge { display: inline-block; color: var(--red); font-size: 0.7rem; margin-top: 2px; }
+.dl-badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 999px; font-size: 0.75rem; font-weight: 500; white-space: nowrap; }
+.dl-green { background: #dcfce7; color: #166534; }
+.dl-blue { background: #dbeafe; color: #1e40af; }
+.dl-teal { background: #ccfbf1; color: #115e59; }
+.dl-yellow { background: #fef9c3; color: #854d0e; }
+.dl-grey { background: #f1f5f9; color: #64748b; }
+.amount { font-weight: 500; }
+.panel-overlay { display: none; position: fixed; top: 0; right: 0; width: 420px; max-width: 90vw; height: 100vh; background: var(--card); box-shadow: -4px 0 24px rgba(0,0,0,0.12); z-index: 100; overflow-y: auto; padding: 2rem; }
+.panel-overlay.open { display: block; }
+.panel-close { float: right; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--muted); }
+.panel-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.25rem; padding-right: 2rem; }
+.panel-org { color: var(--muted); margin-bottom: 1rem; }
+.panel-desc { line-height: 1.6; margin-bottom: 1.25rem; font-size: 0.9rem; }
+.panel-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1.25rem; }
+.panel-meta-item { background: var(--bg); padding: 0.6rem 0.75rem; border-radius: 8px; }
+.panel-meta-label { font-size: 0.7rem; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.panel-meta-value { font-size: 0.875rem; font-weight: 500; margin-top: 0.2rem; }
+.panel-notes { background: #fffbeb; border-left: 3px solid var(--yellow); padding: 0.75rem 1rem; border-radius: 0 6px 6px 0; font-size: 0.85rem; line-height: 1.5; margin-bottom: 1.25rem; }
+.panel-link { display: inline-block; padding: 0.6rem 1.25rem; background: var(--accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 500; font-size: 0.9rem; }
+.panel-link.broken { background: var(--red); }
+.panel-broken-warn { background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; padding: 0.6rem 0.75rem; border-radius: 6px; font-size: 0.8rem; margin-bottom: 1rem; }
+footer { text-align: center; padding: 1.5rem 2rem; color: var(--muted); font-size: 0.75rem; border-top: 1px solid var(--border); line-height: 1.6; }
 </style>
 </head>
 <body>
 <div class="header">
-<h1>&#127793; AI Future-of-Work Funding Tracker</h1>
-<p>Grants, fellowships &amp; funding for AI + workforce / labour-market research</p>
-<p style="margin-top:0.5rem;font-size:0.8rem;opacity:0.7">Last updated: 23 March 2026 &middot; Auto-updated daily</p>
+  <h1>&#127793; AI Future-of-Work Funding Tracker</h1>
+  <div class="subtitle">Grants, fellowships and RFPs at the intersection of AI and the future of work</div>
+  <div class="updated">Last updated: 27 March 2026 &middot; Auto-updated daily</div>
 </div>
+
 <div class="tabs" id="tabs">
-<div class="tab active" data-tab="open" onclick="switchTab('open')">Open Calls <span class="badge" id="countOpen">0</span></div>
-<div class="tab" data-tab="tbc" onclick="switchTab('tbc')">TBC <span class="badge" id="countTbc">0</span></div>
-<div class="tab" data-tab="archive" onclick="switchTab('archive')">Archive <span class="badge" id="countArchive">0</span></div>
+  <div class="tab active" data-tab="open" onclick="switchTab('open')">Open Calls <span class="badge" id="badge-open">0</span></div>
+  <div class="tab" data-tab="tbc" onclick="switchTab('tbc')">TBC <span class="badge" id="badge-tbc">0</span></div>
+  <div class="tab" data-tab="archive" onclick="switchTab('archive')">Archive <span class="badge" id="badge-archive">0</span></div>
 </div>
+
 <div class="toolbar">
-<input type="text" id="search" placeholder="Search name, org, description..." oninput="render()">
-<select id="filterType" onchange="render()"><option value="">All types</option><option value="foundation">Foundation</option><option value="corporate">Corporate</option><option value="government">Government</option><option value="research_institution">Research Institution</option></select>
-<select id="filterFit" onchange="render()"><option value="">All fit scores</option><option value="5">5</option><option value="4">4</option><option value="3">3</option></select>
-<select id="filterRegion" onchange="render()"><option value="">All regions</option></select>
+  <input type="text" id="search" placeholder="Search by name, organization, or keyword..." oninput="renderTable()">
+  <select id="filterType" onchange="renderTable()"><option value="">All types</option><option value="foundation">Foundation</option><option value="corporate">Corporate</option><option value="government">Government</option><option value="research_institution">Research</option></select>
+  <select id="filterFit" onchange="renderTable()"><option value="">All fit scores</option><option value="5">5</option><option value="4">4+</option><option value="3">3+</option></select>
+  <select id="filterRegion" onchange="renderTable()"><option value="">All regions</option><option value="US">US</option><option value="EU">EU</option><option value="global">Global</option></select>
 </div>
-<table><thead><tr><th>Fit</th><th>Name / Organisation</th><th>Type</th><th>Max Award</th><th>Deadline</th><th>Region</th></tr></thead><tbody id="tbody"></tbody></table>
-<div class="empty-state" id="emptyState" style="display:none">No opportunities match your filters.</div>
-<div class="panel-overlay" id="panelOverlay" onclick="closePanel()"></div>
-<div class="panel" id="panel">
-<button class="close-btn" onclick="closePanel()">&times;</button>
-<h2 id="panelTitle"></h2>
-<div class="broken-warning" id="panelBroken" style="display:none">&#9888; The link for this opportunity may be broken. Please verify the URL manually.</div>
-<div class="desc" id="panelDesc"></div>
-<div class="meta-grid" id="panelMeta"></div>
-<div class="notes" id="panelNotes" style="display:none"></div>
-<a class="link-btn" id="panelLink" href="#" target="_blank">Visit Opportunity &rarr;</a>
+
+<div class="table-wrap">
+  <table>
+    <thead><tr><th style="width:60px">Fit</th><th>Name / Organisation</th><th style="width:90px">Type</th><th style="width:110px">Max Award</th><th style="width:130px">Deadline</th><th style="width:80px">Region</th></tr></thead>
+    <tbody id="tbody"></tbody>
+  </table>
 </div>
-<div class="footer">Data sourced from public grant announcements. Verify deadlines and eligibility on funder websites before applying. &bull; Excludes EU Horizon, US federal agency grants, and PhD/postdoc-only fellowships.</div>
+
+<div class="panel-overlay" id="panel">
+  <button class="panel-close" onclick="closePanel()">&times;</button>
+  <div id="panel-content"></div>
+</div>
+
+<footer>
+  Data sourced from public grant announcements. Verify deadlines and eligibility on funder websites before applying.
+  &bull; Excludes EU Horizon, US federal agency grants, and PhD/postdoc-only fellowships.
+</footer>
+
 <script>
-var ACTIVE = [
-  {
-    "id": "ibmImpactAcceleratorAIWorkforce2026",
-    "name": "IBM Impact Accelerator \u2014 Education & Workforce Development Cohort",
-    "organization": "IBM",
-    "type": "corporate",
-    "thematic_fit": 5,
-    "description": "Global RFP for nonprofits and research organisations to develop AI solutions for education and workforce development. Selected organisations (5 per cohort) receive two-year pro bono access to IBM watsonx, Granite AI models, IBM Cloud, and implementation support from IBM researchers and consultants.",
-    "url": "https://newsroom.ibm.com/2026-02-04-ibm-opens-global-rfp-for-ai-driven-solutions-shaping-the-future-of-work-and-education",
-    "amount_max_usd": 0,
-    "amount_notes": "Pro bono technology package; in-kind support including IBM tools and consulting (no cash grant)",
-    "deadline": "2026-03-25",
-    "eligible_regions": "global",
-    "date_added": "2026-03-15",
-    "status": "active",
-    "notes": "Deadline 25 March 2026 \u2014 apply immediately. Excellent fit for think tanks working on AI and workforce research. Global scope. Contact: impact.accelerator@ibm.com",
-    "broken_url": false
-  },
-  {
-    "id": "googleOrgAIGovInnovation2026",
-    "name": "Google.org Impact Challenge: AI for Government Innovation",
-    "organization": "Google.org",
-    "type": "corporate",
-    "thematic_fit": 3,
-    "description": "Global call for nonprofits, social enterprises, and academic institutions to develop AI-powered solutions partnering with governments. Focus areas include economy, health, and resilience. Selected orgs receive $1M\u2013$3M+ plus Google.org Accelerator support, technical mentorship, and cloud resources.",
-    "url": "https://www.google.org/impact-challenges/ai-government-innovation/",
-    "contact": "https://www.google.org/impact-challenges/ai-government-innovation/",
-    "amount_max_usd": 3000000,
-    "amount_notes": "$1M\u2013$3M+",
-    "deadline": "2026-04-03",
-    "eligible_regions": "global",
-    "date_added": "2026-03-17",
-    "status": "active",
-    "broken_url": true,
-    "notes": "Economy is one of three priority pillars alongside health and resilience. Requires partnership with a government entity. Strong fit if project focuses on AI-driven workforce or economic opportunity via public services."
-  },
-  {
-    "id": "schmidtAIatWork2026",
-    "name": "Schmidt Sciences \u2014 AI at Work: Field Experiments on Workforce Effects of AI",
-    "organization": "Schmidt Sciences",
-    "type": "foundation",
-    "thematic_fit": 5,
-    "description": "Funds field experiments and quasi-experiments by economists and quantitative social scientists studying AI's impact on workplaces. Two priority areas: (1) Worker Displacement & Adjustment; (2) Scientific Productivity. Awards up to $200k per project.",
-    "url": "https://www.schmidtsciences.org/ai-at-work/",
-    "amount_max_usd": 200000,
-    "amount_notes": "Up to $200,000 per project",
-    "deadline": "2026-04-10",
-    "eligible_regions": "global",
-    "date_added": "2026-03-15",
-    "status": "active",
-    "notes": "Expressions of interest due 10 April 2026. Perfect fit for think tank AI + future-of-work research.",
-    "broken_url": false
-  },
-  {
-    "id": "sloanRDEconomicsResearch2026",
-    "name": "Alfred P. Sloan Foundation \u2014 Economic Research on Returns to R&D",
-    "organization": "Alfred P. Sloan Foundation",
-    "type": "foundation",
-    "thematic_fit": 3,
-    "description": "Consortium of funders led by Sloan and Coefficient Giving seeking empirical research on social and economic returns to R&D investment. Awards up to $250k. LOI due 30 April 2026; invitation-only full proposals follow. Tangential fit for teams studying AI investment and labour productivity.",
-    "url": "https://sloan.org/programs/research/economics/call-for-letters-of-inquiry-economics-research-on-the-returns-to-rd-investment",
-    "contact": "grants@sloan.org",
-    "amount_max_usd": 250000,
-    "amount_notes": "Up to $250,000 per award",
-    "deadline": "2026-04-30",
-    "eligible_regions": "US",
-    "date_added": "2026-03-14",
-    "status": "active",
-    "notes": "LOI deadline 30 April 2026. Full proposals by invitation only. Focus is on R&D return estimates, not future-of-work specifically.",
-    "broken_url": true
-  },
-  {
-    "id": "schmidtScienceTrustworthyAI2026",
-    "name": "Schmidt Sciences \u2014 Science of Trustworthy AI RFP 2026",
-    "organization": "Schmidt Sciences",
-    "type": "foundation",
-    "thematic_fit": 4,
-    "description": "Supports technical research improving understanding, prediction, and control of risks from frontier AI systems. Tier 1: up to $1M; Tier 2: $1M\u2013$5M+. 1\u20133 year projects. Indirect costs capped at 10%. Global participation encouraged.",
-    "url": "https://www.schmidtsciences.org/opportunity/2026-science-of-trustworthy-ai-rfp/",
-    "amount_max_usd": 5000000,
-    "amount_notes": "Tier 1: up to $1M; Tier 2: $1M\u2013$5M+; 1\u20133 year projects",
-    "deadline": "2026-05-17",
-    "eligible_regions": "global",
-    "date_added": "2026-03-15",
-    "status": "active",
-    "notes": "Applications opened 18 Feb 2026. Informational webinar 15 April. Can encompass sociotechnical and labour-market risks of frontier AI.",
-    "broken_url": false
-  },
-  {
-    "id": "wtGrantReducingInequality2026",
-    "name": "William T. Grant Foundation \u2014 Research Grants on Reducing Inequality 2026",
-    "organization": "William T. Grant Foundation",
-    "type": "foundation",
-    "thematic_fit": 3,
-    "description": "Grants up to $600k funding research to build, test, or increase understanding of programmes and policies that reduce inequality in youth outcomes (ages 5\u201325) in the US. Can encompass AI-driven labour market inequality affecting young workers. Second LOI cycle due July 2026.",
-    "url": "https://wtgrantfoundation.org/funding/research-grants-on-reducing-inequality",
-    "contact": "https://wtgrantfoundation.org/funding/research-grants-on-reducing-inequality/faq",
-    "amount_max_usd": 600000,
-    "amount_notes": "Up to $600,000 per grant",
-    "deadline": "2026-07-29",
-    "eligible_regions": "US",
-    "date_added": "2026-03-14",
-    "status": "active",
-    "notes": "LOI due 29 July 2026 (second cycle). Focus strictly on ages 5\u201325; best fit if research targets young workers entering AI-affected labour markets.",
-    "broken_url": false
-  },
-  {
-    "id": "equitableGrowthAIWorkers2025",
-    "name": "Washington Center for Equitable Growth \u2014 AI Workers & Competition RFP",
-    "organization": "Washington Center for Equitable Growth",
-    "type": "foundation",
-    "thematic_fit": 5,
-    "description": "Research grants studying how AI, automation, algorithmic management, and electronic surveillance affect US workers, wages, and market competition. Awards $25k\u2013$80k over up to 2 years. Open to individual researchers and teams at think tanks, universities, and research institutions.",
-    "url": "https://equitablegrowth.org/research-paper/request-for-proposals-promoting-competition-and-supporting-workers-in-an-era-of-ai-innovation/",
-    "contact": "https://equitablegrowth.org/engage/funding-opportunities/",
-    "amount_max_usd": 80000,
-    "amount_notes": "$25,000\u2013$80,000; slightly larger grants possible if well-justified",
-    "deadline": "TBC",
-    "eligible_regions": "US",
-    "date_added": "2026-03-14",
-    "status": "active",
-    "notes": "Most recent cycle closed Feb 2025; next RFP likely late 2026. Excellent thematic fit for think tank teams. Monitor equitablegrowth.org.",
-    "broken_url": false
-  },
-  {
-    "id": "gitlabFoundationAIEconomicOpp",
-    "name": "GitLab Foundation AI for Economic Opportunity Fund",
-    "organization": "GitLab Foundation",
-    "type": "foundation",
-    "thematic_fit": 3,
-    "description": "Demonstration grants to US-based nonprofits using AI to measurably improve economic mobility for low-income populations. Each award is $250k plus OpenAI API credits and 6 months of technical support. The 2026 cohort (cycle 4) has already been announced; next cycle TBC.",
-    "url": "https://www.gitlabfoundation.org/futureofwork",
-    "contact": "https://www.gitlabfoundation.org/partnerships/aifund",
-    "amount_max_usd": 250000,
-    "amount_notes": "$250,000 per org plus OpenAI API credits and cohort support",
-    "deadline": "TBC",
-    "eligible_regions": "US",
-    "date_added": "2026-03-14",
-    "status": "active",
-    "notes": "2026 cohort (16 orgs) announced March 5, 2026. Next open call TBC. Open to nonprofits, not think tanks directly unless nonprofit-registered.",
-    "broken_url": false
-  },
-  {
-    "id": "humanityAIFund2026",
-    "name": "Humanity AI \u2014 Pooled Philanthropic Fund (Labor & Economy Track)",
-    "organization": "Humanity AI (Ford, MacArthur, Mellon, Omidyar, Mozilla, Packard, Kapor, Doris Duke, Lumina, Siegel Family Endowment)",
-    "type": "foundation",
-    "thematic_fit": 5,
-    "description": "A $500M, 5-year pooled fund from 10 leading foundations dedicated to people-centred AI development. The 'Labor & Economy' track focuses on equipping workers to thrive amid AI-driven transformation. Grants expected to flow in 2026; application details pending. Highest possible thematic alignment for think tank AI + future-of-work research.",
-    "url": "https://omidyar.com/update/humanity-ai/",
-    "contact": "https://www.humanityai.ai",
-    "amount_max_usd": 0,
-    "amount_notes": "$500M total fund; per-grant amounts TBC when applications open",
-    "deadline": "TBC",
-    "eligible_regions": "global",
-    "date_added": "2026-03-14",
-    "status": "active",
-    "notes": "Application details and per-grant amounts not yet announced. Sign up for updates at humanityai.ai. Managed by Rockefeller Philanthropy Advisors.",
-    "broken_url": true
-  },
-  {
-    "id": "siegelFamilyAIWorkforce2026",
-    "name": "Siegel Family Endowment \u2014 AI & Workforce Research Grants",
-    "organization": "Siegel Family Endowment",
-    "type": "foundation",
-    "thematic_fit": 5,
-    "description": "Siegel Family Endowment investing $15.4M+ in grants focused on how workers shape AI's transformation of work. Supports research and programmes examining hiring, management, monitoring of workers, and evidence-based policies on worker data rights and AI impact. 2025\u20132026 cohort of Siegel Research Fellows announced.",
-    "url": "https://www.siegelendowment.org/insights/shaping-ais-future-together-siegel-family-endowment-joins-humanity-ai/",
-    "contact": "https://www.siegelendowment.org/contact/",
-    "amount_max_usd": 0,
-    "amount_notes": "$15.4M total announced; individual award amounts TBC",
-    "deadline": "TBC",
-    "eligible_regions": "US",
-    "date_added": "2026-03-15",
-    "status": "active",
-    "notes": "Siegel is a Humanity AI coalition member with an active research fellowship programme. Explicitly focused on worker agency in AI transformation. Contact directly for 2026 grant deadlines.",
-    "broken_url": false
-  },
-  {
-    "id": "cooperativeAIFoundationGrants2025",
-    "name": "Cooperative AI Foundation Research Grants",
-    "organization": "Cooperative AI Foundation",
-    "type": "foundation",
-    "thematic_fit": 3,
-    "description": "Research grants on AI cooperation, including understanding and evaluating cooperation-relevant capabilities. No fixed upper limit; cost-effectiveness is weighted. Priority areas include understanding AI cooperation propensities and multi-stakeholder AI governance relevant to labour and economic settings.",
-    "url": "https://www.cooperativeai.com/grants/2025",
-    "contact": "https://www.cooperativeai.com/grants",
-    "amount_max_usd": 0,
-    "amount_notes": "No fixed ceiling; applicants encouraged to be ambitious",
-    "deadline": "rolling",
-    "eligible_regions": "global",
-    "date_added": "2026-03-14",
-    "status": "active",
-    "notes": "Rolling applications. Thematic overlap is indirect; strongest fit if research addresses cooperation in human-AI work systems.",
-    "broken_url": false
-  },
-  {
-    "id": "amazonResearchAwardsAI2026",
-    "name": "Amazon Research Awards \u2014 Fairness in AI & Human-Computer Interaction",
-    "organization": "Amazon",
-    "type": "corporate",
-    "thematic_fit": 3,
-    "description": "Unrestricted research gifts to academic institutions in areas including fairness in AI, knowledge management, NLP, and HCI. No IP rights retained by Amazon. Rolling calls; typically $50k\u2013$150k per award. Relevant for think tanks affiliated with universities or structured as research institutions.",
-    "url": "https://www.amazon.science/research-awards/call-for-proposals",
-    "contact": "https://www.amazon.science/research-awards",
-    "amount_max_usd": 150000,
-    "amount_notes": "Typically $50,000\u2013$150,000 unrestricted gift",
-    "deadline": "rolling",
-    "eligible_regions": "global",
-    "date_added": "2026-03-14",
-    "status": "active",
-    "notes": "Requires institutional affiliation (university or nonprofit research org). Applications reviewed in rolling cycles; check portal for current open areas.",
-    "broken_url": false
-  },
-  {
-    "id": "googleOrgAIOpportunityFundUS",
-    "name": "Google.org AI Opportunity Fund \u2014 US Workforce Development",
-    "organization": "Google.org",
-    "type": "corporate",
-    "thematic_fit": 4,
-    "description": "Part of a $75M commitment to help over 1 million Americans learn AI skills through workforce development and education organisations. Focus on rural/under-served workers, public sector employees, small businesses, and nonprofits. Grants to best-in-class workforce orgs; not an open call but accepts relationship-based inquiries.",
-    "url": "https://aiopportunityfund.withgoogle.com/",
-    "contact": "https://www.google.org/",
-    "amount_max_usd": 0,
-    "amount_notes": "$75M total programme; individual grants vary; $15M sub-tranche for public sector recently announced",
-    "deadline": "rolling",
-    "eligible_regions": "US",
-    "date_added": "2026-03-14",
-    "status": "active",
-    "notes": "Not an open RFP \u2014 Google.org selects partners proactively. Engage through introductions or foundation relations. Excellent fit for AI workforce research with practical outputs.",
-    "broken_url": false
-  },
-  {
-    "id": "knightFoundationAIGovernanceFund2026",
-    "name": "Knight Foundation \u2014 Ethics and Governance of AI Fund",
-    "organization": "Knight Foundation",
-    "type": "foundation",
-    "thematic_fit": 4,
-    "description": "Ongoing initiative supporting civil society organisations working on AI ethics, governance, and public interest. The Foundation has committed $7.6M to nine initial grantees; supports research on governance, norms, values, and responsible AI systems.",
-    "url": "https://knightfoundation.org/press/releases/the-ethics-and-governance-of-artificial-intelligence-fund-commits-7-6-million-to-organizations-that-bolster-civil-society-efforts-around-the-world/",
-    "amount_max_usd": 0,
-    "amount_notes": "$7.6M committed across nine grantees; individual award sizes not published",
-    "deadline": "rolling",
-    "eligible_regions": "global",
-    "date_added": "2026-03-15",
-    "status": "active",
-    "notes": "Rolling applications. Good fit for AI governance and policy research. Check knightfoundation.org for 2026 RFP details. May need to align with Knight's democracy and civics mission.",
-    "broken_url": false
-  },
-  {
-    "id": "schmidtAI2050Fellowship",
-    "name": "Schmidt Sciences \u2014 AI2050 Fellowship Programme",
-    "organization": "Schmidt Sciences",
-    "type": "foundation",
-    "thematic_fit": 5,
-    "description": "Supports exceptional researchers working on critical AI opportunities and hard problems including AI's impact on the economy and society. The 2025 cohort awarded $18M+ to 28 fellows. Co-chaired by Eric Schmidt and James Manyika.",
-    "url": "https://ai2050.schmidtsciences.org/",
-    "amount_max_usd": 0,
-    "amount_notes": "$18M+ awarded to 28 fellows in 2025 cohort; individual amounts not disclosed",
-    "deadline": "rolling",
-    "eligible_regions": "global",
-    "date_added": "2026-03-15",
-    "status": "active",
-    "notes": "Invitation and nomination only \u2014 no open application. Monitor for nomination windows and build a relationship with Schmidt Sciences programme staff.",
-    "broken_url": false
-  }
-];
-var ARCHIVE = [
-  {
-    "id": "jffAIResilientEarlyCareer2026",
-    "name": "Advancing AI-Resilient Early-Career Pathways Initiative",
-    "organization": "Jobs for the Future (JFF)",
-    "type": "foundation",
-    "thematic_fit": 5,
-    "description": "Initiative to identify and pilot innovative models helping early-career workers thrive in an AI-transformed labour market. Awards $50k\u2013$100k per grant (3\u20136 grants anticipated) for an 8-month pilot (April\u2013November 2026). Eligible applicants include workforce development orgs, training providers, employer-led entities, and for-profit organisations.",
-    "url": "https://info.jff.org/advancing-ai-resilient-early-career-pathways",
-    "contact": "https://info.jff.org/advancing-ai-resilient-early-career-pathways",
-    "amount_max_usd": 100000,
-    "amount_notes": "$50,000\u2013$100,000 per grant; 3\u20136 grants expected",
-    "deadline": "2026-02-25",
-    "eligible_regions": "US",
-    "date_added": "2026-03-14",
-    "status": "archived",
-    "notes": "Deadline passed (25 Feb 2026). Required in-person convening 25 March 2026. Monitor JFF for next round.",
-    "broken_url": false
-  },
-  {
-    "id": "linkedinFutureOfWorkFund2026",
-    "name": "LinkedIn Future of Work Fund 2026: Global AI Workforce Grant",
-    "organization": "LinkedIn / Silicon Valley Community Foundation",
-    "type": "foundation",
-    "thematic_fit": 5,
-    "description": "Grant programme supporting nonprofit organisations preparing young adults for an AI-powered labour market through AI literacy, digital skills, and employment pathways. Grants range from $200k\u2013$300k; focus countries include US, UK, France, Germany, and India. Open to legally registered nonprofits with a workforce development mandate.",
-    "url": "https://socialimpact.linkedin.com/future-of-work-fund",
-    "contact": "https://socialimpact.linkedin.com/future-of-work-fund",
-    "amount_max_usd": 300000,
-    "amount_notes": "$200,000\u2013$300,000 per grant (varies by application strength)",
-    "deadline": "2026-03-15",
-    "eligible_regions": "global (US, UK, France, Germany, India priority)",
-    "date_added": "2026-03-14",
-    "status": "archived",
-    "notes": "Deadline was 15 March 2026 \u2014 may have just closed. Verify next cycle. Restricted to nonprofits, not think tanks directly.",
-    "broken_url": false
-  },
-  {
-    "id": "mozillaDemocracyAICohort2026",
-    "name": "Mozilla Foundation Democracy x AI Cohort 2026",
-    "organization": "Mozilla Foundation",
-    "type": "foundation",
-    "thematic_fit": 3,
-    "description": "Incubator programme funding ~10 projects building AI-driven tools that strengthen democracy. Tier I: $50k + 12-month incubation; Tier II (Sustain): up to $250k additional. Focus on information integrity, institutional transparency, and civic participation. Applicants must have a working prototype.",
-    "url": "https://www.mozillafoundation.org/en/what-we-do/grantmaking/incubator/democracy-ai-cohort/",
-    "contact": "https://www.mozillafoundation.org/en/what-we-do/grantmaking/incubator/",
-    "amount_max_usd": 300000,
-    "amount_notes": "Tier I: $50k; Tier II additional up to $250k (total ~$300k)",
-    "deadline": "2026-03-16",
-    "eligible_regions": "global",
-    "date_added": "2026-03-14",
-    "status": "archived",
-    "notes": "Initial proposal deadline 16 March 2026; full proposals invited April 15. Requires working prototype and open-source commitment. Civic/democracy focus, not labour markets.",
-    "broken_url": false
-  }
-];
+var ACTIVE = [{"id": "googleOrgAIGovInnovation2026", "name": "Google.org Impact Challenge: AI for Government Innovation", "organization": "Google.org", "type": "corporate", "thematic_fit": 3, "description": "Global call for nonprofits, social enterprises, and academic institutions to develop AI-powered solutions partnering with governments. Focus areas include economy, health, and resilience. Selected orgs receive $1M\u2013$3M+ plus Google.org Accelerator support, technical mentorship, and cloud resources.", "url": "https://www.google.org/impact-challenges/ai-government-innovation/", "contact": "https://www.google.org/impact-challenges/ai-government-innovation/", "amount_max_usd": 3000000, "amount_notes": "$1M\u2013$3M+", "deadline": "2026-04-03", "eligible_regions": "global", "date_added": "2026-03-17", "status": "active", "broken_url": false, "notes": "Economy is one of three priority pillars alongside health and resilience. Requires partnership with a government entity. Strong fit if project focuses on AI-driven workforce or economic opportunity via public services."}, {"id": "schmidtAIatWork2026", "name": "Schmidt Sciences \u2014 AI at Work: Field Experiments on Workforce Effects of AI", "organization": "Schmidt Sciences", "type": "foundation", "thematic_fit": 5, "description": "Funds field experiments and quasi-experiments by economists and quantitative social scientists studying AI's impact on workplaces. Two priority areas: (1) Worker Displacement & Adjustment; (2) Scientific Productivity. Awards up to $200k per project.", "url": "https://www.schmidtsciences.org/ai-at-work/", "amount_max_usd": 200000, "amount_notes": "Up to $200,000 per project", "deadline": "2026-04-10", "eligible_regions": "global", "date_added": "2026-03-15", "status": "active", "notes": "Expressions of interest due 10 April 2026. Perfect fit for think tank AI + future-of-work research.", "broken_url": false}, {"id": "sloanRDEconomicsResearch2026", "name": "Alfred P. Sloan Foundation \u2014 Economic Research on Returns to R&D", "organization": "Alfred P. Sloan Foundation", "type": "foundation", "thematic_fit": 3, "description": "Consortium of funders led by Sloan and Coefficient Giving seeking empirical research on social and economic returns to R&D investment. Awards up to $250k. LOI due 30 April 2026; invitation-only full proposals follow. Tangential fit for teams studying AI investment and labour productivity.", "url": "https://sloan.org/programs/research/economics/call-for-letters-of-inquiry-economics-research-on-the-returns-to-rd-investment", "contact": "grants@sloan.org", "amount_max_usd": 250000, "amount_notes": "Up to $250,000 per award", "deadline": "2026-04-30", "eligible_regions": "US", "date_added": "2026-03-14", "status": "active", "notes": "LOI deadline 30 April 2026. Full proposals by invitation only. Focus is on R&D return estimates, not future-of-work specifically.", "broken_url": true}, {"id": "schmidtScienceTrustworthyAI2026", "name": "Schmidt Sciences \u2014 Science of Trustworthy AI RFP 2026", "organization": "Schmidt Sciences", "type": "foundation", "thematic_fit": 4, "description": "Supports technical research improving understanding, prediction, and control of risks from frontier AI systems. Tier 1: up to $1M; Tier 2: $1M\u2013$5M+. 1\u20133 year projects. Indirect costs capped at 10%. Global participation encouraged.", "url": "https://www.schmidtsciences.org/opportunity/2026-science-of-trustworthy-ai-rfp/", "amount_max_usd": 5000000, "amount_notes": "Tier 1: up to $1M; Tier 2: $1M\u2013$5M+; 1\u20133 year projects", "deadline": "2026-05-17", "eligible_regions": "global", "date_added": "2026-03-15", "status": "active", "notes": "Applications opened 18 Feb 2026. Informational webinar 15 April. Can encompass sociotechnical and labour-market risks of frontier AI.", "broken_url": false}, {"id": "wtGrantReducingInequality2026", "name": "William T. Grant Foundation \u2014 Research Grants on Reducing Inequality 2026", "organization": "William T. Grant Foundation", "type": "foundation", "thematic_fit": 3, "description": "Grants up to $600k funding research to build, test, or increase understanding of programmes and policies that reduce inequality in youth outcomes (ages 5\u201325) in the US. Can encompass AI-driven labour market inequality affecting young workers. Second LOI cycle due July 2026.", "url": "https://wtgrantfoundation.org/funding/research-grants-on-reducing-inequality", "contact": "https://wtgrantfoundation.org/funding/research-grants-on-reducing-inequality/faq", "amount_max_usd": 600000, "amount_notes": "Up to $600,000 per grant", "deadline": "2026-07-29", "eligible_regions": "US", "date_added": "2026-03-14", "status": "active", "notes": "LOI due 29 July 2026 (second cycle). Focus strictly on ages 5\u201325; best fit if research targets young workers entering AI-affected labour markets.", "broken_url": false}, {"id": "equitableGrowthAIWorkers2025", "name": "Washington Center for Equitable Growth \u2014 AI Workers & Competition RFP", "organization": "Washington Center for Equitable Growth", "type": "foundation", "thematic_fit": 5, "description": "Research grants studying how AI, automation, algorithmic management, and electronic surveillance affect US workers, wages, and market competition. Awards $25k\u2013$80k over up to 2 years. Open to individual researchers and teams at think tanks, universities, and research institutions.", "url": "https://equitablegrowth.org/research-paper/request-for-proposals-promoting-competition-and-supporting-workers-in-an-era-of-ai-innovation/", "contact": "https://equitablegrowth.org/engage/funding-opportunities/", "amount_max_usd": 80000, "amount_notes": "$25,000\u2013$80,000; slightly larger grants possible if well-justified", "deadline": "TBC", "eligible_regions": "US", "date_added": "2026-03-14", "status": "active", "notes": "Most recent cycle closed Feb 2025; next RFP likely late 2026. Excellent thematic fit for think tank teams. Monitor equitablegrowth.org.", "broken_url": false}, {"id": "gitlabFoundationAIEconomicOpp", "name": "GitLab Foundation AI for Economic Opportunity Fund", "organization": "GitLab Foundation", "type": "foundation", "thematic_fit": 3, "description": "Demonstration grants to US-based nonprofits using AI to measurably improve economic mobility for low-income populations. Each award is $250k plus OpenAI API credits and 6 months of technical support. The 2026 cohort (cycle 4) has already been announced; next cycle TBC.", "url": "https://www.gitlabfoundation.org/futureofwork", "contact": "https://www.gitlabfoundation.org/partnerships/aifund", "amount_max_usd": 250000, "amount_notes": "$250,000 per org plus OpenAI API credits and cohort support", "deadline": "TBC", "eligible_regions": "US", "date_added": "2026-03-14", "status": "active", "notes": "2026 cohort (16 orgs) announced March 5, 2026. Next open call TBC. Open to nonprofits, not think tanks directly unless nonprofit-registered.", "broken_url": false}, {"id": "humanityAIFund2026", "name": "Humanity AI \u2014 Pooled Philanthropic Fund (Labor & Economy Track)", "organization": "Humanity AI (Ford, MacArthur, Mellon, Omidyar, Mozilla, Packard, Kapor, Doris Duke, Lumina, Siegel Family Endowment)", "type": "foundation", "thematic_fit": 5, "description": "A $500M, 5-year pooled fund from 10 leading foundations dedicated to people-centred AI development. The 'Labor & Economy' track focuses on equipping workers to thrive amid AI-driven transformation. Grants expected to flow in 2026; application details pending. Highest possible thematic alignment for think tank AI + future-of-work research.", "url": "https://omidyar.com/update/humanity-ai/", "contact": "https://www.humanityai.ai", "amount_max_usd": 0, "amount_notes": "$500M total fund; per-grant amounts TBC when applications open", "deadline": "TBC", "eligible_regions": "global", "date_added": "2026-03-14", "status": "active", "notes": "Application details and per-grant amounts not yet announced. Sign up for updates at humanityai.ai. Managed by Rockefeller Philanthropy Advisors.", "broken_url": true}, {"id": "siegelFamilyAIWorkforce2026", "name": "Siegel Family Endowment \u2014 AI & Workforce Research Grants", "organization": "Siegel Family Endowment", "type": "foundation", "thematic_fit": 5, "description": "Siegel Family Endowment investing $15.4M+ in grants focused on how workers shape AI's transformation of work. Supports research and programmes examining hiring, management, monitoring of workers, and evidence-based policies on worker data rights and AI impact. 2025\u20132026 cohort of Siegel Research Fellows announced.", "url": "https://www.siegelendowment.org/insights/shaping-ais-future-together-siegel-family-endowment-joins-humanity-ai/", "contact": "https://www.siegelendowment.org/contact/", "amount_max_usd": 0, "amount_notes": "$15.4M total announced; individual award amounts TBC", "deadline": "TBC", "eligible_regions": "US", "date_added": "2026-03-15", "status": "active", "notes": "Siegel is a Humanity AI coalition member with an active research fellowship programme. Explicitly focused on worker agency in AI transformation. Contact directly for 2026 grant deadlines.", "broken_url": false}, {"id": "openaiFoundationAIGrants2026", "name": "OpenAI Foundation \u2014 AI for Humanity Grants", "organization": "OpenAI Foundation", "type": "corporate", "thematic_fit": 4, "description": "The OpenAI Foundation pledged $1 billion in grants over the next year to support AI for public benefit. Priorities include mitigating AI impacts on jobs, the economy, and mental health, as well as life science/health research. The first round (People-First AI Fund) awarded $40.5M to 208 US nonprofits; future open calls expected in 2026.", "url": "https://openai.com/foundation/", "contact": "", "amount_max_usd": 1000000000, "amount_notes": "$1B total pledge; individual grant sizes vary ($50K\u2013$500K in first round)", "deadline": "TBC", "eligible_regions": "US", "date_added": "2026-03-27", "status": "new", "broken_url": false, "notes": "First round closed Oct 2025. Foundation announced $1B commitment March 2026. Monitor openai.com/foundation for next open application cycle. Strong workforce/economic impact component."}, {"id": "cooperativeAIFoundationGrants2025", "name": "Cooperative AI Foundation Research Grants", "organization": "Cooperative AI Foundation", "type": "foundation", "thematic_fit": 3, "description": "Research grants on AI cooperation, including understanding and evaluating cooperation-relevant capabilities. No fixed upper limit; cost-effectiveness is weighted. Priority areas include understanding AI cooperation propensities and multi-stakeholder AI governance relevant to labour and economic settings.", "url": "https://www.cooperativeai.com/grants/2025", "contact": "https://www.cooperativeai.com/grants", "amount_max_usd": 0, "amount_notes": "No fixed ceiling; applicants encouraged to be ambitious", "deadline": "rolling", "eligible_regions": "global", "date_added": "2026-03-14", "status": "active", "notes": "Rolling applications. Thematic overlap is indirect; strongest fit if research addresses cooperation in human-AI work systems.", "broken_url": false}, {"id": "amazonResearchAwardsAI2026", "name": "Amazon Research Awards \u2014 Fairness in AI & Human-Computer Interaction", "organization": "Amazon", "type": "corporate", "thematic_fit": 3, "description": "Unrestricted research gifts to academic institutions in areas including fairness in AI, knowledge management, NLP, and HCI. No IP rights retained by Amazon. Rolling calls; typically $50k\u2013$150k per award. Relevant for think tanks affiliated with universities or structured as research institutions.", "url": "https://www.amazon.science/research-awards/call-for-proposals", "contact": "https://www.amazon.science/research-awards", "amount_max_usd": 150000, "amount_notes": "Typically $50,000\u2013$150,000 unrestricted gift", "deadline": "rolling", "eligible_regions": "global", "date_added": "2026-03-14", "status": "active", "notes": "Requires institutional affiliation (university or nonprofit research org). Applications reviewed in rolling cycles; check portal for current open areas.", "broken_url": false}, {"id": "googleOrgAIOpportunityFundUS", "name": "Google.org AI Opportunity Fund \u2014 US Workforce Development", "organization": "Google.org", "type": "corporate", "thematic_fit": 4, "description": "Part of a $75M commitment to help over 1 million Americans learn AI skills through workforce development and education organisations. Focus on rural/under-served workers, public sector employees, small businesses, and nonprofits. Grants to best-in-class workforce orgs; not an open call but accepts relationship-based inquiries.", "url": "https://aiopportunityfund.withgoogle.com/", "contact": "https://www.google.org/", "amount_max_usd": 0, "amount_notes": "$75M total programme; individual grants vary; $15M sub-tranche for public sector recently announced", "deadline": "rolling", "eligible_regions": "US", "date_added": "2026-03-14", "status": "active", "notes": "Not an open RFP \u2014 Google.org selects partners proactively. Engage through introductions or foundation relations. Excellent fit for AI workforce research with practical outputs.", "broken_url": false}, {"id": "knightFoundationAIGovernanceFund2026", "name": "Knight Foundation \u2014 Ethics and Governance of AI Fund", "organization": "Knight Foundation", "type": "foundation", "thematic_fit": 4, "description": "Ongoing initiative supporting civil society organisations working on AI ethics, governance, and public interest. The Foundation has committed $7.6M to nine initial grantees; supports research on governance, norms, values, and responsible AI systems.", "url": "https://knightfoundation.org/press/releases/the-ethics-and-governance-of-artificial-intelligence-fund-commits-7-6-million-to-organizations-that-bolster-civil-society-efforts-around-the-world/", "amount_max_usd": 0, "amount_notes": "$7.6M committed across nine grantees; individual award sizes not published", "deadline": "rolling", "eligible_regions": "global", "date_added": "2026-03-15", "status": "active", "notes": "Rolling applications. Good fit for AI governance and policy research. Check knightfoundation.org for 2026 RFP details. May need to align with Knight's democracy and civics mission.", "broken_url": false}, {"id": "schmidtAI2050Fellowship", "name": "Schmidt Sciences \u2014 AI2050 Fellowship Programme", "organization": "Schmidt Sciences", "type": "foundation", "thematic_fit": 5, "description": "Supports exceptional researchers working on critical AI opportunities and hard problems including AI's impact on the economy and society. The 2025 cohort awarded $18M+ to 28 fellows. Co-chaired by Eric Schmidt and James Manyika.", "url": "https://ai2050.schmidtsciences.org/", "amount_max_usd": 0, "amount_notes": "$18M+ awarded to 28 fellows in 2025 cohort; individual amounts not disclosed", "deadline": "rolling", "eligible_regions": "global", "date_added": "2026-03-15", "status": "active", "notes": "Invitation and nomination only \u2014 no open application. Monitor for nomination windows and build a relationship with Schmidt Sciences programme staff.", "broken_url": false}, {"id": "mcgovernFoundationAIPublicPurpose2026", "name": "Patrick J. McGovern Foundation \u2014 AI for Public Purpose", "organization": "Patrick J. McGovern Foundation", "type": "foundation", "thematic_fit": 3, "description": "Annual grantmaking of ~$75M across 149 grants supporting AI and data solutions for public purpose, including digital literacy, workforce, crisis response, and climate resilience. Grants range from $100K to $1M+ and fund nonprofits, research institutions, and social enterprises globally.", "url": "https://www.mcgovern.org/grants/", "contact": "https://www.mcgovern.org/grants/", "amount_max_usd": 1000000, "amount_notes": "$100K\u2013$1M+; total annual spend ~$75M", "deadline": "rolling", "eligible_regions": "global", "date_added": "2026-03-27", "status": "new", "broken_url": false, "notes": "Proactive grantmaking model \u2014 foundation identifies and approaches partners, but unsolicited inquiries can be submitted via website. Workforce/labor is one of several focus areas alongside health equity, climate, journalism."}];
+var ARCHIVE = [{"id": "jffAIResilientEarlyCareer2026", "name": "Advancing AI-Resilient Early-Career Pathways Initiative", "organization": "Jobs for the Future (JFF)", "type": "foundation", "thematic_fit": 5, "description": "Initiative to identify and pilot innovative models helping early-career workers thrive in an AI-transformed labour market. Awards $50k\u2013$100k per grant (3\u20136 grants anticipated) for an 8-month pilot (April\u2013November 2026). Eligible applicants include workforce development orgs, training providers, employer-led entities, and for-profit organisations.", "url": "https://info.jff.org/advancing-ai-resilient-early-career-pathways", "contact": "https://info.jff.org/advancing-ai-resilient-early-career-pathways", "amount_max_usd": 100000, "amount_notes": "$50,000\u2013$100,000 per grant; 3\u20136 grants expected", "deadline": "2026-02-25", "eligible_regions": "US", "date_added": "2026-03-14", "status": "archived", "notes": "Deadline passed (25 Feb 2026). Required in-person convening 25 March 2026. Monitor JFF for next round.", "broken_url": false}, {"id": "linkedinFutureOfWorkFund2026", "name": "LinkedIn Future of Work Fund 2026: Global AI Workforce Grant", "organization": "LinkedIn / Silicon Valley Community Foundation", "type": "foundation", "thematic_fit": 5, "description": "Grant programme supporting nonprofit organisations preparing young adults for an AI-powered labour market through AI literacy, digital skills, and employment pathways. Grants range from $200k\u2013$300k; focus countries include US, UK, France, Germany, and India. Open to legally registered nonprofits with a workforce development mandate.", "url": "https://socialimpact.linkedin.com/future-of-work-fund", "contact": "https://socialimpact.linkedin.com/future-of-work-fund", "amount_max_usd": 300000, "amount_notes": "$200,000\u2013$300,000 per grant (varies by application strength)", "deadline": "2026-03-15", "eligible_regions": "global (US, UK, France, Germany, India priority)", "date_added": "2026-03-14", "status": "archived", "notes": "Deadline was 15 March 2026 \u2014 may have just closed. Verify next cycle. Restricted to nonprofits, not think tanks directly.", "broken_url": false}, {"id": "mozillaDemocracyAICohort2026", "name": "Mozilla Foundation Democracy x AI Cohort 2026", "organization": "Mozilla Foundation", "type": "foundation", "thematic_fit": 3, "description": "Incubator programme funding ~10 projects building AI-driven tools that strengthen democracy. Tier I: $50k + 12-month incubation; Tier II (Sustain): up to $250k additional. Focus on information integrity, institutional transparency, and civic participation. Applicants must have a working prototype.", "url": "https://www.mozillafoundation.org/en/what-we-do/grantmaking/incubator/democracy-ai-cohort/", "contact": "https://www.mozillafoundation.org/en/what-we-do/grantmaking/incubator/", "amount_max_usd": 300000, "amount_notes": "Tier I: $50k; Tier II additional up to $250k (total ~$300k)", "deadline": "2026-03-16", "eligible_regions": "global", "date_added": "2026-03-14", "status": "archived", "notes": "Initial proposal deadline 16 March 2026; full proposals invited April 15. Requires working prototype and open-source commitment. Civic/democracy focus, not labour markets.", "broken_url": false}, {"id": "ibmImpactAcceleratorAIWorkforce2026", "name": "IBM Impact Accelerator \u2014 Education & Workforce Development Cohort", "organization": "IBM", "type": "corporate", "thematic_fit": 5, "description": "Global RFP for nonprofits and research organisations to develop AI solutions for education and workforce development. Selected organisations (5 per cohort) receive two-year pro bono access to IBM watsonx, Granite AI models, IBM Cloud, and implementation support from IBM researchers and consultants.", "url": "https://newsroom.ibm.com/2026-02-04-ibm-opens-global-rfp-for-ai-driven-solutions-shaping-the-future-of-work-and-education", "amount_max_usd": 0, "amount_notes": "Pro bono technology package; in-kind support including IBM tools and consulting (no cash grant)", "deadline": "2026-03-25", "eligible_regions": "global", "date_added": "2026-03-15", "status": "archived", "notes": "Deadline 25 March 2026 \u2014 apply immediately. Excellent fit for think tanks working on AI and workforce research. Global scope. Contact: impact.accelerator@ibm.com", "broken_url": false}];
 var currentTab = 'open';
-function switchTab(tab){currentTab=tab;var tabs=document.querySelectorAll('.tab');for(var i=0;i<tabs.length;i++){tabs[i].classList.toggle('active',tabs[i].getAttribute('data-tab')===tab)}render()}
-function fitStars(n){var color={5:'var(--green)',4:'var(--accent)',3:'var(--yellow)',2:'var(--orange)',1:'var(--red)'}[n]||'#999';var dots='';for(var i=1;i<=5;i++){dots+='<span class="fit-dot '+(i<=n?'on':'off')+'" style="background:'+color+'"></span>'}return '<span class="fit-badge fit-'+n+'">'+dots+' '+n+'</span>'}
-function deadlineBadge(d){if(d==='rolling')return '<span class="deadline-badge dl-teal">Rolling</span>';if(d==='TBC')return '<span class="deadline-badge dl-yellow">TBC</span>';var dl=new Date(d+'T12:00:00');var now=new Date();now.setHours(12,0,0,0);var diff=Math.ceil((dl-now)/86400000);if(diff<0)return '<span class="deadline-badge dl-grey">Passed</span>';if(diff<=60)return '<span class="deadline-badge dl-green">'+diff+'d left</span>';var mo=Math.round(diff/30);var ds=dl.toLocaleDateString('en-GB',{day:'numeric',month:'short'});return '<span class="deadline-badge dl-blue">'+mo+'mo &middot; '+ds+'</span>'}
-function fmtAmount(n){if(!n||n===0)return '\u2014';if(n>=1000000)return '$'+(n/1000000).toFixed(n%1000000===0?0:1)+'M';if(n>=1000)return '$'+(n/1000)+'K';return '$'+n}
-function getFiltered(){var src;if(currentTab==='open'){src=ACTIVE.filter(function(e){return e.deadline!=='TBC'})}else if(currentTab==='tbc'){src=ACTIVE.filter(function(e){return e.deadline==='TBC'})}else{src=ARCHIVE}var q=document.getElementById('search').value.toLowerCase();var ft=document.getElementById('filterType').value;var ff=document.getElementById('filterFit').value;var fr=document.getElementById('filterRegion').value;return src.filter(function(e){if(q&&(e.name+' '+e.organization+' '+e.description).toLowerCase().indexOf(q)===-1)return false;if(ft&&e.type!==ft)return false;if(ff&&e.thematic_fit!==parseInt(ff))return false;if(fr&&e.eligible_regions!==fr)return false;return true})}
-function render(){var openCount=ACTIVE.filter(function(e){return e.deadline!=='TBC'}).length;var tbcCount=ACTIVE.filter(function(e){return e.deadline==='TBC'}).length;document.getElementById('countOpen').textContent=openCount;document.getElementById('countTbc').textContent=tbcCount;document.getElementById('countArchive').textContent=ARCHIVE.length;var items=getFiltered();var tbody=document.getElementById('tbody');var rows='';for(var i=0;i<items.length;i++){var e=items[i];var newDot=e.status==='new'?'<span class="new-dot"></span>':'';var brokenBadge=e.broken_url?'<span class="broken-badge">&#9888; link may be broken</span>':'';rows+='<tr data-id="'+e.id+'" onclick="openPanel(this.dataset.id)">';rows+='<td>'+fitStars(e.thematic_fit)+'</td>';rows+='<td class="name-cell"><strong>'+e.name+newDot+'</strong><br><span class="org">'+e.organization+'</span>'+brokenBadge+'</td>';rows+='<td>'+e.type+'</td>';rows+='<td class="amount">'+fmtAmount(e.amount_max_usd)+'</td>';rows+='<td>'+deadlineBadge(e.deadline)+'</td>';rows+='<td>'+(e.eligible_regions||'')+'</td>';rows+='</tr>'}tbody.innerHTML=rows;document.getElementById('emptyState').style.display=items.length===0?'block':'none';var regionSel=document.getElementById('filterRegion');var curVal=regionSel.value;var regions={};for(var j=0;j<ACTIVE.length;j++){var r=ACTIVE[j].eligible_regions;if(r)regions[r]=true}for(var j=0;j<ARCHIVE.length;j++){var r=ARCHIVE[j].eligible_regions;if(r)regions[r]=true}var opts='<option value="">All regions</option>';var rkeys=Object.keys(regions).sort();for(var k=0;k<rkeys.length;k++){opts+='<option value="'+rkeys[k]+'"'+(rkeys[k]===curVal?' selected':'')+'>'+rkeys[k]+'</option>'}regionSel.innerHTML=opts}
-function findEntry(id){for(var i=0;i<ACTIVE.length;i++){if(ACTIVE[i].id===id)return ACTIVE[i]}for(var i=0;i<ARCHIVE.length;i++){if(ARCHIVE[i].id===id)return ARCHIVE[i]}return null}
-function openPanel(id){var e=findEntry(id);if(!e)return;document.getElementById('panelTitle').textContent=e.name;document.getElementById('panelDesc').textContent=e.description;document.getElementById('panelBroken').style.display=e.broken_url?'block':'none';var meta='';meta+='<div class="meta-item"><div class="label">Deadline</div><div class="value">'+e.deadline+'</div></div>';meta+='<div class="meta-item"><div class="label">Max Award</div><div class="value">'+(e.amount_notes||fmtAmount(e.amount_max_usd))+'</div></div>';meta+='<div class="meta-item"><div class="label">Region</div><div class="value">'+(e.eligible_regions||'\u2014')+'</div></div>';meta+='<div class="meta-item"><div class="label">Date Added</div><div class="value">'+e.date_added+'</div></div>';document.getElementById('panelMeta').innerHTML=meta;var notesDiv=document.getElementById('panelNotes');if(e.notes){notesDiv.textContent=e.notes;notesDiv.style.display='block'}else{notesDiv.style.display='none'}var linkBtn=document.getElementById('panelLink');linkBtn.href=e.url;linkBtn.className='link-btn'+(e.broken_url?' broken':'');document.getElementById('panel').classList.add('open');document.getElementById('panelOverlay').classList.add('open')}
-function closePanel(){document.getElementById('panel').classList.remove('open');document.getElementById('panelOverlay').classList.remove('open')}
-render();
+
+function fitStars(n) {
+  var color = {5:'var(--green)',4:'var(--accent)',3:'var(--yellow)',2:'var(--orange)',1:'var(--red)'}[n]||'#999';
+  var dots = '';
+  for (var i = 1; i <= 5; i++) {
+    dots += '<span class="fit-dot '+(i<=n?'on':'off')+'" style="background:'+color+'"></span>';
+  }
+  return '<span class="fit-badge fit-'+n+'">'+dots+' '+n+'</span>';
+}
+
+function deadlineBadge(d) {
+  if (d === 'rolling') return '<span class="dl-badge dl-teal">Rolling</span>';
+  if (d === 'TBC') return '<span class="dl-badge dl-yellow">TBC</span>';
+  var dl = new Date(d + 'T12:00:00');
+  var now = new Date();
+  now.setHours(12,0,0,0);
+  var diff = Math.ceil((dl - now) / 86400000);
+  if (diff < 0) return '<span class="dl-badge dl-grey">Passed</span>';
+  if (diff <= 60) return '<span class="dl-badge dl-green">' + diff + 'd left</span>';
+  var mo = Math.round(diff / 30);
+  return '<span class="dl-badge dl-blue">' + mo + 'mo &middot; ' + d + '</span>';
+}
+
+function fmtAmount(n) {
+  if (!n || n === 0) return '—';
+  if (n >= 1000000000) return '$' + (n/1000000000).toFixed(0) + 'B';
+  if (n >= 1000000) return '$' + (n/1000000).toFixed(0) + 'M';
+  if (n >= 1000) return '$' + (n/1000).toFixed(0) + 'K';
+  return '$' + n;
+}
+
+function getFiltered() {
+  var data;
+  if (currentTab === 'open') {
+    data = ACTIVE.filter(function(o) {
+      if (o.deadline === 'TBC') return false;
+      if (o.deadline !== 'rolling') {
+        var dl = new Date(o.deadline + 'T12:00:00');
+        var now = new Date(); now.setHours(12,0,0,0);
+        if (dl < now) return false;
+      }
+      return true;
+    });
+  } else if (currentTab === 'tbc') {
+    data = ACTIVE.filter(function(o) { return o.deadline === 'TBC'; });
+  } else {
+    data = ARCHIVE.slice();
+    // Also add any active with passed deadlines
+    ACTIVE.forEach(function(o) {
+      if (o.deadline !== 'rolling' && o.deadline !== 'TBC') {
+        var dl = new Date(o.deadline + 'T12:00:00');
+        var now = new Date(); now.setHours(12,0,0,0);
+        if (dl < now) data.push(o);
+      }
+    });
+  }
+  var q = document.getElementById('search').value.toLowerCase();
+  var ft = document.getElementById('filterType').value;
+  var ff = document.getElementById('filterFit').value;
+  var fr = document.getElementById('filterRegion').value;
+  return data.filter(function(o) {
+    if (q && (o.name + ' ' + o.organization + ' ' + o.description + ' ' + o.notes).toLowerCase().indexOf(q) === -1) return false;
+    if (ft && o.type !== ft) return false;
+    if (ff && o.thematic_fit < parseInt(ff)) return false;
+    if (fr && o.eligible_regions.toLowerCase().indexOf(fr.toLowerCase()) === -1) return false;
+    return true;
+  });
+}
+
+function renderTable() {
+  var rows = getFiltered();
+  var html = '';
+  for (var i = 0; i < rows.length; i++) {
+    var o = rows[i];
+    var newDot = o.status === 'new' ? '<span class="new-dot"></span>' : '';
+    var brokenBadge = o.broken_url ? '<div class="broken-badge">&#9888; link may be broken</div>' : '';
+    html += '<tr data-id="' + o.id + '" onclick="openPanel(this.dataset.id)">';
+    html += '<td>' + fitStars(o.thematic_fit) + '</td>';
+    html += '<td><div class="org-name">' + o.name + newDot + '</div><div class="org-sub">' + o.organization + brokenBadge + '</div></td>';
+    html += '<td>' + o.type + '</td>';
+    html += '<td class="amount">' + fmtAmount(o.amount_max_usd) + '</td>';
+    html += '<td>' + deadlineBadge(o.deadline) + '</td>';
+    html += '<td>' + o.eligible_regions + '</td>';
+    html += '</tr>';
+  }
+  document.getElementById('tbody').innerHTML = html;
+  updateBadges();
+}
+
+function updateBadges() {
+  var openCount = ACTIVE.filter(function(o) {
+    if (o.deadline === 'TBC') return false;
+    if (o.deadline !== 'rolling') {
+      var dl = new Date(o.deadline + 'T12:00:00');
+      var now = new Date(); now.setHours(12,0,0,0);
+      if (dl < now) return false;
+    }
+    return true;
+  }).length;
+  var tbcCount = ACTIVE.filter(function(o) { return o.deadline === 'TBC'; }).length;
+  var archCount = ARCHIVE.length;
+  ACTIVE.forEach(function(o) {
+    if (o.deadline !== 'rolling' && o.deadline !== 'TBC') {
+      var dl = new Date(o.deadline + 'T12:00:00');
+      var now = new Date(); now.setHours(12,0,0,0);
+      if (dl < now) archCount++;
+    }
+  });
+  document.getElementById('badge-open').textContent = openCount;
+  document.getElementById('badge-tbc').textContent = tbcCount;
+  document.getElementById('badge-archive').textContent = archCount;
+}
+
+function switchTab(tab) {
+  currentTab = tab;
+  var tabs = document.querySelectorAll('.tab');
+  for (var i = 0; i < tabs.length; i++) {
+    tabs[i].classList.toggle('active', tabs[i].getAttribute('data-tab') === tab);
+  }
+  renderTable();
+}
+
+function openPanel(id) {
+  var all = ACTIVE.concat(ARCHIVE);
+  var o = null;
+  for (var i = 0; i < all.length; i++) { if (all[i].id === id) { o = all[i]; break; } }
+  if (!o) return;
+  var h = '';
+  if (o.broken_url) h += '<div class="panel-broken-warn">&#9888; The link for this opportunity may be broken. Please verify the URL directly.</div>';
+  h += '<div class="panel-title">' + o.name + '</div>';
+  h += '<div class="panel-org">' + o.organization + '</div>';
+  h += '<div class="panel-desc">' + o.description + '</div>';
+  h += '<div class="panel-meta">';
+  h += '<div class="panel-meta-item"><div class="panel-meta-label">Deadline</div><div class="panel-meta-value">' + o.deadline + '</div></div>';
+  h += '<div class="panel-meta-item"><div class="panel-meta-label">Max Award</div><div class="panel-meta-value">' + (o.amount_notes || fmtAmount(o.amount_max_usd)) + '</div></div>';
+  h += '<div class="panel-meta-item"><div class="panel-meta-label">Region</div><div class="panel-meta-value">' + o.eligible_regions + '</div></div>';
+  h += '<div class="panel-meta-item"><div class="panel-meta-label">Date Added</div><div class="panel-meta-value">' + o.date_added + '</div></div>';
+  h += '</div>';
+  if (o.notes) h += '<div class="panel-notes">' + o.notes + '</div>';
+  h += '<a class="panel-link' + (o.broken_url ? ' broken' : '') + '" href="' + o.url + '" target="_blank" rel="noopener">Visit Opportunity &rarr;</a>';
+  document.getElementById('panel-content').innerHTML = h;
+  document.getElementById('panel').classList.add('open');
+}
+
+function closePanel() { document.getElementById('panel').classList.remove('open'); }
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closePanel(); });
+document.addEventListener('click', function(e) {
+  var panel = document.getElementById('panel');
+  if (panel.classList.contains('open') && !panel.contains(e.target) && !e.target.closest('tr')) closePanel();
+});
+
+renderTable();
 </script>
 </body>
 </html>

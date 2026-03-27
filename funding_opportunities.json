@@ -1,22 +1,5 @@
 [
   {
-    "id": "ibmImpactAcceleratorAIWorkforce2026",
-    "name": "IBM Impact Accelerator \u2014 Education & Workforce Development Cohort",
-    "organization": "IBM",
-    "type": "corporate",
-    "thematic_fit": 5,
-    "description": "Global RFP for nonprofits and research organisations to develop AI solutions for education and workforce development. Selected organisations (5 per cohort) receive two-year pro bono access to IBM watsonx, Granite AI models, IBM Cloud, and implementation support from IBM researchers and consultants.",
-    "url": "https://newsroom.ibm.com/2026-02-04-ibm-opens-global-rfp-for-ai-driven-solutions-shaping-the-future-of-work-and-education",
-    "amount_max_usd": 0,
-    "amount_notes": "Pro bono technology package; in-kind support including IBM tools and consulting (no cash grant)",
-    "deadline": "2026-03-25",
-    "eligible_regions": "global",
-    "date_added": "2026-03-15",
-    "status": "active",
-    "notes": "Deadline 25 March 2026 \u2014 apply immediately. Excellent fit for think tanks working on AI and workforce research. Global scope. Contact: impact.accelerator@ibm.com",
-    "broken_url": false
-  },
-  {
     "id": "googleOrgAIGovInnovation2026",
     "name": "Google.org Impact Challenge: AI for Government Innovation",
     "organization": "Google.org",
@@ -31,7 +14,7 @@
     "eligible_regions": "global",
     "date_added": "2026-03-17",
     "status": "active",
-    "broken_url": true,
+    "broken_url": false,
     "notes": "Economy is one of three priority pillars alongside health and resilience. Requires partnership with a government entity. Strong fit if project focuses on AI-driven workforce or economic opportunity via public services."
   },
   {
@@ -177,6 +160,24 @@
     "broken_url": false
   },
   {
+    "id": "openaiFoundationAIGrants2026",
+    "name": "OpenAI Foundation \u2014 AI for Humanity Grants",
+    "organization": "OpenAI Foundation",
+    "type": "corporate",
+    "thematic_fit": 4,
+    "description": "The OpenAI Foundation pledged $1 billion in grants over the next year to support AI for public benefit. Priorities include mitigating AI impacts on jobs, the economy, and mental health, as well as life science/health research. The first round (People-First AI Fund) awarded $40.5M to 208 US nonprofits; future open calls expected in 2026.",
+    "url": "https://openai.com/foundation/",
+    "contact": "",
+    "amount_max_usd": 1000000000,
+    "amount_notes": "$1B total pledge; individual grant sizes vary ($50K\u2013$500K in first round)",
+    "deadline": "TBC",
+    "eligible_regions": "US",
+    "date_added": "2026-03-27",
+    "status": "new",
+    "broken_url": false,
+    "notes": "First round closed Oct 2025. Foundation announced $1B commitment March 2026. Monitor openai.com/foundation for next open application cycle. Strong workforce/economic impact component."
+  },
+  {
     "id": "cooperativeAIFoundationGrants2025",
     "name": "Cooperative AI Foundation Research Grants",
     "organization": "Cooperative AI Foundation",
@@ -263,5 +264,23 @@
     "status": "active",
     "notes": "Invitation and nomination only \u2014 no open application. Monitor for nomination windows and build a relationship with Schmidt Sciences programme staff.",
     "broken_url": false
+  },
+  {
+    "id": "mcgovernFoundationAIPublicPurpose2026",
+    "name": "Patrick J. McGovern Foundation \u2014 AI for Public Purpose",
+    "organization": "Patrick J. McGovern Foundation",
+    "type": "foundation",
+    "thematic_fit": 3,
+    "description": "Annual grantmaking of ~$75M across 149 grants supporting AI and data solutions for public purpose, including digital literacy, workforce, crisis response, and climate resilience. Grants range from $100K to $1M+ and fund nonprofits, research institutions, and social enterprises globally.",
+    "url": "https://www.mcgovern.org/grants/",
+    "contact": "https://www.mcgovern.org/grants/",
+    "amount_max_usd": 1000000,
+    "amount_notes": "$100K\u2013$1M+; total annual spend ~$75M",
+    "deadline": "rolling",
+    "eligible_regions": "global",
+    "date_added": "2026-03-27",
+    "status": "new",
+    "broken_url": false,
+    "notes": "Proactive grantmaking model \u2014 foundation identifies and approaches partners, but unsolicited inquiries can be submitted via website. Workforce/labor is one of several focus areas alongside health equity, climate, journalism."
   }
 ]

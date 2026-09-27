@@ -15,7 +15,8 @@
     "date_added": "2026-03-14",
     "status": "active",
     "notes": "Most recent cycle closed Feb 2025; next RFP likely late 2026. Excellent thematic fit for think tank teams. Monitor equitablegrowth.org.",
-    "broken_url": false
+    "broken_url": false,
+    "category": "Economics of AI, labour & growth"
   },
   {
     "id": "gitlabFoundationAIEconomicOpp",
@@ -33,7 +34,8 @@
     "date_added": "2026-03-14",
     "status": "active",
     "notes": "2026 cohort (16 orgs) announced March 5, 2026. Next open call TBC. Open to nonprofits, not think tanks directly unless nonprofit-registered.",
-    "broken_url": false
+    "broken_url": false,
+    "category": "Economics of AI, labour & growth"
   },
   {
     "id": "humanityAIFund2026",
@@ -51,7 +53,8 @@
     "date_added": "2026-03-14",
     "status": "active",
     "notes": "The open call is due 21 Oct 2026 and is limited to US-based nonprofits, so European organisations are not eligible. Focus areas are education, labour & economy, and the humanities, arts & culture.",
-    "broken_url": false
+    "broken_url": false,
+    "category": "Economics of AI, labour & growth"
   },
   {
     "id": "siegelFamilyAIWorkforce2026",
@@ -69,7 +72,8 @@
     "date_added": "2026-03-15",
     "status": "active",
     "notes": "Siegel is a Humanity AI coalition member with an active research fellowship programme. Explicitly focused on worker agency in AI transformation. Contact directly for 2026 grant deadlines.",
-    "broken_url": false
+    "broken_url": false,
+    "category": "Economics of AI, labour & growth"
   },
   {
     "id": "openaiFoundationAIGrants2026",
@@ -87,7 +91,8 @@
     "date_added": "2026-03-27",
     "status": "new",
     "broken_url": false,
-    "notes": "First round closed Oct 2025. Foundation announced $1B commitment March 2026. Monitor openai.com/foundation for next open application cycle. Strong workforce/economic impact component."
+    "notes": "First round closed Oct 2025. Foundation announced $1B commitment March 2026. Monitor openai.com/foundation for next open application cycle. Strong workforce/economic impact component.",
+    "category": "AI governance, policy & society"
   },
   {
     "id": "cooperativeAIFoundationGrants2025",
@@ -105,7 +110,8 @@
     "date_added": "2026-03-14",
     "status": "active",
     "notes": "Rolling applications. Thematic overlap is indirect; strongest fit if research addresses cooperation in human-AI work systems.",
-    "broken_url": false
+    "broken_url": false,
+    "category": "AI safety & security"
   },
   {
     "id": "amazonResearchAwardsAI2026",
@@ -123,7 +129,8 @@
     "date_added": "2026-03-14",
     "status": "active",
     "notes": "Requires institutional affiliation (university or nonprofit research org). Applications reviewed in rolling cycles; check portal for current open areas.",
-    "broken_url": false
+    "broken_url": false,
+    "category": "AI governance, policy & society"
   },
   {
     "id": "googleOrgAIOpportunityFundUS",
@@ -141,7 +148,8 @@
     "date_added": "2026-03-14",
     "status": "active",
     "notes": "Not an open RFP \u2014 Google.org selects partners proactively. Engage through introductions or foundation relations. Excellent fit for AI workforce research with practical outputs.",
-    "broken_url": false
+    "broken_url": false,
+    "category": "Economics of AI, labour & growth"
   },
   {
     "id": "knightFoundationAIGovernanceFund2026",
@@ -158,7 +166,8 @@
     "date_added": "2026-03-15",
     "status": "active",
     "notes": "Rolling applications. Good fit for AI governance and policy research. Check knightfoundation.org for 2026 RFP details. May need to align with Knight's democracy and civics mission.",
-    "broken_url": false
+    "broken_url": false,
+    "category": "AI governance, policy & society"
   },
   {
     "id": "schmidtAI2050Fellowship",
@@ -175,7 +184,8 @@
     "date_added": "2026-03-15",
     "status": "active",
     "notes": "Invitation and nomination only \u2014 no open application. Monitor for nomination windows and build a relationship with Schmidt Sciences programme staff.",
-    "broken_url": false
+    "broken_url": false,
+    "category": "AI governance, policy & society"
   },
   {
     "id": "mcgovernFoundationAIPublicPurpose2026",
@@ -193,7 +203,8 @@
     "date_added": "2026-03-27",
     "status": "new",
     "broken_url": false,
-    "notes": "Proactive grantmaking model \u2014 foundation identifies and approaches partners, but unsolicited inquiries can be submitted via website. Workforce/labor is one of several focus areas alongside health equity, climate, journalism."
+    "notes": "Proactive grantmaking model \u2014 foundation identifies and approaches partners, but unsolicited inquiries can be submitted via website. Workforce/labor is one of several focus areas alongside health equity, climate, journalism.",
+    "category": "AI governance, policy & society"
   },
   {
     "id": "astralisMiddlePowersRFP2026",
@@ -211,7 +222,8 @@
     "notes": "Deadline Fri 23 Oct 2026, 23:59 PT. Individuals and organisations can apply. Astralis is a European funder with offices in Stockholm, London and Vienna. Reviews are rolling, so applying early helps. This is the strongest fit for European policy think tanks.",
     "date_added": "2026-09-27",
     "status": "new",
-    "broken_url": false
+    "broken_url": false,
+    "category": "AI governance, policy & society"
   },
   {
     "id": "coefficientProjectTailwind2026",
@@ -229,7 +241,8 @@
     "notes": "Expression of interest due 2 Oct 2026. Non-US teams are eligible, and pre-seed applicants do not need a legal entity. It suits a new initiative or spin-out rather than core funding for an existing programme. Strong candidates may be fast-tracked to a pitch meeting.",
     "date_added": "2026-09-27",
     "status": "new",
-    "broken_url": false
+    "broken_url": false,
+    "category": "AI safety & security"
   },
   {
     "id": "foresightAINodes2026Oct",
@@ -247,7 +260,8 @@
     "notes": "Deadline 31 Oct 2026, 23:59 PT; review takes about 3 months. Individuals, nonprofits and for-profits worldwide can apply. Applicants willing to work in person at a Node are strongly prioritised, and the Berlin node is convenient for European teams. Technical and tooling-heavy.",
     "date_added": "2026-09-27",
     "status": "new",
-    "broken_url": false
+    "broken_url": false,
+    "category": "AI safety & security"
   },
   {
     "id": "eaFundsTransformativeAIFund",
@@ -265,7 +279,8 @@
     "notes": "Always open and fast. Good for pilots, a single research project, or bridge funding. European nonprofits are eligible.",
     "date_added": "2026-09-27",
     "status": "new",
-    "broken_url": false
+    "broken_url": false,
+    "category": "AI governance, policy & society"
   },
   {
     "id": "sffRollingSpeculation2026",
@@ -283,7 +298,8 @@
     "notes": "You can apply even when no S-Process round is open. The 2026 main round closed 22 Apr 2026. Applying now positions you for the 2027 round. Check SFF's requirements for non-US charities or fiscal sponsorship.",
     "date_added": "2026-09-27",
     "status": "new",
-    "broken_url": false
+    "broken_url": false,
+    "category": "AI safety & security"
   },
   {
     "id": "anthropicEconomicFuturesAwards",
@@ -301,7 +317,8 @@
     "notes": "Rolling. Well suited to data-heavy think-tank work such as econometrics, new data collection, or labour-market analysis. The grants are small but decisions are quick.",
     "date_added": "2026-09-27",
     "status": "new",
-    "broken_url": false
+    "broken_url": false,
+    "category": "Economics of AI, labour & growth"
   },
   {
     "id": "eicPathfinderDeepRAP2026",
@@ -319,7 +336,8 @@
     "notes": "Deadline 28 Oct 2026, 17:00 CEST. Nonprofit research organisations in EU and associated countries can apply. Check the call text for consortium rules. The work is technical and research-heavy, so it fits nonprofits with ML research capacity rather than policy shops.",
     "date_added": "2026-09-27",
     "status": "new",
-    "broken_url": false
+    "broken_url": false,
+    "category": "AI safety & security"
   },
   {
     "id": "mercorAISafetyFund2026",
@@ -337,7 +355,8 @@
     "notes": "Start with a focused expression of interest. The fund is aimed at small teams with well-scoped research that will be published. The official application page was not verified directly, so confirm the details via AISafety.com/funding.",
     "date_added": "2026-09-27",
     "status": "new",
-    "broken_url": false
+    "broken_url": false,
+    "category": "AI safety & security"
   },
   {
     "id": "nuffieldMainGrantsOct2026",
@@ -355,7 +374,8 @@
     "notes": "Outline application due 5 Oct 2026. Projects must aim to improve lives in the UK, so this suits UK-based think tanks only.",
     "date_added": "2026-09-27",
     "status": "new",
-    "broken_url": false
+    "broken_url": false,
+    "category": "Open-topic research & civil society funding"
   },
   {
     "id": "digitalFreedomFundCall2026",
@@ -373,7 +393,8 @@
     "notes": "The next call is expected to open in late Nov 2026 and close mid-Feb 2027 (exact dates TBC). Digital-rights NGOs, pro bono lawyers and litigators in Europe can apply. It suits AI-accountability and legal-research organisations.",
     "date_added": "2026-09-27",
     "status": "new",
-    "broken_url": false
+    "broken_url": false,
+    "category": "Democracy, rights & media"
   },
   {
     "id": "prototypeFundNov2026",
@@ -391,7 +412,8 @@
     "notes": "Due 30 Nov 2026. Open to individuals and small teams based in Germany, not established organisations. Useful for staff-led open data or AI tooling spin-offs. Individual eligibility rules and grant sizes were not verified directly.",
     "date_added": "2026-09-27",
     "status": "new",
-    "broken_url": false
+    "broken_url": false,
+    "category": "Open source & digital commons"
   },
   {
     "id": "coefficientCapacityBuildingTAI",
@@ -409,7 +431,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://coefficientgiving.org/funds/navigating-transformative-ai/funding-for-work-that-builds-capacity-to-address-risks-from-transformative-ai/"
+    "contact": "https://coefficientgiving.org/funds/navigating-transformative-ai/funding-for-work-that-builds-capacity-to-address-risks-from-transformative-ai/",
+    "category": "AI governance, policy & society"
   },
   {
     "id": "ariaSafeguardedAICyber2026",
@@ -427,7 +450,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://aria.org.uk/opportunity-spaces/trust-everything-everywhere/safeguarded-ai/funding"
+    "contact": "https://aria.org.uk/opportunity-spaces/trust-everything-everywhere/safeguarded-ai/funding",
+    "category": "AI safety & security"
   },
   {
     "id": "ariaScalingTrust2026",
@@ -445,7 +469,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://aria.org.uk/opportunity-spaces/trust-everything-everywhere/scaling-trust/funding"
+    "contact": "https://aria.org.uk/opportunity-spaces/trust-everything-everywhere/scaling-trust/funding",
+    "category": "AI safety & security"
   },
   {
     "id": "manifundAISafetyRegranting",
@@ -463,7 +488,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://manifund.org/about/regranting"
+    "contact": "https://manifund.org/about/regranting",
+    "category": "AI safety & security"
   },
   {
     "id": "aiAlignmentFoundationLOI",
@@ -481,7 +507,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://www.aialignmentfoundation.org/approach/apply"
+    "contact": "https://www.aialignmentfoundation.org/approach/apply",
+    "category": "AI safety & security"
   },
   {
     "id": "openaiSafetyResearchGrants2026",
@@ -499,7 +526,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://aisafety.com/funding"
+    "contact": "https://aisafety.com/funding",
+    "category": "AI safety & security"
   },
   {
     "id": "horizonCL3FCT02GenAIMisuse2026",
@@ -517,7 +545,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://eufundingportal.eu/call-for-proposals-to-support-the-prevention-and-countering-of-the-misuse-of-emerging-technologies-for-criminal-purposes/"
+    "contact": "https://eufundingportal.eu/call-for-proposals-to-support-the-prevention-and-countering-of-the-misuse-of-emerging-technologies-for-criminal-purposes/",
+    "category": "AI safety & security"
   },
   {
     "id": "costOpenCall2026",
@@ -535,7 +564,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://www.cost.eu/funding/open-call-a-simple-one-step-application-process/"
+    "contact": "https://www.cost.eu/funding/open-call-a-simple-one-step-application-process/",
+    "category": "Open-topic research & civil society funding"
   },
   {
     "id": "raiseDoctoralNetworks2026",
@@ -553,7 +583,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://cordis.europa.eu/programme/id/HORIZON_HORIZON-RAISE-2026-01-03"
+    "contact": "https://cordis.europa.eu/programme/id/HORIZON_HORIZON-RAISE-2026-01-03",
+    "category": "AI for science, data & compute"
   },
   {
     "id": "nlnetRestack2026",
@@ -571,7 +602,8 @@
     "notes": "Deadline 3 Nov 2026, 12:00 CET. This replaces the NGI Zero Commons Fund, which closed in June 2026. It suits nonprofits that build open-source data or AI tooling. A sister CodeSupply call (software supply-chain security) has the same deadline.",
     "date_added": "2026-09-27",
     "status": "new",
-    "broken_url": false
+    "broken_url": false,
+    "category": "Open source & digital commons"
   },
   {
     "id": "nlnetCodeSupply2026",
@@ -589,7 +621,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://nlnet.nl/codesupply/"
+    "contact": "https://nlnet.nl/codesupply/",
+    "category": "Open source & digital commons"
   },
   {
     "id": "braidFellowships2027",
@@ -607,7 +640,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://braiduk.org/research-fellowships"
+    "contact": "https://braiduk.org/research-fellowships",
+    "category": "AI governance, policy & society"
   },
   {
     "id": "waspHsDdlsInitiation2026",
@@ -625,7 +659,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://wasp-hs.org/open-call-research-initiation-grants-for-data-driven-life-sciences-and-society-2026/"
+    "contact": "https://wasp-hs.org/open-call-research-initiation-grants-for-data-driven-life-sciences-and-society-2026/",
+    "category": "AI for science, data & compute"
   },
   {
     "id": "digitalEuropeAIData10Compliance",
@@ -643,7 +678,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details-tr/DIGITAL-2026-AI-DATA-10-COMPLIANCE"
+    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details-tr/DIGITAL-2026-AI-DATA-10-COMPLIANCE",
+    "category": "Applied & sectoral AI"
   },
   {
     "id": "anthropicAIForScienceCredits",
@@ -661,7 +697,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://support.claude.com/en/articles/11199177-anthropic-s-ai-for-science-program"
+    "contact": "https://support.claude.com/en/articles/11199177-anthropic-s-ai-for-science-program",
+    "category": "AI for science, data & compute"
   },
   {
     "id": "checksAndBalancesRFP2026",
@@ -679,7 +716,8 @@
     "notes": "Open through the end of 2026 (the exact close date is not published). The application is light: a 120-word team blurb plus a 400-word pitch, with a reply within 2\u20134 weeks. It explicitly covers coordinating democratic middle powers, so it pairs naturally with the Astralis Middle Powers RFP. Among this round's finds, it is the best fit for European AI-policy think tanks.",
     "date_added": "2026-09-27",
     "status": "new",
-    "broken_url": false
+    "broken_url": false,
+    "category": "AI governance, policy & society"
   },
   {
     "id": "stiftungMercatorOutlines",
@@ -697,7 +735,8 @@
     "notes": "Rolling: submit a short project outline. The strongest fit is for German or European organisations whose work ties into Mercator's strategy. Also check the calls page for time-limited calls.",
     "date_added": "2026-09-27",
     "status": "new",
-    "broken_url": false
+    "broken_url": false,
+    "category": "AI governance, policy & society"
   },
   {
     "id": "sloanExploratoryTech",
@@ -715,7 +754,8 @@
     "notes": "Rolling: email a letter of inquiry of up to 2 pages to technology@sloan.org. It is open to universities, research institutes and nonprofits, and international applicants may be considered. It suits data-heavy metascience or AI-in-research projects more than policy work.",
     "date_added": "2026-09-27",
     "status": "new",
-    "broken_url": false
+    "broken_url": false,
+    "category": "AI for science, data & compute"
   },
   {
     "id": "fliDigitalMediaAccelerator",
@@ -733,7 +773,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://futureoflife.org/project/digital-media-accelerator/"
+    "contact": "https://futureoflife.org/project/digital-media-accelerator/",
+    "category": "AI governance, policy & society"
   },
   {
     "id": "iliadOpenCall",
@@ -751,7 +792,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://www.iliad.ac/"
+    "contact": "https://www.iliad.ac/",
+    "category": "AI safety & security"
   },
   {
     "id": "heCL4_2027_FrontierAI11",
@@ -769,7 +811,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://topictree.ideal-ist.eu/topic/7057"
+    "contact": "https://topictree.ideal-ist.eu/topic/7057",
+    "category": "AI safety & security"
   },
   {
     "id": "heCL4_2027_AIAdoption01",
@@ -787,7 +830,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-7-digital-industry-and-space_horizon-2026-2027_en.pdf"
+    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-7-digital-industry-and-space_horizon-2026-2027_en.pdf",
+    "category": "AI safety & security"
   },
   {
     "id": "heCL4_2027_ApplyAIBooster04",
@@ -805,7 +849,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://topictree.ideal-ist.eu/topic/7054"
+    "contact": "https://topictree.ideal-ist.eu/topic/7054",
+    "category": "Applied & sectoral AI"
   },
   {
     "id": "heCL4_2027_IntlCoopAI06",
@@ -823,7 +868,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://topictree.ideal-ist.eu/topic/7053"
+    "contact": "https://topictree.ideal-ist.eu/topic/7053",
+    "category": "AI governance, policy & society"
   },
   {
     "id": "heCL2_2027_Democracy04",
@@ -841,7 +887,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://fasi.eu/en/grants/49cf70f1-53a1-353b-8e73-218782ded5e6"
+    "contact": "https://fasi.eu/en/grants/49cf70f1-53a1-353b-8e73-218782ded5e6",
+    "category": "Democracy, rights & media"
   },
   {
     "id": "heCL2_2027_Transfo05AIEducation",
@@ -859,7 +906,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://fasi.eu/en/grants/420183f9-a97e-3b72-b1d5-8cedf93c40b6"
+    "contact": "https://fasi.eu/en/grants/420183f9-a97e-3b72-b1d5-8cedf93c40b6",
+    "category": "Applied & sectoral AI"
   },
   {
     "id": "heCL2_2027_AI4Creatives",
@@ -877,7 +925,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://www.timemachine.eu/funding-opts/horizon-cl2-2027-01-heritage-02-ai4creatives-support-platform-embracing-a-fair-ai-revolution/"
+    "contact": "https://www.timemachine.eu/funding-opts/horizon-cl2-2027-01-heritage-02-ai4creatives-support-platform-embracing-a-fair-ai-revolution/",
+    "category": "Applied & sectoral AI"
   },
   {
     "id": "heCL3_2027_AIforCyber",
@@ -895,7 +944,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-6-civil-security-for-society_horizon-2026-2027_en.pdf"
+    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-6-civil-security-for-society_horizon-2026-2027_en.pdf",
+    "category": "AI safety & security"
   },
   {
     "id": "eurostarsCall12",
@@ -913,7 +963,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://www.eurekanetwork.org/programmes-and-calls/eurostars/eurostars-call-12-for-projects-deadline-march-2027/"
+    "contact": "https://www.eurekanetwork.org/programmes-and-calls/eurostars/eurostars-call-12-for-projects-deadline-march-2027/",
+    "category": "Open-topic research & civil society funding"
   },
   {
     "id": "jrrtDemocracyGrants",
@@ -931,6 +982,957 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://www.jrrt.org.uk/apply-for-a-grant/"
+    "contact": "https://www.jrrt.org.uk/apply-for-a-grant/",
+    "category": "Democracy, rights & media"
+  },
+  {
+    "id": "coefficientAbundanceGrowth",
+    "name": "Abundance & Growth Fund \u2014 Unsolicited Proposals",
+    "organization": "Coefficient Giving (with Good Ventures, Patrick Collison and others)",
+    "type": "foundation",
+    "thematic_fit": 5,
+    "description": "A $120M, three-year fund to accelerate economic growth and scientific and technological progress. In 2026 it prioritises innovation policy, energy, clinical trials, housing and state capacity. It accepts unsolicited proposals for policy-change work in the US and other high-income countries.",
+    "url": "https://coefficientgiving.org/funds/abundance-and-growth/apply-for-a-grant-from-the-abundance-and-growth-fund/",
+    "amount_notes": "$120M over 3 years; grant sizes vary",
+    "deadline": "rolling",
+    "eligible_regions": "global (US + other high-income countries, incl. EU/UK)",
+    "notes": "Rolling. The best single fit for European think tanks working on innovation policy, R&D funding reform, science and permitting reform, or state capacity. Coefficient's living-literature-reviews call closed 1 Jul 2026.",
+    "category": "R&I economics, science policy & metascience",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://coefficientgiving.org/funds/abundance-and-growth/apply-for-a-grant-from-the-abundance-and-growth-fund/",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "iglSeedGrants2026",
+    "name": "Innovation Growth Lab (IGL) Seed Grants \u2014 Experimental Research on Innovation & Productivity",
+    "organization": "Innovation Growth Lab (Nesta), funded by the Alfred P. Sloan Foundation",
+    "type": "foundation",
+    "thematic_fit": 4,
+    "description": "Small grants to design and pilot experimental research (leading to randomised trials) on science, innovation, entrepreneurship and productivity policy. Findings should be relevant to the US or other OECD countries.",
+    "url": "https://www.innovationgrowthlab.org/about/research-network/seed-grants",
+    "amount_notes": "Typically up to \u00a35,000; up to 8 grants, at least 2 reserved for early-career researchers",
+    "deadline": "TBC",
+    "eligible_regions": "global (OECD relevance)",
+    "notes": "The next round opens in autumn 2026 (dates TBC). Small money, but it is an entry point into the IGL network and to later, larger RCT funding.",
+    "category": "R&I economics, science policy & metascience",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.innovationgrowthlab.org/about/research-network/seed-grants",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "nberMedicalInnovationCall",
+    "name": "NBER \u2014 Assessing the US Medical Innovation System (Call for Proposals)",
+    "organization": "National Bureau of Economic Research (NBER)",
+    "type": "research_institution",
+    "thematic_fit": 3,
+    "description": "An NBER call for research proposals on how the US medical innovation system performs, covering R&D incentives, drug and device development, and returns to biomedical research.",
+    "url": "https://www.nber.org/calls-papers-and-proposals",
+    "amount_notes": "See call text",
+    "deadline": "2026-11-02",
+    "eligible_regions": "global (US-system focus)",
+    "notes": "Closes 2 Nov 2026. NBER calls usually welcome non-affiliated and international researchers, but check the call. Relevant for innovation economists who can study US data.",
+    "category": "R&I economics, science policy & metascience",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.nber.org/calls-papers-and-proposals",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "nberAgFoodInnovationCall",
+    "name": "NBER \u2014 Innovation in the Agricultural and Food System (Call for Proposals)",
+    "organization": "National Bureau of Economic Research (NBER)",
+    "type": "research_institution",
+    "thematic_fit": 2,
+    "description": "An NBER call for economic research on innovation in agriculture and food: R&D, technology adoption, and productivity.",
+    "url": "https://www.nber.org/calls-papers-and-proposals",
+    "amount_notes": "See call text",
+    "deadline": "2027-02-15",
+    "eligible_regions": "global",
+    "notes": "Closes 15 Feb 2027. Relevant for R&I economists working on sectoral innovation and productivity.",
+    "category": "R&I economics, science policy & metascience",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.nber.org/calls-papers-and-proposals",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "emergentVentures",
+    "name": "Emergent Ventures (incl. Science Policy & Communication Tranche)",
+    "organization": "Mercatus Center (Tyler Cowen), with Renaissance Philanthropy",
+    "type": "foundation",
+    "thematic_fit": 3,
+    "description": "Fast grants and fellowships for ambitious people and projects. A 2026 tranche is dedicated to science policy and science communication, and AI projects are also funded.",
+    "url": "https://mercatus.tfaforms.net/5099527",
+    "amount_notes": "Typically $1k\u2013$50k; guaranteed response in 2\u20133 weeks",
+    "deadline": "rolling",
+    "eligible_regions": "global",
+    "notes": "Rolling. Good for a quick-start science-policy or innovation-economics project, a data project, or an early-career researcher on your team.",
+    "category": "R&I economics, science policy & metascience",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://mercatus.tfaforms.net/5099527",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "digitalScienceCatalyst2026",
+    "name": "Digital Science Catalyst Grant 2026 \u2014 Trustworthy Agentic AI for Research Workflows",
+    "organization": "Digital Science",
+    "type": "corporate",
+    "thematic_fit": 3,
+    "description": "Funds trustworthy agentic AI tools that support research, such as discovery, evidence synthesis, peer review, funding decisions and research integrity, with audit trails and provenance built in.",
+    "url": "https://www.digital-science.com/press-releases/digital-science-2026-catalyst-grant-agentic-ai-workflows-you-can-trust/",
+    "amount_max_usd": 32000,
+    "amount_notes": "Up to \u00a325,000",
+    "deadline": "2026-10-05",
+    "eligible_regions": "global",
+    "notes": "Due 5 Oct 2026, 17:00 BST. Open to individuals, research teams and start-ups worldwide; a well-formed concept is enough. Fits metascience and research-assessment work that uses AI.",
+    "category": "R&I economics, science policy & metascience",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.digital-science.com/press-releases/digital-science-2026-catalyst-grant-agentic-ai-workflows-you-can-trust/"
+  },
+  {
+    "id": "heWidera2027ERA",
+    "name": "Horizon Europe WIDERA 2027 \u2014 ERA Policy Topics (Open-Access IPR Retention, Talent Ecosystems, Public Engagement in R&I)",
+    "organization": "European Commission (Horizon Europe) \u2014 Widening & ERA",
+    "type": "government",
+    "thematic_fit": 3,
+    "description": "2027 topics under 'Reforming and enhancing the European R&I system': institutional open-access policies through rights retention (ERA-01, ~\u20ac2M), talent ecosystems for early research careers (ERA-02, \u20ac2\u20134M \u00d7 up to 12), and public engagement and scientific literacy (ERA-04).",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-11-widening-participation-and-strengthening-the-european-research-area_horizon-2026-2027_en.pdf",
+    "amount_notes": "\u20ac2M\u2013\u20ac4M per project depending on topic",
+    "deadline": "TBC",
+    "eligible_regions": "EU / Horizon Europe associated countries",
+    "notes": "UPCOMING in 2027; topic dates not yet confirmed (one WIDERA 2027 call opens 8 Dec 2026 and closes 11 Mar 2027). The most direct EU funding line for research on R&I policy. The 2026 'Advancing Knowledge for ERA' topic (ERA-08, up to 8 \u00d7 \u20ac1.5\u20132.5M) shows the kind of work funded.",
+    "category": "R&I economics, science policy & metascience",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-11-widening-participation-and-strengthening-the-european-research-area_horizon-2026-2027_en.pdf",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "heCL4_2027_Foresight10",
+    "name": "Horizon Europe CL4 2027 \u2014 Horizon Scanning & Foresight in Future Enabling Digital Technologies (DIGITAL-EMERGING-10)",
+    "organization": "European Commission (Horizon Europe)",
+    "type": "government",
+    "thematic_fit": 4,
+    "description": "A Coordination & Support Action to set up a European forum for foresight on emerging interdisciplinary technologies and their industrial, societal and environmental potential, linked to national and regional initiatives.",
+    "url": "https://topictree.ideal-ist.eu/topic/7059",
+    "amount_max_usd": 4400000,
+    "amount_notes": "\u20ac4M, one grant",
+    "deadline": "2027-03-18",
+    "eligible_regions": "EU / Horizon Europe associated countries",
+    "notes": "UPCOMING: opens 17 Nov 2026, deadline 18 Mar 2027. A natural lead or partner role for technology-foresight and innovation-policy think tanks.",
+    "category": "R&I economics, science policy & metascience",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://topictree.ideal-ist.eu/topic/7059"
+  },
+  {
+    "id": "heCL2_2027_Transfo03",
+    "name": "Horizon Europe CL2 2027 \u2014 Rethinking Sustainable Competitiveness: Role of the Social Economy (TRANSFO-03)",
+    "organization": "European Commission (Horizon Europe) Cluster 2",
+    "type": "government",
+    "thematic_fit": 3,
+    "description": "Research on competitiveness beyond traditional measures, including the social economy's contribution to productivity, innovation and resilient growth in Europe.",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
+    "amount_notes": "See work programme (typically \u20ac3\u20134M per project)",
+    "deadline": "2027-09-23",
+    "eligible_regions": "EU / Horizon Europe associated countries",
+    "notes": "UPCOMING: the CL2-2027-01 call opens 13 May 2027, deadline 23 Sep 2027. Relevant for growth, competitiveness and industrial-policy economists.",
+    "category": "R&I economics, science policy & metascience",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "ceprSTEGReCIPE",
+    "name": "CEPR STEG & ReCIPE Research Grants (Structural Transformation & Growth; Conflict & Economic Performance)",
+    "organization": "CEPR (funded by FCDO)",
+    "type": "research_institution",
+    "thematic_fit": 3,
+    "description": "Competitive research grants on structural transformation and growth (STEG) and on conflict, growth and public policy (ReCIPE). Tiers: small or compact grants of \u00a310\u201325k, larger grants up to \u00a3100k, and PhD grants up to \u00a315k.",
+    "url": "https://cepr.org/sixth-call-proposals-steg-larger-research-grants",
+    "amount_max_usd": 130000,
+    "amount_notes": "\u00a310k\u2013\u00a3100k depending on tier",
+    "deadline": "TBC",
+    "eligible_regions": "global (low- and middle-income country focus)",
+    "notes": "The 2026 calls closed in Jan\u2013Feb 2026. If the cycle repeats, the next calls would open around Dec 2026 with January 2027 deadlines, so watch cepr.org. Growth economics with a development focus.",
+    "category": "R&I economics, science policy & metascience",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://cepr.org/sixth-call-proposals-steg-larger-research-grants"
+  },
+  {
+    "id": "hansBoecklerResearch",
+    "name": "Hans-B\u00f6ckler-Stiftung \u2014 Research Funding (Digitalisation, AI & Co-determination)",
+    "organization": "Hans-B\u00f6ckler-Stiftung (German Trade Union Confederation foundation)",
+    "type": "foundation",
+    "thematic_fit": 4,
+    "description": "Research funding on work, co-determination and the economy, including the research cluster 'Digitalisation, co-determination, good work' on how AI and digital technology reshape jobs and workplace governance.",
+    "url": "https://www.boeckler.de/de/forschungsfoerderung-beantragen-2742.htm",
+    "amount_notes": "Project-dependent",
+    "deadline": "rolling",
+    "eligible_regions": "EU (Germany focus)",
+    "notes": "Project outlines are reviewed three times a year; check the site for the next cut-off. The 2026 cycle's first cut-off was 5 Jan 2026. It suits labour-economics and AI-at-work research with German or European relevance.",
+    "category": "Economics of AI, labour & growth",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.boeckler.de/de/forschungsfoerderung-beantragen-2742.htm",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "eurofoundAlgoMgmtTender2026",
+    "name": "Eurofound Tender \u2014 Case Studies on Algorithmic Management in European Workplaces",
+    "organization": "Eurofound (EU agency)",
+    "type": "government",
+    "thematic_fit": 4,
+    "description": "An open procurement for case-study research on how algorithmic management and AI tools are used in European workplaces, and their effects on job quality and working conditions.",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-tenders",
+    "amount_notes": "Service contract; budget in tender documents (a comparable 2026 Eurofound AI tender was \u20ac220k)",
+    "deadline": "2026-11-30",
+    "eligible_regions": "EU",
+    "notes": "Ref. EUROFOUND/2026/MVP/0013-EXA; deadline 30 Nov 2026. This is a tender, not a grant, but research institutes and nonprofits can bid, often in consortium. It pays for directly policy-relevant fieldwork.",
+    "category": "Economics of AI, labour & growth",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-tenders",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "ihsAIWorkforce2027",
+    "name": "IHS AI & the Workforce Faculty Research Grants 2027",
+    "organization": "Institute for Humane Studies (IHS)",
+    "type": "foundation",
+    "thematic_fit": 3,
+    "description": "Research grants on how AI affects employment, productivity, occupational change, economic opportunity and innovation. Outputs can be papers, policy white papers or shareable datasets.",
+    "url": "https://theihs.org/ai-and-the-workforce",
+    "amount_max_usd": 20000,
+    "amount_notes": "Up to $20,000 (larger in exceptional cases)",
+    "deadline": "2026-12-15",
+    "eligible_regions": "global? (check; aimed at academic scholars)",
+    "notes": "Due 15 Dec 2026; decisions 15 Jan 2027. International eligibility was not confirmed, and the grant targets faculty, so it may only fit think-tank staff with academic affiliations.",
+    "category": "Economics of AI, labour & growth",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://theihs.org/ai-and-the-workforce"
+  },
+  {
+    "id": "heCL2_2027_Transfo02",
+    "name": "Horizon Europe CL2 2027 \u2014 Impact of In-kind Benefits on Income Distribution and Vulnerable Populations (TRANSFO-02)",
+    "organization": "European Commission (Horizon Europe) Cluster 2",
+    "type": "government",
+    "thematic_fit": 3,
+    "description": "Research on how in-kind benefits such as housing, health, education and childcare affect income distribution and poverty, including measurement and data.",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
+    "amount_notes": "See work programme",
+    "deadline": "2027-09-23",
+    "eligible_regions": "EU / Horizon Europe associated countries",
+    "notes": "UPCOMING: opens 13 May 2027, deadline 23 Sep 2027. Data-heavy distributional economics.",
+    "category": "Economics of AI, labour & growth",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "heCL2_2027_Transfo04",
+    "name": "Horizon Europe CL2 2027 \u2014 Impact of EU Labour Mobility on Member States (TRANSFO-04)",
+    "organization": "European Commission (Horizon Europe) Cluster 2",
+    "type": "government",
+    "thematic_fit": 2,
+    "description": "Research on the economic and social effects of labour mobility within the EU on sending and receiving Member States.",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
+    "amount_max_usd": 4400000,
+    "amount_notes": "~\u20ac3\u20134M per project, up to 3 projects",
+    "deadline": "2027-09-23",
+    "eligible_regions": "EU / Horizon Europe associated countries",
+    "notes": "UPCOMING: opens 13 May 2027, deadline 23 Sep 2027. Labour economics.",
+    "category": "Economics of AI, labour & growth",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf"
+  },
+  {
+    "id": "heCL2_2027_Transfo06",
+    "name": "Horizon Europe CL2 2027 \u2014 Closing the Learning Gap: Declining Youth Skills (TRANSFO-06)",
+    "organization": "European Commission (Horizon Europe) Cluster 2",
+    "type": "government",
+    "thematic_fit": 2,
+    "description": "Research on the causes of declining youth skills in mathematics, reading and science, and on effective policy responses. Relevant to human-capital and productivity debates.",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
+    "amount_notes": "See work programme",
+    "deadline": "2027-09-23",
+    "eligible_regions": "EU / Horizon Europe associated countries",
+    "notes": "UPCOMING: opens 13 May 2027, deadline 23 Sep 2027.",
+    "category": "Economics of AI, labour & growth",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "friendsProvidentFoundation",
+    "name": "Friends Provident Foundation \u2014 New Economy Infrastructure & Transforming Financial Systems",
+    "organization": "Friends Provident Foundation",
+    "type": "foundation",
+    "thematic_fit": 2,
+    "description": "Grants for work towards a fairer economic system in the UK, through two strands: New Economy Infrastructure and Transforming Financial Systems.",
+    "url": "https://friendsprovidentfoundation.org/grants/",
+    "amount_notes": "~\u00a3250k allocated per trustee meeting across all applicants",
+    "deadline": "rolling",
+    "eligible_regions": "UK",
+    "notes": "Applications are reviewed at trustee meetings. The budget is tight (under \u00a31M a year). Only for UK economic-policy organisations.",
+    "category": "Economics of AI, labour & growth",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://friendsprovidentfoundation.org/grants/",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "microsoftAIEINextCall",
+    "name": "Microsoft AI Economy Institute (AIEI) \u2014 Research Open Calls",
+    "organization": "Microsoft Research \u2014 AI Economy Institute",
+    "type": "corporate",
+    "thematic_fit": 3,
+    "description": "Global research calls on AI and the economy. Open Call 3 (2026) covered 'frontier firms' and the reorganisation of work; earlier cohorts received about $75k grants.",
+    "url": "https://www.microsoft.com/en-us/research/group/aiei/aiei-open-call-3/",
+    "amount_max_usd": 75000,
+    "amount_notes": "~$75k in earlier cohorts",
+    "deadline": "TBC",
+    "eligible_regions": "global (university or research-institution PIs)",
+    "notes": "Open Call 3 has been awarded (its cohort was announced in Jul 2026), and no next call has been announced. PIs must hold a PhD held for at least 3 years at an accredited research institution. Watch for a fourth call.",
+    "category": "Economics of AI, labour & growth",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.microsoft.com/en-us/research/group/aiei/aiei-open-call-3/"
+  },
+  {
+    "id": "openaiEconResearchExchangeNext",
+    "name": "OpenAI Economic Research Exchange \u2014 Next Round",
+    "organization": "OpenAI",
+    "type": "corporate",
+    "thematic_fit": 3,
+    "description": "Project-based collaborations producing independent evidence on AI's effects on workers, firms and the economy. Includes a $25k grant, $7,500 a month for a research assistant, and privacy-protected access to OpenAI usage data.",
+    "url": "https://openai.com/economic-research-exchange/",
+    "amount_notes": "$25k grant + $7.5k/month RA stipend + data access",
+    "deadline": "TBC",
+    "eligible_regions": "global",
+    "notes": "The summer 2026 round closed 5 Jul 2026, and no next round has been announced; sign up for updates. The data access is uniquely valuable for data-heavy AI-economics teams.",
+    "category": "Economics of AI, labour & growth",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://openai.com/economic-research-exchange/",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "heCL4_2027_Standards07",
+    "name": "Horizon Europe CL4 2027 \u2014 European Stakeholder Engagement in International Digital Standardisation (HUMAN-07)",
+    "organization": "European Commission (Horizon Europe)",
+    "type": "government",
+    "thematic_fit": 4,
+    "description": "A Coordination & Support Action to strengthen European participation in international digital and AI standard-setting, promote EU values, train experts from SMEs, academia, open-source and civil society, and map standardisation gaps.",
+    "url": "https://topictree.ideal-ist.eu/topic/7052",
+    "amount_max_usd": 7700000,
+    "amount_notes": "~\u20ac7M, one project",
+    "deadline": "2027-03-18",
+    "eligible_regions": "EU / Horizon Europe associated countries",
+    "notes": "UPCOMING: opens 17 Nov 2026, deadline 18 Mar 2027. Directly relevant to AI Act harmonised standards and international AI governance, and a good fit for policy nonprofits in a consortium.",
+    "category": "AI governance, policy & society",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://topictree.ideal-ist.eu/topic/7052"
+  },
+  {
+    "id": "bmftrGenAIHumanitiesSocial",
+    "name": "BMFTR \u2014 Generative AI as a Subject of Humanities & Social Science Research",
+    "organization": "German Federal Ministry of Research, Technology and Space (BMFTR)",
+    "type": "government",
+    "thematic_fit": 4,
+    "description": "German federal funding for humanities and social-science research on generative AI: its societal, ethical, economic, political and philosophical implications.",
+    "url": "https://www.bmftr.bund.de/SharedDocs/Bekanntmachungen/DE/2026/08/2026-08-25-bekanntmachung-ki-gsw.html",
+    "amount_notes": "Per the funding guideline",
+    "deadline": "2026-11-30",
+    "eligible_regions": "EU (Germany-based applicants)",
+    "notes": "Two stages: project outlines (up to 12 pages) are due 30 Nov 2026, and later submissions go to the 2028 round. Open to German universities and non-university research institutions, including nonprofit institutes.",
+    "category": "AI governance, policy & society",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.bmftr.bund.de/SharedDocs/Bekanntmachungen/DE/2026/08/2026-08-25-bekanntmachung-ki-gsw.html",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "coefficientGCRProgramsEvents",
+    "name": "Coefficient Giving \u2014 Funding for Programs & Events on Global Catastrophic Risk, AI & Epistemics",
+    "organization": "Coefficient Giving",
+    "type": "foundation",
+    "thematic_fit": 3,
+    "description": "Rolling grants for fellowships, internships, residencies, courses, seminars, conferences, workshops and retreats on AI risk, AI for epistemics, forecasting, biosecurity and related topics.",
+    "url": "https://coefficientgiving.org/funds/global-catastrophic-risks-opportunities/funding-for-programs-and-events-on-global-catastrophic-risk-effective-altruism-and-other-topics/",
+    "amount_notes": "Varies by event or programme",
+    "deadline": "rolling",
+    "eligible_regions": "global (incl. EU/UK)",
+    "notes": "Rolling. Useful for funding a European convening, summer school or fellowship on AI governance. Coefficient's separate Forecasting Fund closed on 30 Mar 2026.",
+    "category": "AI governance, policy & society",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://coefficientgiving.org/funds/global-catastrophic-risks-opportunities/funding-for-programs-and-events-on-global-catastrophic-risk-effective-altruism-and-other-topics/",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "robertBoschOpenCallAI2026",
+    "name": "Robert Bosch Stiftung \u2014 Open Call / Project Funding (2026 Focus: AI for the Common Good)",
+    "organization": "Robert Bosch Stiftung",
+    "type": "foundation",
+    "thematic_fit": 3,
+    "description": "In 2026 the foundation made AI its focus theme, with about \u20ac17M for projects that put human dignity first and strengthen the social benefits of AI in education, migration, health and public services. It also co-funds the European AI & Society Fund.",
+    "url": "https://www.bosch-stiftung.de/en/open-call",
+    "amount_notes": "\u20ac17M 2026 AI budget across programmes",
+    "deadline": "TBC",
+    "eligible_regions": "EU (Germany/Europe focus)",
+    "notes": "Deadlines depend on the call and were not confirmed. Check the Open Call page and the application portal (bewerbung.bosch-stiftung.de). It suits public-interest AI projects in Germany and Europe.",
+    "category": "AI governance, policy & society",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.bosch-stiftung.de/en/open-call",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "heCL2_2027_Democracy01",
+    "name": "Horizon Europe CL2 2027 \u2014 Countering Radicalisation, Extremism, Hate Speech & Polarisation: Advisory Support & Network (DEMOCRACY-01)",
+    "organization": "European Commission (Horizon Europe) Cluster 2",
+    "type": "government",
+    "thematic_fit": 3,
+    "description": "An advisory and network action to counter and prevent radicalisation, extremism, hate speech and polarisation, including their online and algorithmic drivers.",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
+    "amount_notes": "See work programme",
+    "deadline": "2027-09-23",
+    "eligible_regions": "EU / Horizon Europe associated countries",
+    "notes": "UPCOMING: the CL2-2027-01 call opens 13 May 2027, deadline 23 Sep 2027. Pair it with DEMOCRACY-04 (AI, deepfakes and democracy).",
+    "category": "Democracy, rights & media",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "heCL2_2027_Democracy09",
+    "name": "Horizon Europe CL2 2027 \u2014 Open Topic: Reinvigorating and Shielding European Democracy (DEMOCRACY-09, two-stage)",
+    "organization": "European Commission (Horizon Europe) Cluster 2",
+    "type": "government",
+    "thematic_fit": 4,
+    "description": "An open, two-stage topic for research on strengthening and protecting European democracy, which would cover information integrity, AI and platforms, and democratic resilience.",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
+    "amount_notes": "See work programme",
+    "deadline": "TBC",
+    "eligible_regions": "EU / Horizon Europe associated countries",
+    "notes": "UPCOMING: HORIZON-CL2-2027-02 (two-stage); dates TBC. Open topics favour bold, well-networked consortia, which suits democracy and tech think tanks.",
+    "category": "Democracy, rights & media",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "otfInternetFreedomFund",
+    "name": "Open Technology Fund \u2014 Internet Freedom Fund",
+    "organization": "Open Technology Fund (OTF)",
+    "type": "foundation",
+    "thematic_fit": 3,
+    "description": "Supports internet-freedom work worldwide: technology development, applied research, digital security and convenings that counter censorship and surveillance, including AI-enabled surveillance and control.",
+    "url": "https://www.opentech.fund/funds/internet-freedom-fund/",
+    "amount_max_usd": 900000,
+    "amount_notes": "$10k\u2013$900k; ideal $50k\u2013$200k for 6\u201312 months",
+    "deadline": "rolling",
+    "eligible_regions": "global (except US-sanctioned countries)",
+    "notes": "Rolling, two stages (concept note, then full proposal). Organisations and individuals of any nationality can apply. OTF's funding depends on US government appropriations, so check its current status.",
+    "category": "Democracy, rights & media",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.opentech.fund/funds/internet-freedom-fund/"
+  },
+  {
+    "id": "creativeEuropeJournalism2027",
+    "name": "Creative Europe \u2014 Journalism Partnerships (Collaborations & Pluralism), 2027 Call",
+    "organization": "European Commission (Creative Europe, cross-sectoral)",
+    "type": "government",
+    "thematic_fit": 2,
+    "description": "Cross-border collaborations among news media to adapt to structural and technological change, including AI tools and business models, plus pluralism grants redistributed to smaller outlets.",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/funding-news-media-sector",
+    "amount_notes": "2026: \u20ac13.8M (Collaborations) + \u20ac6.9M (Pluralism)",
+    "deadline": "TBC",
+    "eligible_regions": "EU / Creative Europe countries",
+    "notes": "The 2026 call closed 4 Feb 2026. The next yearly call is expected to follow the same pattern (deadline around Feb 2027); dates TBC. Relevant for media nonprofits working on AI in journalism.",
+    "category": "Democracy, rights & media",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://digital-strategy.ec.europa.eu/en/policies/funding-news-media-sector",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "swedishPostcodeFoundation",
+    "name": "Swedish Postcode Foundation (Postkodstiftelsen) \u2014 Project Support",
+    "organization": "Svenska Postkodlotteriets Stiftelse",
+    "type": "foundation",
+    "thematic_fit": 2,
+    "description": "Supports civil-society projects in Sweden and internationally on democracy, human rights, climate, culture and more, including digital-democracy projects.",
+    "url": "https://postkodlotterietsstiftelse.se/en/our-support/sweden-and-international/",
+    "amount_notes": "Project-dependent",
+    "deadline": "rolling",
+    "eligible_regions": "global (NGOs; Swedish links help)",
+    "notes": "Apply any time, with an answer in 4\u20136 weeks. Nonprofits only.",
+    "category": "Democracy, rights & media",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://postkodlotterietsstiftelse.se/en/our-support/sweden-and-international/",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "eaisfNextCalls",
+    "name": "European AI & Society Fund \u2014 Next Funding Calls (Strategy 2026\u20132030)",
+    "organization": "European AI & Society Fund (hosted by King Baudouin Foundation)",
+    "type": "foundation",
+    "thematic_fit": 4,
+    "description": "Europe's main pooled funder for public-interest AI civil society. Its 2026\u20132030 strategy promises ongoing flexible funding plus targeted grants on climate, labour and the social fabric.",
+    "url": "https://europeanaifund.org/funding/",
+    "amount_notes": "Recent calls \u20ac10k\u2013\u20ac150k per grant",
+    "deadline": "TBC",
+    "eligible_regions": "EU / Europe",
+    "notes": "No call is open now; the last one, Building Narrative Power, closed 31 Aug 2026. Subscribe to the newsletter, since this is the most relevant European AI civil-society funder.",
+    "category": "Democracy, rights & media",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://europeanaifund.org/funding/",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "nordforskSocietalSecurity2026",
+    "name": "NordForsk \u2014 Call on Societal Security",
+    "organization": "NordForsk",
+    "type": "government",
+    "thematic_fit": 2,
+    "description": "Nordic research call on societal security, covering resilience, hybrid threats and critical infrastructure.",
+    "url": "https://www.nordforsk.org/calls",
+    "amount_notes": "See call text",
+    "deadline": "2026-12-03",
+    "eligible_regions": "EU / Nordic\u2013Baltic research organisations",
+    "notes": "Due 3 Dec 2026. Consortia must come from several Nordic or Baltic countries. Relevant where AI-enabled threats or security governance are in scope.",
+    "category": "AI safety & security",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.nordforsk.org/calls",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "eurohpcAIScienceAccess",
+    "name": "EuroHPC JU \u2014 AI for Science & Collaborative EU Projects Access (AI Factories Compute)",
+    "organization": "EuroHPC Joint Undertaking",
+    "type": "government",
+    "thematic_fit": 3,
+    "description": "Free access to EuroHPC's AI-optimised supercomputers for scientific AI work, including training and fine-tuning foundation models and LLMs, data-intensive analysis, and ethical-AI research. Open to scientific and public-sector users.",
+    "url": "https://eurohpc-ju.europa.eu/eurohpc-ju-call-proposals-ai-science-and-collaborative-eu-projects_en",
+    "amount_notes": "In-kind GPU hours (no cash)",
+    "deadline": "2026-10-30",
+    "eligible_regions": "EU / EuroHPC participating states",
+    "notes": "Cut-offs on 30 Oct 2026 and 11 Dec 2026 (10:00 CET), then continuing in 2027. Ideal for data-heavy think tanks that need serious compute, for example LLM evaluation or large text-as-data projects.",
+    "category": "AI for science, data & compute",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://eurohpc-ju.europa.eu/eurohpc-ju-call-proposals-ai-science-and-collaborative-eu-projects_en",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "heCL4_2027_Data03",
+    "name": "Horizon Europe CL4 2027 \u2014 Decentralised, Federated & Sustainable AI Data Processing (DATA-03)",
+    "organization": "European Commission (Horizon Europe)",
+    "type": "government",
+    "thematic_fit": 2,
+    "description": "Research on new approaches to decentralised and federated AI data processing that preserves privacy and is energy-efficient.",
+    "url": "https://topictree.ideal-ist.eu/topic/7050",
+    "amount_notes": "See topic text",
+    "deadline": "2027-03-18",
+    "eligible_regions": "EU / Horizon Europe associated countries",
+    "notes": "UPCOMING: opens 17 Nov 2026, deadline 18 Mar 2027. Technical; nonprofits can contribute data-governance or data-trust expertise.",
+    "category": "AI for science, data & compute",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://topictree.ideal-ist.eu/topic/7050",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "heINFRA2027",
+    "name": "Horizon Europe Research Infrastructures 2027 \u2014 incl. EOSC / FAIR Data (INFRA-2027)",
+    "organization": "European Commission (Horizon Europe) \u2014 Research Infrastructures",
+    "type": "government",
+    "thematic_fit": 2,
+    "description": "The 2027 Research Infrastructures calls, including INFRAEOSC topics on an open, FAIR data environment and trusted data sharing, relevant to social-science and economics data infrastructure.",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-3-research-infrastructures_horizon-2026-2027_en.pdf",
+    "amount_notes": "See work programme",
+    "deadline": "2027-06-15",
+    "eligible_regions": "EU / Horizon Europe associated countries",
+    "notes": "UPCOMING: opens 9 Mar 2027, deadline 15 Jun 2027. Relevant for organisations building shared research-data infrastructure, such as firm-level or innovation data.",
+    "category": "AI for science, data & compute",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-3-research-infrastructures_horizon-2026-2027_en.pdf",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "templetonIntelligenceVenture2027",
+    "name": "John Templeton Foundation \u2014 Intelligence Venture (2027 Funding Cycle)",
+    "organization": "John Templeton Foundation",
+    "type": "foundation",
+    "thematic_fit": 2,
+    "description": "A three-year, $60M+ initiative on what intelligence is and how it emerges across human, animal, artificial and cosmic contexts, spanning several funding areas.",
+    "url": "https://www.templeton.org/grants/grant-faq",
+    "amount_max_usd": 60000000,
+    "amount_notes": "$60M+ across the initiative",
+    "deadline": "TBC",
+    "eligible_regions": "global",
+    "notes": "The 2026 cycle is closed. The 2027 cycle's online inquiry opens several months before its deadline and is expected to be announced in early 2027. Suits conceptual and empirical work on AI and intelligence.",
+    "category": "AI for science, data & compute",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.templeton.org/grants/grant-faq"
+  },
+  {
+    "id": "numfocusSDG2026",
+    "name": "NumFOCUS Small Development Grants \u2014 2026 Round",
+    "organization": "NumFOCUS",
+    "type": "foundation",
+    "thematic_fit": 1,
+    "description": "Small grants for development, documentation and community work on NumFOCUS-sponsored or affiliated open-source scientific computing projects, the data-science stack many research teams rely on.",
+    "url": "https://numfocus.org/programs/small-development-grants",
+    "amount_max_usd": 10000,
+    "amount_notes": "Up to $10,000 per proposal",
+    "deadline": "2026-10-17",
+    "eligible_regions": "global (NumFOCUS projects only)",
+    "notes": "Proposals due 17 Oct 2026. Only for NumFOCUS fiscally sponsored or affiliated projects, so it is relevant only if your team maintains such a tool.",
+    "category": "Open source & digital commons",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://numfocus.org/programs/small-development-grants"
+  },
+  {
+    "id": "wikimediaResearchFund2027",
+    "name": "Wikimedia Research Fund \u2014 2026\u201327 Cycle",
+    "organization": "Wikimedia Foundation",
+    "type": "foundation",
+    "thematic_fit": 2,
+    "description": "Funds research on or about Wikimedia projects, including AI and knowledge integrity, LLMs and open knowledge, and information ecosystems. Open to individuals, groups and organisations.",
+    "url": "https://meta.wikimedia.org/wiki/Grants:Programs/Wikimedia_Research_%26_Technology_Fund/Wikimedia_Research_Fund",
+    "amount_max_usd": 150000,
+    "amount_notes": "$2k\u2013$50k (Types 1 & 3); up to $150k (Type 2)",
+    "deadline": "TBC",
+    "eligible_regions": "global",
+    "notes": "Two stages, starting with a letter of intent. The submission platform usually opens in January, and the previous cycle closed 3 Apr 2026. Dates for the new cycle are TBC.",
+    "category": "Open source & digital commons",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://meta.wikimedia.org/wiki/Grants:Programs/Wikimedia_Research_%26_Technology_Fund/Wikimedia_Research_Fund"
+  },
+  {
+    "id": "rjResearchInitiation2026",
+    "name": "Riksbankens Jubileumsfond \u2014 RJ Research Initiation 2026",
+    "organization": "Riksbankens Jubileumsfond (RJ)",
+    "type": "foundation",
+    "thematic_fit": 2,
+    "description": "Seed funding in the humanities and social sciences to develop new research ideas, including on AI, innovation and the economy. RJ also runs RJ Flexit, which places researchers in private, public and nonprofit host organisations.",
+    "url": "https://www.rj.se/en/funding/rj-research-initiation-2026/",
+    "amount_notes": "See call",
+    "deadline": "2026-10-30",
+    "eligible_regions": "EU (Sweden-based research organisations)",
+    "notes": "Due 30 Oct 2026. The applicant must be based at a Swedish research organisation. Flexit is worth watching for think tanks that could host a researcher.",
+    "category": "Open-topic research & civil society funding",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.rj.se/en/funding/rj-research-initiation-2026/",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "leverhulmeRPG",
+    "name": "Leverhulme Trust \u2014 Research Project Grants (Outline Applications)",
+    "organization": "The Leverhulme Trust",
+    "type": "foundation",
+    "thematic_fit": 2,
+    "description": "Open-topic research project grants of up to \u00a3500k in any discipline, economics and AI-and-society included.",
+    "url": "https://www.leverhulme.ac.uk/research-project-grants",
+    "amount_max_usd": 650000,
+    "amount_notes": "Up to \u00a3500,000",
+    "deadline": "rolling",
+    "eligible_regions": "UK",
+    "notes": "Outline applications reopened 21 Sep 2026 and are accepted any time. Only UK higher-education institutions and eligible UK research organisations can apply.",
+    "category": "Open-topic research & civil society funding",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.leverhulme.ac.uk/research-project-grants"
+  },
+  {
+    "id": "baLeverhulmeSmall2026",
+    "name": "British Academy / Leverhulme Small Research Grants 2026\u201327",
+    "organization": "British Academy & Leverhulme Trust",
+    "type": "foundation",
+    "thematic_fit": 2,
+    "description": "Small grants for primary research in the humanities and social sciences, including economics, AI and society, and innovation studies.",
+    "url": "https://www.thebritishacademy.ac.uk/funding/schemes/ba-leverhulme-small-research-grants/",
+    "amount_max_usd": 13000,
+    "amount_notes": "Up to \u00a310,000 for up to 24 months",
+    "deadline": "2026-11-04",
+    "eligible_regions": "UK",
+    "notes": "Due 4 Nov 2026, 17:00 GMT (independent scholars: 28 Oct 2026). Applicants must be UK-resident postdoctoral researchers or equivalent.",
+    "category": "Open-topic research & civil society funding",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.thebritishacademy.ac.uk/funding/schemes/ba-leverhulme-small-research-grants/"
+  },
+  {
+    "id": "ercStG2027",
+    "name": "ERC Starting Grant 2027",
+    "organization": "European Research Council",
+    "type": "government",
+    "thematic_fit": 2,
+    "description": "Up to \u20ac1.5M over 5 years for an early-career investigator (2\u20137 years after PhD) and team, in any field, economics of innovation and AI included. The host can be any eligible research organisation.",
+    "url": "https://erc.europa.eu/apply-grant/starting-grant",
+    "amount_max_usd": 1650000,
+    "amount_notes": "Up to \u20ac1.5M (+ up to \u20ac1M extra in some cases)",
+    "deadline": "2026-10-14",
+    "eligible_regions": "EU / Horizon Europe associated countries",
+    "notes": "Due 14 Oct 2026, 17:00 Brussels time. A think tank can host an ERC grant if it qualifies as a research organisation. Useful for attracting top researchers.",
+    "category": "Open-topic research & civil society funding",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://erc.europa.eu/apply-grant/starting-grant"
+  },
+  {
+    "id": "ercCoG2027",
+    "name": "ERC Consolidator Grant 2027",
+    "organization": "European Research Council",
+    "type": "government",
+    "thematic_fit": 2,
+    "description": "Up to \u20ac2M over 5 years for researchers 7\u201312 years after PhD, in any field.",
+    "url": "https://erc.europa.eu/apply-grant/consolidator-grant",
+    "amount_max_usd": 2200000,
+    "amount_notes": "Up to \u20ac2M",
+    "deadline": "2027-01-12",
+    "eligible_regions": "EU / Horizon Europe associated countries",
+    "notes": "Opens 24 Sep 2026, deadline 12 Jan 2027.",
+    "category": "Open-topic research & civil society funding",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://erc.europa.eu/apply-grant/consolidator-grant"
+  },
+  {
+    "id": "ercSyG2027",
+    "name": "ERC Synergy Grant 2027",
+    "organization": "European Research Council",
+    "type": "government",
+    "thematic_fit": 2,
+    "description": "Up to \u20ac10M over 6 years for 2\u20134 principal investigators tackling ambitious interdisciplinary problems, which could include the economics of AI or the science of science.",
+    "url": "https://erc.europa.eu/apply-grant/synergy-grant",
+    "amount_max_usd": 11000000,
+    "amount_notes": "Up to \u20ac10M (+ up to \u20ac4M in justified cases)",
+    "deadline": "2027-05-11",
+    "eligible_regions": "EU / Horizon Europe associated countries",
+    "notes": "UPCOMING: opens 17 Feb 2027, deadline 11 May 2027. It was moved from the originally announced November 2026 date.",
+    "category": "Open-topic research & civil society funding",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://erc.europa.eu/apply-grant/synergy-grant"
+  },
+  {
+    "id": "fritzThyssenProjects2027",
+    "name": "Fritz Thyssen Stiftung \u2014 Project Funding (Humanities & Social Sciences)",
+    "organization": "Fritz Thyssen Stiftung",
+    "type": "foundation",
+    "thematic_fit": 2,
+    "description": "Research project funding in the humanities and social sciences, including the 'State, Economy and Society' area, which fits economics and AI governance research.",
+    "url": "https://www.fritz-thyssen-stiftung.de/en/funding/types-of-support/support-of-projects/",
+    "amount_notes": "Project-dependent",
+    "deadline": "2027-02-01",
+    "eligible_regions": "EU (Germany focus; international considered)",
+    "notes": "Next project deadline 1 Feb 2027. Usually for researchers at research institutions.",
+    "category": "Open-topic research & civil society funding",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.fritz-thyssen-stiftung.de/en/funding/types-of-support/support-of-projects/",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "fritzThyssenConferences",
+    "name": "Fritz Thyssen Stiftung \u2014 Conference & Workshop Funding",
+    "organization": "Fritz Thyssen Stiftung",
+    "type": "foundation",
+    "thematic_fit": 2,
+    "description": "Funds scholarly conferences and workshops in the humanities and social sciences. A cheap way to fund an expert convening on AI or innovation economics.",
+    "url": "https://www.fritz-thyssen-stiftung.de/en/",
+    "amount_notes": "Event costs",
+    "deadline": "2026-11-30",
+    "eligible_regions": "EU (Germany focus; international considered)",
+    "notes": "Deadline 30 Nov 2026 for events from mid-2027 onward. The following deadline is 31 May 2027.",
+    "category": "Open-topic research & civil society funding",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.fritz-thyssen-stiftung.de/en/",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "esrcResponsiveAI",
+    "name": "ESRC Responsive Mode Research Grants (AI-for-Social-Science Highlight)",
+    "organization": "Economic and Social Research Council (UKRI)",
+    "type": "government",
+    "thematic_fit": 3,
+    "description": "Open-deadline ESRC research grants. A current highlight welcomes research on how AI is used by and affects people, businesses and the economy, and on how social science can guide AI's development and adoption.",
+    "url": "https://www.ukri.org/opportunity/?filter_council%5B%5D=818",
+    "amount_notes": "Typically \u00a3100k\u2013\u00a31M+ (80% of full economic cost)",
+    "deadline": "rolling",
+    "eligible_regions": "UK (eligible research organisations incl. approved independent research organisations)",
+    "notes": "No deadline. UK think tanks with independent-research-organisation status can lead, and international co-investigators are allowed. Strong fit for AI-economics research.",
+    "category": "Open-topic research & civil society funding",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.ukri.org/opportunity/?filter_council%5B%5D=818",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "nwoSSHExpand2026",
+    "name": "NWO SSH Open Competition \u2014 Expand (Pre-proposals)",
+    "organization": "Dutch Research Council (NWO)",
+    "type": "government",
+    "thematic_fit": 2,
+    "description": "Open-topic social sciences and humanities research funding in the Netherlands, merging the former M and L categories. It covers AI and society, economics and innovation.",
+    "url": "https://www.nwo.nl/en/researchprogrammes/open-competition-ssh",
+    "amount_notes": "See call",
+    "deadline": "2026-11-17",
+    "eligible_regions": "EU (Netherlands-based research organisations)",
+    "notes": "Pre-proposals due 17 Nov 2026. The main applicant must be at a Dutch knowledge institution; nonprofits can take part as partners.",
+    "category": "Open-topic research & civil society funding",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.nwo.nl/en/researchprogrammes/open-competition-ssh",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "ncnOpus32LAP",
+    "name": "NCN OPUS 32 \u2014 LAP / Weave International Track",
+    "organization": "National Science Centre Poland (NCN)",
+    "type": "government",
+    "thematic_fit": 1,
+    "description": "Polish open-topic research grants. The LAP/Weave track funds bilateral projects with partner agencies abroad, such as DFG, FWF, SNSF or GA\u010cR.",
+    "url": "https://www.ncn.gov.pl/index.php/en/aktualnosci/2026-07-21-jesienny-nabor-opus32",
+    "amount_notes": "See call",
+    "deadline": "2026-12-15",
+    "eligible_regions": "EU (Poland + partner countries)",
+    "notes": "The Polish team must submit LAP proposals by 15 Dec 2026, 14:00. Only relevant for Polish research organisations or their partners.",
+    "category": "Open-topic research & civil society funding",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.ncn.gov.pl/index.php/en/aktualnosci/2026-07-21-jesienny-nabor-opus32",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "rcfStrategicResearch2027",
+    "name": "Research Council of Finland \u2014 Strategic Research Council (New Programmes)",
+    "organization": "Research Council of Finland (Strategic Research Council)",
+    "type": "government",
+    "thematic_fit": 2,
+    "description": "Large, society-oriented, multi-disciplinary research programmes on themes set by the Finnish Government. They often cover technology, work and the economy, and they require stakeholder interaction.",
+    "url": "https://www.aka.fi/en/research-funding/apply-for-funding/calls-for-applications/",
+    "amount_notes": "Large consortium funding",
+    "deadline": "TBC",
+    "eligible_regions": "EU (Finland-based consortia; foreign partners possible)",
+    "notes": "Calls for letters of intent are expected in Oct 2026 and the calls to open in Nov 2026, depending on the Government's theme decision.",
+    "category": "Open-topic research & civil society funding",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.aka.fi/en/research-funding/apply-for-funding/calls-for-applications/",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "anrAAPG2027",
+    "name": "ANR Generic Call (AAPG) 2027 \u2014 incl. AI Priority & ANR\u2013DFG Projects",
+    "organization": "Agence Nationale de la Recherche (ANR)",
+    "type": "government",
+    "thematic_fit": 1,
+    "description": "France's main open research call. AI is a cross-cutting priority, along with social sciences at interfaces, and there is a Franco-German ANR\u2013DFG track.",
+    "url": "https://anr.fr/en/generic-call-2026/",
+    "amount_notes": "Project-dependent",
+    "deadline": "TBC",
+    "eligible_regions": "EU (France-based research organisations + partners)",
+    "notes": "AAPG usually opens in autumn with a pre-proposal stage; one ANR\u2013DFG pre-registration date cited is 13 Oct 2026. Confirm the 2027 call dates on anr.fr.",
+    "category": "Open-topic research & civil society funding",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://anr.fr/en/generic-call-2026/",
+    "amount_max_usd": 0
+  },
+  {
+    "id": "visegradFundOct2026",
+    "name": "International Visegrad Fund \u2014 Visegrad, Visegrad+ & Strategic Grants",
+    "organization": "International Visegrad Fund",
+    "type": "government",
+    "thematic_fit": 2,
+    "description": "Grants for regional cooperation projects among NGOs, universities and public bodies. 2026 priorities include research, development, innovation and digitalisation, and knowledge sharing with Eastern Partnership and Western Balkan countries.",
+    "url": "https://www.visegradfund.org/apply/grants/visegrad-grants/",
+    "amount_max_usd": 33000,
+    "amount_notes": "Average ~\u20ac30k; up to 100% of budget",
+    "deadline": "2026-10-01",
+    "eligible_regions": "EU (V4: CZ, HU, PL, SK + partners)",
+    "notes": "Due 1 Oct 2026, noon CET (next rounds 1 Feb and 1 Jun 2027). Needs partners from at least 3 V4 countries. Good for Central European digital and innovation-policy NGOs.",
+    "category": "Open-topic research & civil society funding",
+    "date_added": "2026-09-27",
+    "status": "new",
+    "broken_url": false,
+    "contact": "https://www.visegradfund.org/apply/grants/visegrad-grants/"
   }
 ]

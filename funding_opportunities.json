@@ -1,173 +1,45 @@
 [
   {
-    "id": "equitableGrowthAIWorkers2025",
-    "name": "Washington Center for Equitable Growth \u2014 AI Workers & Competition RFP",
-    "organization": "Washington Center for Equitable Growth",
-    "type": "foundation",
-    "thematic_fit": 5,
-    "description": "Research grants studying how AI, automation, algorithmic management, and electronic surveillance affect US workers, wages, and market competition. Awards $25k\u2013$80k over up to 2 years. Open to individual researchers and teams at think tanks, universities, and research institutions.",
-    "url": "https://equitablegrowth.org/research-paper/request-for-proposals-promoting-competition-and-supporting-workers-in-an-era-of-ai-innovation/",
-    "contact": "https://equitablegrowth.org/engage/funding-opportunities/",
-    "amount_max_usd": 80000,
-    "amount_notes": "$25,000\u2013$80,000; slightly larger grants possible if well-justified",
-    "deadline": "TBC",
-    "eligible_regions": "US",
-    "date_added": "2026-03-14",
-    "status": "active",
-    "notes": "Most recent cycle closed Feb 2025; next RFP likely late 2026. Excellent thematic fit for think tank teams. Monitor equitablegrowth.org.",
-    "broken_url": false,
-    "category": "Economics of AI, labour & growth"
-  },
-  {
-    "id": "gitlabFoundationAIEconomicOpp",
-    "name": "GitLab Foundation AI for Economic Opportunity Fund",
-    "organization": "GitLab Foundation",
-    "type": "foundation",
-    "thematic_fit": 3,
-    "description": "Demonstration grants to US-based nonprofits using AI to measurably improve economic mobility for low-income populations. Each award is $250k plus OpenAI API credits and 6 months of technical support. The 2026 cohort (cycle 4) has already been announced; next cycle TBC.",
-    "url": "https://www.gitlabfoundation.org/futureofwork",
-    "contact": "https://www.gitlabfoundation.org/partnerships/aifund",
-    "amount_max_usd": 250000,
-    "amount_notes": "$250,000 per org plus OpenAI API credits and cohort support",
-    "deadline": "TBC",
-    "eligible_regions": "US",
-    "date_added": "2026-03-14",
-    "status": "active",
-    "notes": "2026 cohort (16 orgs) announced March 5, 2026. Next open call TBC. Open to nonprofits, not think tanks directly unless nonprofit-registered.",
-    "broken_url": false,
-    "category": "Economics of AI, labour & growth"
-  },
-  {
-    "id": "humanityAIFund2026",
-    "name": "Humanity AI \u2014 Pooled Philanthropic Fund (Labor & Economy Track)",
-    "organization": "Humanity AI (Ford, MacArthur, Mellon, Omidyar, Mozilla, Packard, Kapor, Doris Duke, Lumina, Siegel Family Endowment)",
-    "type": "foundation",
-    "thematic_fit": 5,
-    "description": "A $500M, 5-year pooled fund from 10 leading foundations dedicated to people-centred AI development. The 'Labor & Economy' track focuses on equipping workers to thrive amid AI-driven transformation. Grants expected to flow in 2026; application details pending. Highest possible thematic alignment for think tank AI + future-of-work research.",
-    "url": "https://humanityai.ai/press-release-open-call-for-grants/",
-    "contact": "https://www.humanityai.ai",
-    "amount_max_usd": 0,
-    "amount_notes": "$10M open call (part of the wider pooled fund)",
-    "deadline": "2026-10-21",
-    "eligible_regions": "US",
-    "date_added": "2026-03-14",
-    "status": "active",
-    "notes": "The open call is due 21 Oct 2026 and is limited to US-based nonprofits, so European organisations are not eligible. Focus areas are education, labour & economy, and the humanities, arts & culture.",
-    "broken_url": false,
-    "category": "Economics of AI, labour & growth"
-  },
-  {
-    "id": "siegelFamilyAIWorkforce2026",
-    "name": "Siegel Family Endowment \u2014 AI & Workforce Research Grants",
-    "organization": "Siegel Family Endowment",
-    "type": "foundation",
-    "thematic_fit": 5,
-    "description": "Siegel Family Endowment investing $15.4M+ in grants focused on how workers shape AI's transformation of work. Supports research and programmes examining hiring, management, monitoring of workers, and evidence-based policies on worker data rights and AI impact. 2025\u20132026 cohort of Siegel Research Fellows announced.",
-    "url": "https://www.siegelendowment.org/insights/shaping-ais-future-together-siegel-family-endowment-joins-humanity-ai/",
-    "contact": "https://www.siegelendowment.org/contact/",
-    "amount_max_usd": 0,
-    "amount_notes": "$15.4M total announced; individual award amounts TBC",
-    "deadline": "TBC",
-    "eligible_regions": "US",
-    "date_added": "2026-03-15",
-    "status": "active",
-    "notes": "Siegel is a Humanity AI coalition member with an active research fellowship programme. Explicitly focused on worker agency in AI transformation. Contact directly for 2026 grant deadlines.",
-    "broken_url": false,
-    "category": "Economics of AI, labour & growth"
-  },
-  {
-    "id": "openaiFoundationAIGrants2026",
-    "name": "OpenAI Foundation \u2014 AI for Humanity Grants",
-    "organization": "OpenAI Foundation",
-    "type": "corporate",
-    "thematic_fit": 4,
-    "description": "The OpenAI Foundation pledged $1 billion in grants over the next year to support AI for public benefit. Priorities include mitigating AI impacts on jobs, the economy, and mental health, as well as life science/health research. The first round (People-First AI Fund) awarded $40.5M to 208 US nonprofits; future open calls expected in 2026.",
-    "url": "https://openai.com/foundation/",
-    "contact": "",
-    "amount_max_usd": 1000000000,
-    "amount_notes": "$1B total pledge; individual grant sizes vary ($50K\u2013$500K in first round)",
-    "deadline": "TBC",
-    "eligible_regions": "US",
-    "date_added": "2026-03-27",
-    "status": "new",
-    "broken_url": false,
-    "notes": "First round closed Oct 2025. Foundation announced $1B commitment March 2026. Monitor openai.com/foundation for next open application cycle. Strong workforce/economic impact component.",
-    "category": "AI governance, policy & society"
-  },
-  {
     "id": "cooperativeAIFoundationGrants2025",
-    "name": "Cooperative AI Foundation Research Grants",
+    "name": "Cooperative AI Foundation \u2014 Research Grants (2026 round TBC)",
     "organization": "Cooperative AI Foundation",
     "type": "foundation",
     "thematic_fit": 3,
     "description": "Research grants on AI cooperation, including understanding and evaluating cooperation-relevant capabilities. No fixed upper limit; cost-effectiveness is weighted. Priority areas include understanding AI cooperation propensities and multi-stakeholder AI governance relevant to labour and economic settings.",
-    "url": "https://www.cooperativeai.com/grants/2025",
+    "url": "https://www.cooperativeai.com/foundation",
     "contact": "https://www.cooperativeai.com/grants",
-    "amount_max_usd": 0,
-    "amount_notes": "No fixed ceiling; applicants encouraged to be ambitious",
-    "deadline": "rolling",
+    "amount_max_usd": 480000,
+    "amount_notes": "\u00a310k\u2013\u00a3385k (recent rounds)",
+    "deadline": "TBC",
     "eligible_regions": "global",
     "date_added": "2026-03-14",
     "status": "active",
-    "notes": "Rolling applications. Thematic overlap is indirect; strongest fit if research addresses cooperation in human-AI work systems.",
+    "notes": "QC 2026-09-28: no confirmed 2026 open deadline, so changed from 'rolling' to TBC. The related DeepMind/ARIA multi-agent safety call closed 8 Aug 2026. Watch cooperativeai.com.",
     "broken_url": false,
-    "category": "AI safety & security"
+    "category": "AI safety & security",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "amazonResearchAwardsAI2026",
     "name": "Amazon Research Awards \u2014 Fairness in AI & Human-Computer Interaction",
     "organization": "Amazon",
     "type": "corporate",
-    "thematic_fit": 3,
+    "thematic_fit": 1,
     "description": "Unrestricted research gifts to academic institutions in areas including fairness in AI, knowledge management, NLP, and HCI. No IP rights retained by Amazon. Rolling calls; typically $50k\u2013$150k per award. Relevant for think tanks affiliated with universities or structured as research institutions.",
     "url": "https://www.amazon.science/research-awards/call-for-proposals",
     "contact": "https://www.amazon.science/research-awards",
     "amount_max_usd": 150000,
     "amount_notes": "Typically $50,000\u2013$150,000 unrestricted gift",
-    "deadline": "rolling",
+    "deadline": "TBC",
     "eligible_regions": "global",
     "date_added": "2026-03-14",
     "status": "active",
-    "notes": "Requires institutional affiliation (university or nonprofit research org). Applications reviewed in rolling cycles; check portal for current open areas.",
+    "notes": "QC 2026-09-28: runs periodic calls rather than rolling applications (spring 2026 closed 13 May 2026). The next call is TBC, and it is aimed mainly at academic researchers.",
     "broken_url": false,
-    "category": "AI governance, policy & society"
-  },
-  {
-    "id": "googleOrgAIOpportunityFundUS",
-    "name": "Google.org AI Opportunity Fund \u2014 US Workforce Development",
-    "organization": "Google.org",
-    "type": "corporate",
-    "thematic_fit": 4,
-    "description": "Part of a $75M commitment to help over 1 million Americans learn AI skills through workforce development and education organisations. Focus on rural/under-served workers, public sector employees, small businesses, and nonprofits. Grants to best-in-class workforce orgs; not an open call but accepts relationship-based inquiries.",
-    "url": "https://aiopportunityfund.withgoogle.com/",
-    "contact": "https://www.google.org/",
-    "amount_max_usd": 0,
-    "amount_notes": "$75M total programme; individual grants vary; $15M sub-tranche for public sector recently announced",
-    "deadline": "rolling",
-    "eligible_regions": "US",
-    "date_added": "2026-03-14",
-    "status": "active",
-    "notes": "Not an open RFP \u2014 Google.org selects partners proactively. Engage through introductions or foundation relations. Excellent fit for AI workforce research with practical outputs.",
-    "broken_url": false,
-    "category": "Economics of AI, labour & growth"
-  },
-  {
-    "id": "knightFoundationAIGovernanceFund2026",
-    "name": "Knight Foundation \u2014 Ethics and Governance of AI Fund",
-    "organization": "Knight Foundation",
-    "type": "foundation",
-    "thematic_fit": 4,
-    "description": "Ongoing initiative supporting civil society organisations working on AI ethics, governance, and public interest. The Foundation has committed $7.6M to nine initial grantees; supports research on governance, norms, values, and responsible AI systems.",
-    "url": "https://knightfoundation.org/press/releases/the-ethics-and-governance-of-artificial-intelligence-fund-commits-7-6-million-to-organizations-that-bolster-civil-society-efforts-around-the-world/",
-    "amount_max_usd": 0,
-    "amount_notes": "$7.6M committed across nine grantees; individual award sizes not published",
-    "deadline": "rolling",
-    "eligible_regions": "global",
-    "date_added": "2026-03-15",
-    "status": "active",
-    "notes": "Rolling applications. Good fit for AI governance and policy research. Check knightfoundation.org for 2026 RFP details. May need to align with Knight's democracy and civics mission.",
-    "broken_url": false,
-    "category": "AI governance, policy & society"
+    "category": "AI governance, policy & society",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "schmidtAI2050Fellowship",
@@ -179,32 +51,15 @@
     "url": "https://ai2050.schmidtsciences.org/",
     "amount_max_usd": 0,
     "amount_notes": "$18M+ awarded to 28 fellows in 2025 cohort; individual amounts not disclosed",
-    "deadline": "rolling",
+    "deadline": "TBC",
     "eligible_regions": "global",
     "date_added": "2026-03-15",
     "status": "active",
-    "notes": "Invitation and nomination only \u2014 no open application. Monitor for nomination windows and build a relationship with Schmidt Sciences programme staff.",
+    "notes": "QC 2026-09-28: nomination-only. The 2026 cycle (nominations May\u2013Jul 2026) has closed, and the next cycle is expected mid-2027. Not an open application.",
     "broken_url": false,
-    "category": "AI governance, policy & society"
-  },
-  {
-    "id": "mcgovernFoundationAIPublicPurpose2026",
-    "name": "Patrick J. McGovern Foundation \u2014 AI for Public Purpose",
-    "organization": "Patrick J. McGovern Foundation",
-    "type": "foundation",
-    "thematic_fit": 3,
-    "description": "Annual grantmaking of ~$75M across 149 grants supporting AI and data solutions for public purpose, including digital literacy, workforce, crisis response, and climate resilience. Grants range from $100K to $1M+ and fund nonprofits, research institutions, and social enterprises globally.",
-    "url": "https://www.mcgovern.org/grants/",
-    "contact": "https://www.mcgovern.org/grants/",
-    "amount_max_usd": 1000000,
-    "amount_notes": "$100K\u2013$1M+; total annual spend ~$75M",
-    "deadline": "rolling",
-    "eligible_regions": "global",
-    "date_added": "2026-03-27",
-    "status": "new",
-    "broken_url": false,
-    "notes": "Proactive grantmaking model \u2014 foundation identifies and approaches partners, but unsolicited inquiries can be submitted via website. Workforce/labor is one of several focus areas alongside health equity, climate, journalism.",
-    "category": "AI governance, policy & society"
+    "category": "AI governance, policy & society",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "astralisMiddlePowersRFP2026",
@@ -223,7 +78,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "category": "AI governance, policy & society"
+    "category": "AI governance, policy & society",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "coefficientProjectTailwind2026",
@@ -242,7 +99,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "category": "AI safety & security"
+    "category": "AI safety & security",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "foresightAINodes2026Oct",
@@ -261,7 +120,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "category": "AI safety & security"
+    "category": "AI safety & security",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "eaFundsTransformativeAIFund",
@@ -280,7 +141,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "category": "AI governance, policy & society"
+    "category": "AI governance, policy & society",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "sffRollingSpeculation2026",
@@ -299,7 +162,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "category": "AI safety & security"
+    "category": "AI safety & security",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "anthropicEconomicFuturesAwards",
@@ -318,7 +183,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "category": "Economics of AI, labour & growth"
+    "category": "Economics of AI, labour & growth",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "eicPathfinderDeepRAP2026",
@@ -337,7 +204,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "category": "AI safety & security"
+    "category": "AI safety & security",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "mercorAISafetyFund2026",
@@ -346,17 +215,19 @@
     "type": "corporate",
     "thematic_fit": 3,
     "description": "$5M for frontier AI safety research by independent researchers, academics, PhD students and small teams. Topics include misalignment, sandbox escape, evaluation awareness, interpretability, oversight and control, and red-teaming. Funds can cover researcher time, API credits and conference travel.",
-    "url": "https://aisafety.com/funding",
+    "url": "https://builtin.com/job/mercor-ai-safety-fund-grants/11187489",
     "contact": "https://aisafety.com/funding",
     "amount_max_usd": 5000000,
     "amount_notes": "$5M total pool; per-grant size not published",
-    "deadline": "rolling",
-    "eligible_regions": "global",
-    "notes": "Start with a focused expression of interest. The fund is aimed at small teams with well-scoped research that will be published. The official application page was not verified directly, so confirm the details via AISafety.com/funding.",
+    "deadline": "2026-11-14",
+    "eligible_regions": "global (independent researchers, nonprofits, academics)",
+    "notes": "QC 2026-09-28: applications close 14 Nov 2026 (previously listed as rolling). Grants cover researcher time, API credits, conference travel, and access to Mercor's expert network and evaluation platform. Apply with a focused expression of interest.",
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "category": "AI safety & security"
+    "category": "AI safety & security",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "nuffieldMainGrantsOct2026",
@@ -375,7 +246,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "category": "Open-topic research & civil society funding"
+    "category": "Open-topic research & civil society funding",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "digitalFreedomFundCall2026",
@@ -394,26 +267,30 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "category": "Democracy, rights & media"
+    "category": "Democracy, rights & media",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "prototypeFundNov2026",
     "name": "Prototype Fund \u2014 Open-Source Public Interest Tech",
     "organization": "Open Knowledge Foundation Germany (funded by the German Federal Ministry of Research)",
     "type": "government",
-    "thematic_fit": 2,
-    "description": "Funding for open-source software prototypes in the public interest, including civic tech, data tools and AI tooling.",
+    "thematic_fit": 3,
+    "description": "Funding for open-source software prototypes in the public interest ('Public Interest Tech'), such as civic tech, data tools and AI tooling, plus coaching. Round 03 is open to individuals, start-ups, nonprofit organisations and companies.",
     "url": "https://prototypefund.de/",
     "contact": "https://prototypefund.de/",
     "amount_max_usd": 0,
     "amount_notes": "Per-project amounts: see the current call text",
     "deadline": "2026-11-30",
-    "eligible_regions": "EU (Germany only)",
-    "notes": "Due 30 Nov 2026. Open to individuals and small teams based in Germany, not established organisations. Useful for staff-led open data or AI tooling spin-offs. Individual eligibility rules and grant sizes were not verified directly.",
+    "eligible_regions": "EU (Germany-based applicants)",
+    "notes": "QC 2026-09-28: the Round 03 application window runs 1 Oct\u201330 Nov 2026. Eligibility now explicitly includes nonprofits (it was individuals only before). German residency or registration is still required.",
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "category": "Open source & digital commons"
+    "category": "Open source & digital commons",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "coefficientCapacityBuildingTAI",
@@ -432,7 +309,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://coefficientgiving.org/funds/navigating-transformative-ai/funding-for-work-that-builds-capacity-to-address-risks-from-transformative-ai/",
-    "category": "AI governance, policy & society"
+    "category": "AI governance, policy & society",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "ariaSafeguardedAICyber2026",
@@ -451,7 +330,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://aria.org.uk/opportunity-spaces/trust-everything-everywhere/safeguarded-ai/funding",
-    "category": "AI safety & security"
+    "category": "AI safety & security",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "ariaScalingTrust2026",
@@ -470,7 +351,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://aria.org.uk/opportunity-spaces/trust-everything-everywhere/scaling-trust/funding",
-    "category": "AI safety & security"
+    "category": "AI safety & security",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "manifundAISafetyRegranting",
@@ -489,45 +372,51 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://manifund.org/about/regranting",
-    "category": "AI safety & security"
+    "category": "AI safety & security",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "aiAlignmentFoundationLOI",
     "name": "AI Alignment Foundation \u2014 Letters of Inquiry",
     "organization": "AI Alignment Foundation (AIAF)",
     "type": "foundation",
-    "thematic_fit": 3,
+    "thematic_fit": 2,
     "description": "Funds alignment researchers with ideas they cannot pursue within their current institutional funding, and experts from other fields who could bring new perspectives. It also runs a remote 8-week fellowship with a $12k stipend.",
     "url": "https://www.aialignmentfoundation.org/approach/apply",
     "amount_max_usd": 0,
     "amount_notes": "Grant sizes not confirmed; fellowship stipend $12k",
     "deadline": "rolling",
     "eligible_regions": "global",
-    "notes": "Letters of inquiry are accepted on a rolling basis. One aggregator lists $100k\u2013$1.5M for nonprofits and research institutions, but that figure may belong to another funder. Confirm on the AIAF site before relying on it. Technical focus.",
+    "notes": "QC 2026-09-28: details could not be confirmed from any independent source (funder site unreachable), and the grant size is unknown. Treat as a lead to check, not a confirmed opportunity. Letters of inquiry reportedly rolling; also runs an 8-week remote fellowship ($12k stipend).",
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
     "contact": "https://www.aialignmentfoundation.org/approach/apply",
-    "category": "AI safety & security"
+    "category": "AI safety & security",
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
-    "id": "openaiSafetyResearchGrants2026",
-    "name": "OpenAI AI Safety Research Grants (2026)",
+    "id": "openaiTeenDevelopmentGrants2026",
+    "name": "OpenAI \u2014 AI & Teen Development Research Grant Program",
     "organization": "OpenAI",
     "type": "corporate",
     "thematic_fit": 3,
-    "description": "A $5M programme of AI safety research grants, including up to $1M in API credits, for external researchers and organisations.",
-    "url": "https://aisafety.com/funding",
-    "amount_max_usd": 5000000,
-    "amount_notes": "$5M total pool (up to $1M of it in API credits)",
+    "description": "$5M for independent research on how generative AI affects the lives, development and wellbeing of young people aged 13\u201317. Relevant disciplines include psychology, public health, human\u2013computer interaction, sociology, data science and AI safety.",
+    "url": "https://openai.com/index/teen-development-research-grants/",
+    "amount_max_usd": 1000000,
+    "amount_notes": "Up to $1M per grant; $5M total",
     "deadline": "2026-10-06",
-    "eligible_regions": "global",
-    "notes": "Due 6 Oct 2026 according to AISafety.com's newsletter and Granted AI. I could not reach an official OpenAI page, so confirm the call and its eligibility on openai.com before investing effort.",
+    "eligible_regions": "global (any country)",
+    "notes": "QC 2026-09-28: replaces an earlier listing of 'OpenAI AI Safety Research Grants ($5M, due 6 Oct)' that only grant listing sites carried and that seems to be a mix-up of this official programme. Due 6 Oct 2026, 23:59 PST; decisions by 13 Nov 2026. Reviews are rolling, so apply early.",
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://aisafety.com/funding",
-    "category": "AI safety & security"
+    "contact": "collaborativeresearch@openai.com",
+    "category": "Democracy, rights & media",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "horizonCL3FCT02GenAIMisuse2026",
@@ -546,7 +435,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://eufundingportal.eu/call-for-proposals-to-support-the-prevention-and-countering-of-the-misuse-of-emerging-technologies-for-criminal-purposes/",
-    "category": "AI safety & security"
+    "category": "AI safety & security",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "costOpenCall2026",
@@ -565,7 +456,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.cost.eu/funding/open-call-a-simple-one-step-application-process/",
-    "category": "Open-topic research & civil society funding"
+    "category": "Open-topic research & civil society funding",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "raiseDoctoralNetworks2026",
@@ -584,7 +477,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://cordis.europa.eu/programme/id/HORIZON_HORIZON-RAISE-2026-01-03",
-    "category": "AI for science, data & compute"
+    "category": "AI for science, data & compute",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "nlnetRestack2026",
@@ -603,7 +498,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "category": "Open source & digital commons"
+    "category": "Open source & digital commons",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "nlnetCodeSupply2026",
@@ -622,7 +519,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://nlnet.nl/codesupply/",
-    "category": "Open source & digital commons"
+    "category": "Open source & digital commons",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "braidFellowships2027",
@@ -641,7 +540,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://braiduk.org/research-fellowships",
-    "category": "AI governance, policy & society"
+    "category": "AI governance, policy & society",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "waspHsDdlsInitiation2026",
@@ -660,7 +561,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://wasp-hs.org/open-call-research-initiation-grants-for-data-driven-life-sciences-and-society-2026/",
-    "category": "AI for science, data & compute"
+    "category": "AI for science, data & compute",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "digitalEuropeAIData10Compliance",
@@ -679,7 +582,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details-tr/DIGITAL-2026-AI-DATA-10-COMPLIANCE",
-    "category": "Applied & sectoral AI"
+    "category": "Applied & sectoral AI",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "anthropicAIForScienceCredits",
@@ -698,7 +603,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://support.claude.com/en/articles/11199177-anthropic-s-ai-for-science-program",
-    "category": "AI for science, data & compute"
+    "category": "AI for science, data & compute",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "checksAndBalancesRFP2026",
@@ -717,7 +624,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "category": "AI governance, policy & society"
+    "category": "AI governance, policy & society",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "stiftungMercatorOutlines",
@@ -736,7 +645,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "category": "AI governance, policy & society"
+    "category": "AI governance, policy & society",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "sloanExploratoryTech",
@@ -755,7 +666,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "category": "AI for science, data & compute"
+    "category": "AI for science, data & compute",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "fliDigitalMediaAccelerator",
@@ -774,7 +687,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://futureoflife.org/project/digital-media-accelerator/",
-    "category": "AI governance, policy & society"
+    "category": "AI governance, policy & society",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "iliadOpenCall",
@@ -793,7 +708,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.iliad.ac/",
-    "category": "AI safety & security"
+    "category": "AI safety & security",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL4_2027_FrontierAI11",
@@ -812,7 +729,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://topictree.ideal-ist.eu/topic/7057",
-    "category": "AI safety & security"
+    "category": "AI safety & security",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL4_2027_AIAdoption01",
@@ -831,7 +750,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-7-digital-industry-and-space_horizon-2026-2027_en.pdf",
-    "category": "AI safety & security"
+    "category": "AI safety & security",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL4_2027_ApplyAIBooster04",
@@ -850,7 +771,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://topictree.ideal-ist.eu/topic/7054",
-    "category": "Applied & sectoral AI"
+    "category": "Applied & sectoral AI",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL4_2027_IntlCoopAI06",
@@ -869,7 +792,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://topictree.ideal-ist.eu/topic/7053",
-    "category": "AI governance, policy & society"
+    "category": "AI governance, policy & society",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL2_2027_Democracy04",
@@ -888,7 +813,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://fasi.eu/en/grants/49cf70f1-53a1-353b-8e73-218782ded5e6",
-    "category": "Democracy, rights & media"
+    "category": "Democracy, rights & media",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL2_2027_Transfo05AIEducation",
@@ -907,7 +834,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://fasi.eu/en/grants/420183f9-a97e-3b72-b1d5-8cedf93c40b6",
-    "category": "Applied & sectoral AI"
+    "category": "Applied & sectoral AI",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL2_2027_AI4Creatives",
@@ -926,7 +855,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.timemachine.eu/funding-opts/horizon-cl2-2027-01-heritage-02-ai4creatives-support-platform-embracing-a-fair-ai-revolution/",
-    "category": "Applied & sectoral AI"
+    "category": "Applied & sectoral AI",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL3_2027_AIforCyber",
@@ -945,7 +876,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-6-civil-security-for-society_horizon-2026-2027_en.pdf",
-    "category": "AI safety & security"
+    "category": "AI safety & security",
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "eurostarsCall12",
@@ -964,7 +897,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.eurekanetwork.org/programmes-and-calls/eurostars/eurostars-call-12-for-projects-deadline-march-2027/",
-    "category": "Open-topic research & civil society funding"
+    "category": "Open-topic research & civil society funding",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "jrrtDemocracyGrants",
@@ -983,7 +918,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.jrrt.org.uk/apply-for-a-grant/",
-    "category": "Democracy, rights & media"
+    "category": "Democracy, rights & media",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "coefficientAbundanceGrowth",
@@ -1002,7 +939,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://coefficientgiving.org/funds/abundance-and-growth/apply-for-a-grant-from-the-abundance-and-growth-fund/",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "iglSeedGrants2026",
@@ -1021,7 +960,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.innovationgrowthlab.org/about/research-network/seed-grants",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "nberMedicalInnovationCall",
@@ -1040,7 +981,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.nber.org/calls-papers-and-proposals",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "nberAgFoodInnovationCall",
@@ -1059,7 +1002,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.nber.org/calls-papers-and-proposals",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "emergentVentures",
@@ -1078,7 +1023,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://mercatus.tfaforms.net/5099527",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "digitalScienceCatalyst2026",
@@ -1097,7 +1044,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://www.digital-science.com/press-releases/digital-science-2026-catalyst-grant-agentic-ai-workflows-you-can-trust/"
+    "contact": "https://www.digital-science.com/press-releases/digital-science-2026-catalyst-grant-agentic-ai-workflows-you-can-trust/",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heWidera2027ERA",
@@ -1116,7 +1065,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-11-widening-participation-and-strengthening-the-european-research-area_horizon-2026-2027_en.pdf",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL4_2027_Foresight10",
@@ -1135,7 +1086,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://topictree.ideal-ist.eu/topic/7059"
+    "contact": "https://topictree.ideal-ist.eu/topic/7059",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL2_2027_Transfo03",
@@ -1154,7 +1107,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "ceprSTEGReCIPE",
@@ -1173,7 +1128,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://cepr.org/sixth-call-proposals-steg-larger-research-grants"
+    "contact": "https://cepr.org/sixth-call-proposals-steg-larger-research-grants",
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "hansBoecklerResearch",
@@ -1192,7 +1149,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.boeckler.de/de/forschungsfoerderung-beantragen-2742.htm",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "eurofoundAlgoMgmtTender2026",
@@ -1211,26 +1170,30 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-tenders",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "ihsAIWorkforce2027",
     "name": "IHS AI & the Workforce Faculty Research Grants 2027",
     "organization": "Institute for Humane Studies (IHS)",
     "type": "foundation",
-    "thematic_fit": 3,
+    "thematic_fit": 2,
     "description": "Research grants on how AI affects employment, productivity, occupational change, economic opportunity and innovation. Outputs can be papers, policy white papers or shareable datasets.",
     "url": "https://theihs.org/ai-and-the-workforce",
     "amount_max_usd": 20000,
     "amount_notes": "Up to $20,000 (larger in exceptional cases)",
     "deadline": "2026-12-15",
     "eligible_regions": "global? (check; aimed at academic scholars)",
-    "notes": "Due 15 Dec 2026; decisions 15 Jan 2027. International eligibility was not confirmed, and the grant targets faculty, so it may only fit think-tank staff with academic affiliations.",
+    "notes": "QC 2026-09-28: due 15 Dec 2026 (decisions 15 Jan 2027). Eligibility for scholars outside the US could not be confirmed, so ask IHS before applying. Aimed at academic faculty.",
     "category": "Economics of AI, labour & growth",
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://theihs.org/ai-and-the-workforce"
+    "contact": "https://theihs.org/ai-and-the-workforce",
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL2_2027_Transfo02",
@@ -1249,7 +1212,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL2_2027_Transfo04",
@@ -1268,7 +1233,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf"
+    "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL2_2027_Transfo06",
@@ -1287,7 +1254,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "friendsProvidentFoundation",
@@ -1306,7 +1275,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://friendsprovidentfoundation.org/grants/",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "microsoftAIEINextCall",
@@ -1325,7 +1296,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://www.microsoft.com/en-us/research/group/aiei/aiei-open-call-3/"
+    "contact": "https://www.microsoft.com/en-us/research/group/aiei/aiei-open-call-3/",
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "openaiEconResearchExchangeNext",
@@ -1344,7 +1317,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://openai.com/economic-research-exchange/",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL4_2027_Standards07",
@@ -1363,7 +1338,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://topictree.ideal-ist.eu/topic/7052"
+    "contact": "https://topictree.ideal-ist.eu/topic/7052",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "bmftrGenAIHumanitiesSocial",
@@ -1382,7 +1359,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.bmftr.bund.de/SharedDocs/Bekanntmachungen/DE/2026/08/2026-08-25-bekanntmachung-ki-gsw.html",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "coefficientGCRProgramsEvents",
@@ -1401,7 +1380,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://coefficientgiving.org/funds/global-catastrophic-risks-opportunities/funding-for-programs-and-events-on-global-catastrophic-risk-effective-altruism-and-other-topics/",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "robertBoschOpenCallAI2026",
@@ -1420,7 +1401,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.bosch-stiftung.de/en/open-call",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL2_2027_Democracy01",
@@ -1439,7 +1422,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL2_2027_Democracy09",
@@ -1458,7 +1443,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "otfInternetFreedomFund",
@@ -1477,7 +1464,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://www.opentech.fund/funds/internet-freedom-fund/"
+    "contact": "https://www.opentech.fund/funds/internet-freedom-fund/",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "creativeEuropeJournalism2027",
@@ -1496,7 +1485,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://digital-strategy.ec.europa.eu/en/policies/funding-news-media-sector",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "swedishPostcodeFoundation",
@@ -1515,7 +1506,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://postkodlotterietsstiftelse.se/en/our-support/sweden-and-international/",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "eaisfNextCalls",
@@ -1534,7 +1527,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://europeanaifund.org/funding/",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "nordforskSocietalSecurity2026",
@@ -1553,7 +1548,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.nordforsk.org/calls",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "eurohpcAIScienceAccess",
@@ -1572,7 +1569,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://eurohpc-ju.europa.eu/eurohpc-ju-call-proposals-ai-science-and-collaborative-eu-projects_en",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heCL4_2027_Data03",
@@ -1591,7 +1590,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://topictree.ideal-ist.eu/topic/7050",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "heINFRA2027",
@@ -1610,7 +1611,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-3-research-infrastructures_horizon-2026-2027_en.pdf",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "templetonIntelligenceVenture2027",
@@ -1629,7 +1632,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://www.templeton.org/grants/grant-faq"
+    "contact": "https://www.templeton.org/grants/grant-faq",
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "numfocusSDG2026",
@@ -1648,7 +1653,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://numfocus.org/programs/small-development-grants"
+    "contact": "https://numfocus.org/programs/small-development-grants",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "wikimediaResearchFund2027",
@@ -1667,7 +1674,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://meta.wikimedia.org/wiki/Grants:Programs/Wikimedia_Research_%26_Technology_Fund/Wikimedia_Research_Fund"
+    "contact": "https://meta.wikimedia.org/wiki/Grants:Programs/Wikimedia_Research_%26_Technology_Fund/Wikimedia_Research_Fund",
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "rjResearchInitiation2026",
@@ -1686,7 +1695,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.rj.se/en/funding/rj-research-initiation-2026/",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "leverhulmeRPG",
@@ -1705,7 +1716,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://www.leverhulme.ac.uk/research-project-grants"
+    "contact": "https://www.leverhulme.ac.uk/research-project-grants",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "baLeverhulmeSmall2026",
@@ -1724,7 +1737,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://www.thebritishacademy.ac.uk/funding/schemes/ba-leverhulme-small-research-grants/"
+    "contact": "https://www.thebritishacademy.ac.uk/funding/schemes/ba-leverhulme-small-research-grants/",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "ercStG2027",
@@ -1743,7 +1758,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://erc.europa.eu/apply-grant/starting-grant"
+    "contact": "https://erc.europa.eu/apply-grant/starting-grant",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "ercCoG2027",
@@ -1762,7 +1779,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://erc.europa.eu/apply-grant/consolidator-grant"
+    "contact": "https://erc.europa.eu/apply-grant/consolidator-grant",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "ercSyG2027",
@@ -1781,7 +1800,9 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://erc.europa.eu/apply-grant/synergy-grant"
+    "contact": "https://erc.europa.eu/apply-grant/synergy-grant",
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "fritzThyssenProjects2027",
@@ -1800,7 +1821,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.fritz-thyssen-stiftung.de/en/funding/types-of-support/support-of-projects/",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "fritzThyssenConferences",
@@ -1819,7 +1842,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.fritz-thyssen-stiftung.de/en/",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "esrcResponsiveAI",
@@ -1838,7 +1863,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.ukri.org/opportunity/?filter_council%5B%5D=818",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "nwoSSHExpand2026",
@@ -1857,7 +1884,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.nwo.nl/en/researchprogrammes/open-competition-ssh",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "medium",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "ncnOpus32LAP",
@@ -1876,7 +1905,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.ncn.gov.pl/index.php/en/aktualnosci/2026-07-21-jesienny-nabor-opus32",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "rcfStrategicResearch2027",
@@ -1895,7 +1926,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.aka.fi/en/research-funding/apply-for-funding/calls-for-applications/",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "anrAAPG2027",
@@ -1914,7 +1947,9 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://anr.fr/en/generic-call-2026/",
-    "amount_max_usd": 0
+    "amount_max_usd": 0,
+    "confidence": "low",
+    "last_verified": "2026-09-28"
   },
   {
     "id": "visegradFundOct2026",
@@ -1933,6 +1968,8 @@
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
-    "contact": "https://www.visegradfund.org/apply/grants/visegrad-grants/"
+    "contact": "https://www.visegradfund.org/apply/grants/visegrad-grants/",
+    "confidence": "high",
+    "last_verified": "2026-09-28"
   }
 ]

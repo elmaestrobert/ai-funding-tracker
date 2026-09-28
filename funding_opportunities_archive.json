@@ -372,5 +372,26 @@
     "amount_max_usd": 0,
     "confidence": "n/a",
     "last_verified": "2026-09-28"
+  },
+  {
+    "id": "friendsProvidentFoundation",
+    "name": "Friends Provident Foundation \u2014 New Economy Infrastructure & Transforming Financial Systems",
+    "organization": "Friends Provident Foundation",
+    "type": "foundation",
+    "thematic_fit": 2,
+    "description": "Grants for work towards a fairer economic system in the UK, through two strands: New Economy Infrastructure and Transforming Financial Systems.",
+    "url": "https://friendsprovidentfoundation.org/grants/",
+    "amount_notes": "~\u00a3250k allocated per trustee meeting across all applicants",
+    "deadline": "rolling",
+    "eligible_regions": "UK",
+    "notes": "QC 2026-09-28: the current programmes are closed (the last 'Say Hello' deadline was 7 Aug 2026), and a new strategy is expected in spring 2027. | Applications are reviewed at trustee meetings. The budget is tight (under \u00a31M a year). Only for UK economic-policy organisations.",
+    "category": "Economics of AI, labour & growth",
+    "date_added": "2026-09-27",
+    "status": "archived",
+    "broken_url": false,
+    "contact": "https://friendsprovidentfoundation.org/grants/",
+    "amount_max_usd": 0,
+    "confidence": "n/a",
+    "last_verified": "2026-09-28"
   }
 ]

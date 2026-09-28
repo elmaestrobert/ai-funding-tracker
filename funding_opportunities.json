@@ -184,7 +184,7 @@
     "status": "new",
     "broken_url": false,
     "category": "Economics of AI, labour & growth",
-    "confidence": "medium",
+    "confidence": "high",
     "last_verified": "2026-09-28"
   },
   {
@@ -268,7 +268,7 @@
     "status": "new",
     "broken_url": false,
     "category": "Democracy, rights & media",
-    "confidence": "medium",
+    "confidence": "high",
     "last_verified": "2026-09-28"
   },
   {
@@ -310,7 +310,7 @@
     "broken_url": false,
     "contact": "https://coefficientgiving.org/funds/navigating-transformative-ai/funding-for-work-that-builds-capacity-to-address-risks-from-transformative-ai/",
     "category": "AI governance, policy & society",
-    "confidence": "medium",
+    "confidence": "high",
     "last_verified": "2026-09-28"
   },
   {
@@ -373,7 +373,7 @@
     "broken_url": false,
     "contact": "https://manifund.org/about/regranting",
     "category": "AI safety & security",
-    "confidence": "medium",
+    "confidence": "high",
     "last_verified": "2026-09-28"
   },
   {
@@ -468,8 +468,8 @@
     "thematic_fit": 2,
     "description": "MSCA Doctoral Networks dedicated to AI in science, run under the pilot of RAISE (Resource for AI Science in Europe). Consortia train PhD candidates. In industrial and joint formats, candidates spend at least 50% of their time at non-academic organisations.",
     "url": "https://cordis.europa.eu/programme/id/HORIZON_HORIZON-RAISE-2026-01-03",
-    "amount_max_usd": 0,
-    "amount_notes": "Standard MSCA DN unit costs (typically \u20ac2\u20134M per network)",
+    "amount_max_usd": 33000000,
+    "amount_notes": "\u20ac30M call budget; MSCA doctoral-network unit costs, up to 100% funding",
     "deadline": "2026-11-24",
     "eligible_regions": "EU / Horizon Europe associated countries",
     "notes": "Due 24 Nov 2026. Consortia need at least 3 independent partners from different EU or associated countries. Data-driven think tanks can join as non-academic hosts or partner organisations, usually alongside a university lead.",
@@ -478,7 +478,7 @@
     "broken_url": false,
     "contact": "https://cordis.europa.eu/programme/id/HORIZON_HORIZON-RAISE-2026-01-03",
     "category": "AI for science, data & compute",
-    "confidence": "medium",
+    "confidence": "high",
     "last_verified": "2026-09-28"
   },
   {
@@ -596,15 +596,15 @@
     "url": "https://support.claude.com/en/articles/11199177-anthropic-s-ai-for-science-program",
     "amount_max_usd": 50000,
     "amount_notes": "Up to ~$50k in API credits per project (in-kind)",
-    "deadline": "rolling",
+    "deadline": "TBC",
     "eligible_regions": "global",
-    "notes": "Rolling, with selections made monthly. Credits only, no cash. Pairs well with the Anthropic Economic Futures awards for data-heavy economic research.",
+    "notes": "QC 2026-09-28: the latest cycles closed (Claude Science track 15 Jul 2026; rare-disease track 2 Aug 2026). It is unclear whether the monthly rolling review continues, so this moved from rolling to TBC.",
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
     "contact": "https://support.claude.com/en/articles/11199177-anthropic-s-ai-for-science-program",
     "category": "AI for science, data & compute",
-    "confidence": "medium",
+    "confidence": "low",
     "last_verified": "2026-09-28"
   },
   {
@@ -641,12 +641,12 @@
     "amount_notes": "No published range; project-dependent",
     "deadline": "rolling",
     "eligible_regions": "EU (Germany/Europe focus)",
-    "notes": "Rolling: submit a short project outline. The strongest fit is for German or European organisations whose work ties into Mercator's strategy. Also check the calls page for time-limited calls.",
+    "notes": "QC 2026-09-28: confirmed. Project outlines can be sent at any time, with no deadlines, informally by email (info@stiftung-mercator.de or to the relevant project manager). There are two stages. The 'Digitalised Society' area funds digital rights, technology governance and independent tech research.",
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
     "category": "AI governance, policy & society",
-    "confidence": "medium",
+    "confidence": "high",
     "last_verified": "2026-09-28"
   },
   {
@@ -662,7 +662,7 @@
     "amount_notes": "Typically $100k\u2013$400k",
     "deadline": "rolling",
     "eligible_regions": "global (international considered)",
-    "notes": "Rolling: email a letter of inquiry of up to 2 pages to technology@sloan.org. It is open to universities, research institutes and nonprofits, and international applicants may be considered. It suits data-heavy metascience or AI-in-research projects more than policy work.",
+    "notes": "QC 2026-09-28: letters of inquiry go to technology@sloan.org. One grant listing gives a 31 Dec 2026 cut-off; not confirmed on Sloan's own page. International applicants 'may be considered'.",
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
@@ -911,15 +911,15 @@
     "url": "https://www.jrrt.org.uk/apply-for-a-grant/",
     "amount_max_usd": 0,
     "amount_notes": "~\u00a32M/yr total; grant sizes vary",
-    "deadline": "rolling",
+    "deadline": "2026-11-02",
     "eligible_regions": "UK",
-    "notes": "Applications are considered at regular trustee meetings; check the site for the next cut-off. UK-focused only. It suits AI-accountability or digital-rights campaigning that charitable funders will not cover.",
+    "notes": "QC 2026-09-28: for grants over \u00a310k, the Q4 outline is due 2 Nov 2026 and the final application 9 Nov 2026, with decisions 11 Dec 2026. Requests under \u00a310k can be made at any time. UK political and democratic-reform campaigning only (JRRT is a non-charitable funder).",
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
     "contact": "https://www.jrrt.org.uk/apply-for-a-grant/",
     "category": "Democracy, rights & media",
-    "confidence": "medium",
+    "confidence": "high",
     "last_verified": "2026-09-28"
   },
   {
@@ -940,7 +940,7 @@
     "broken_url": false,
     "contact": "https://coefficientgiving.org/funds/abundance-and-growth/apply-for-a-grant-from-the-abundance-and-growth-fund/",
     "amount_max_usd": 0,
-    "confidence": "medium",
+    "confidence": "high",
     "last_verified": "2026-09-28"
   },
   {
@@ -1122,14 +1122,14 @@
     "amount_notes": "Project-dependent",
     "deadline": "rolling",
     "eligible_regions": "EU (Germany focus)",
-    "notes": "Project outlines are reviewed three times a year; check the site for the next cut-off. The 2026 cycle's first cut-off was 5 Jan 2026. It suits labour-economics and AI-at-work research with German or European relevance.",
+    "notes": "QC 2026-09-28: confirmed. Short project outlines can be sent all year and are reviewed three times a year, with feedback 4\u20136 weeks after each cut-off. The special research call on progressive social policy closed 30 Sep 2026, and the doctoral-network formats reopen only in 2027.",
     "category": "Economics of AI, labour & growth",
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
     "contact": "https://www.boeckler.de/de/forschungsfoerderung-beantragen-2742.htm",
     "amount_max_usd": 0,
-    "confidence": "medium",
+    "confidence": "high",
     "last_verified": "2026-09-28"
   },
   {
@@ -1143,14 +1143,14 @@
     "amount_notes": "Service contract; budget in tender documents (a comparable 2026 Eurofound AI tender was \u20ac220k)",
     "deadline": "2026-11-30",
     "eligible_regions": "EU",
-    "notes": "Ref. EUROFOUND/2026/MVP/0013-EXA; deadline 30 Nov 2026. This is a tender, not a grant, but research institutes and nonprofits can bid, often in consortium. It pays for directly policy-relevant fieldwork.",
+    "notes": "QC 2026-09-28: the tender was published 21 Sep 2026 as a planned negotiated procedure for a middle- or low-value contract. That type of procedure may be by invitation only, and the 30 Nov 2026 deadline could not be confirmed. Contact ef-procurement@eurofound.europa.eu to ask whether you can take part.",
     "category": "Economics of AI, labour & growth",
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
     "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-tenders",
     "amount_max_usd": 0,
-    "confidence": "medium",
+    "confidence": "low",
     "last_verified": "2026-09-28"
   },
   {
@@ -1235,27 +1235,6 @@
     "contact": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-5-culture-creativity-and-inclusive-society_horizon-2026-2027_en.pdf",
     "amount_max_usd": 4400000,
     "confidence": "high",
-    "last_verified": "2026-09-28"
-  },
-  {
-    "id": "friendsProvidentFoundation",
-    "name": "Friends Provident Foundation \u2014 New Economy Infrastructure & Transforming Financial Systems",
-    "organization": "Friends Provident Foundation",
-    "type": "foundation",
-    "thematic_fit": 2,
-    "description": "Grants for work towards a fairer economic system in the UK, through two strands: New Economy Infrastructure and Transforming Financial Systems.",
-    "url": "https://friendsprovidentfoundation.org/grants/",
-    "amount_notes": "~\u00a3250k allocated per trustee meeting across all applicants",
-    "deadline": "rolling",
-    "eligible_regions": "UK",
-    "notes": "Applications are reviewed at trustee meetings. The budget is tight (under \u00a31M a year). Only for UK economic-policy organisations.",
-    "category": "Economics of AI, labour & growth",
-    "date_added": "2026-09-27",
-    "status": "new",
-    "broken_url": false,
-    "contact": "https://friendsprovidentfoundation.org/grants/",
-    "amount_max_usd": 0,
-    "confidence": "medium",
     "last_verified": "2026-09-28"
   },
   {
@@ -1438,13 +1417,13 @@
     "amount_notes": "$10k\u2013$900k; ideal $50k\u2013$200k for 6\u201312 months",
     "deadline": "rolling",
     "eligible_regions": "global (except US-sanctioned countries)",
-    "notes": "Rolling, two stages (concept note, then full proposal). Organisations and individuals of any nationality can apply. OTF's funding depends on US government appropriations, so check its current status.",
+    "notes": "QC 2026-09-28: confirmed active (USAGM-supported), rolling, two stages. First-time and under-represented applicants and underfunded areas are prioritised. OTF's funding depends on US appropriations, so check its status before investing heavily.",
     "category": "Democracy, rights & media",
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
     "contact": "https://www.opentech.fund/funds/internet-freedom-fund/",
-    "confidence": "medium",
+    "confidence": "high",
     "last_verified": "2026-09-28"
   },
   {
@@ -1696,7 +1675,7 @@
     "status": "new",
     "broken_url": false,
     "contact": "https://www.leverhulme.ac.uk/research-project-grants",
-    "confidence": "medium",
+    "confidence": "high",
     "last_verified": "2026-09-28"
   },
   {
@@ -1827,23 +1806,23 @@
   },
   {
     "id": "esrcResponsiveAI",
-    "name": "ESRC Responsive Mode Research Grants (AI-for-Social-Science Highlight)",
+    "name": "ESRC Responsive Mode Research Grants \u2014 Round Two",
     "organization": "Economic and Social Research Council (UKRI)",
     "type": "government",
     "thematic_fit": 3,
     "description": "Open-deadline ESRC research grants. A current highlight welcomes research on how AI is used by and affects people, businesses and the economy, and on how social science can guide AI's development and adoption.",
     "url": "https://www.ukri.org/opportunity/?filter_council%5B%5D=818",
-    "amount_notes": "Typically \u00a3100k\u2013\u00a31M+ (80% of full economic cost)",
-    "deadline": "rolling",
+    "amount_notes": "\u00a3350k\u2013\u00a31M (80% of full economic cost)",
+    "deadline": "2026-11-04",
     "eligible_regions": "UK (eligible research organisations incl. approved independent research organisations)",
-    "notes": "No deadline. UK think tanks with independent-research-organisation status can lead, and international co-investigators are allowed. Strong fit for AI-economics research.",
+    "notes": "QC 2026-09-28: corrected. Responsive mode now runs in rounds, and round two closes 4 Nov 2026, 16:00 UK time (it had been listed as open-deadline). The lead must be at an ESRC-eligible UK research organisation; UK business, third-sector or government co-leads can be included, which suits think tanks. AI and social-science research is welcome, and social science must be more than 50% of the project.",
     "category": "Open-topic research & civil society funding",
     "date_added": "2026-09-27",
     "status": "new",
     "broken_url": false,
     "contact": "https://www.ukri.org/opportunity/?filter_council%5B%5D=818",
-    "amount_max_usd": 0,
-    "confidence": "medium",
+    "amount_max_usd": 1300000,
+    "confidence": "high",
     "last_verified": "2026-09-28"
   },
   {

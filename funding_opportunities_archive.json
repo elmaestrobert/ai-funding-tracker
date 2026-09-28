@@ -351,5 +351,26 @@
     "category": "Economics of AI, labour & growth",
     "confidence": "n/a",
     "last_verified": "2026-09-28"
+  },
+  {
+    "id": "nberMedicalInnovationCall",
+    "name": "NBER \u2014 Assessing the US Medical Innovation System (Call for Proposals)",
+    "organization": "National Bureau of Economic Research (NBER)",
+    "type": "research_institution",
+    "thematic_fit": 3,
+    "description": "An NBER call for research proposals on how the US medical innovation system performs, covering R&D incentives, drug and device development, and returns to biomedical research.",
+    "url": "https://www.nber.org/calls-papers-and-proposals",
+    "amount_notes": "See call text",
+    "deadline": "2026-11-02",
+    "eligible_regions": "global (US-system focus)",
+    "notes": "QC 2026-09-28: removed from open calls because this is a call for conference papers (NBER Center for Aging and Health Research), not a funding opportunity. | Closes 2 Nov 2026. NBER calls usually welcome non-affiliated and international researchers, but check the call. Relevant for innovation economists who can study US data.",
+    "category": "R&I economics, science policy & metascience",
+    "date_added": "2026-09-27",
+    "status": "archived",
+    "broken_url": false,
+    "contact": "https://www.nber.org/calls-papers-and-proposals",
+    "amount_max_usd": 0,
+    "confidence": "n/a",
+    "last_verified": "2026-09-28"
   }
 ]
